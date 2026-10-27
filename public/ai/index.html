@@ -109,7 +109,7 @@ svg.hide-work .hit.work, svg.hide-money .hit.money, svg.hide-tie .hit.tie, svg.h
 .nd .body { transition: opacity 0.6s ease, transform 0.6s cubic-bezier(.2,.8,.2,1); transform-origin: 0 0; }
 .nd.off { pointer-events: none; }
 .nd.off .body { opacity: 0; transform: scale(0.3); }
-.nd.org.lone .body { opacity: 0.5; }
+.nd.lone .body { opacity: 0.5; }
 .nd.dim .body { opacity: 0.18; }
 .sq { fill: #FFFFFF; stroke: var(--shade); stroke-width: 1; }
 .sq.unvalued { stroke-dasharray: 3 3; }
@@ -675,12 +675,9 @@ const RC_LOGO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO8AAABQCAYAAADx7
       l.active = l.f <= t && t < l.e && l.na.vis && l.nb.vis && !(l.na.absorb > 0.5 || l.nb.absorb > 0.5);
       l.past = !l.active && l.e <= t && l.na.vis && l.nb.vis;
     });
-    // A person with no active tie leaves the map until they have one again.
-    // Organisations are the map's landmarks: once they appear they stay, drawn faint while they have no tie.
-    nodes.forEach(n => {
-      n.lone = n.vis && !n.links.some(l => l.active);
-      if (n.lone && n.kind === "person") n.vis = false;
-    });
+    // Everyone stays once they appear, drawn faint while they have no active tie.
+    // Only an organisation that is taken over or merged leaves the map.
+    nodes.forEach(n => { n.lone = n.vis && !n.links.some(l => l.active); });
 
     const sig = links.map(l => l.active ? "1" : "0").join("") + nodes.map(n => n.vis ? "1" : "0").join("");
     if (sig === activeSig && !force) return false;
@@ -1070,7 +1067,7 @@ const RC_LOGO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO8AAABQCAYAAADx7
     return `
       <h3>How to read it</h3>
       <div class="legend">
-        <div class="lg static"><svg viewBox="0 0 34 22"><circle cx="9" cy="11" r="8" fill="var(--ice)" stroke="var(--shade)"/><path d="${squircle(16)}" transform="translate(26,11)" fill="#fff" stroke="var(--shade)"/></svg><span><b>Actors</b><span>Circles are people. Rounded squares are organisations. A person leaves the map while they have no active tie. Organisations stay once they appear, faint while they have none.</span></span></div>
+        <div class="lg static"><svg viewBox="0 0 34 22"><circle cx="9" cy="11" r="8" fill="var(--ice)" stroke="var(--shade)"/><path d="${squircle(16)}" transform="translate(26,11)" fill="#fff" stroke="var(--shade)"/></svg><span><b>Actors</b><span>Circles are people, squares organisations. Faint means no active tie.</span></span></div>
         <div class="lg static"><svg viewBox="0 0 34 22"><path d="${squircle(10)}" transform="translate(6,14)" fill="#fff" stroke="var(--shade)"/><path d="${squircle(20)}" transform="translate(22,11)" fill="#fff" stroke="var(--shade)"/></svg><span><b>Size</b><span>${HAS_VALUES ? "Companies: value on that date, from stock-market value or the last funding round. Each step up is ten times more. Dashed edge: no public value. People: how many ties they have that day." : "Size shows how many ties each actor has."}</span></span></div>
         ${sizeKey()}
         ${lg("work", "Work", "Founded, works at, or sits on the board.", '<line x1="1" y1="8" x2="33" y2="8" stroke="var(--work)" stroke-width="2"/><line x1="1" y1="16" x2="33" y2="16" stroke="var(--work)" stroke-width="2" stroke-dasharray="1 3.5" stroke-linecap="round"/>')}
