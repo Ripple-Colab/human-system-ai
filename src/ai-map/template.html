@@ -144,11 +144,7 @@ svg.hide-release .rtag { display: none; }
 .cap-actors:empty { display: none; }
 .actor { border: 0; background: none; padding: 0; cursor: pointer; color: var(--navy); font-weight: 600; text-decoration: underline; text-decoration-color: var(--hair); text-underline-offset: 3px; }
 .actor:hover { text-decoration-color: var(--navy); }
-.cap-src, .rl-src { color: var(--navy); font-size: 13px; text-decoration-color: var(--hair); text-underline-offset: 3px; white-space: nowrap; }
-.cap-rel { margin-top: 10px; padding-top: 9px; border-top: 1px solid var(--hair); font-size: 13px; color: var(--ink); display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
-.cap-rel .tick { width: 2px; height: 11px; background: var(--navy); align-self: center; flex: none; }
-.cap-rel b { color: var(--navy); font-weight: 700; }
-.cap-rel button { border: 0; background: none; padding: 0; cursor: pointer; color: var(--navy); font-weight: 600; text-decoration: underline; text-decoration-color: var(--hair); text-underline-offset: 3px; }
+.cap-src { color: var(--navy); font-size: 13px; text-decoration-color: var(--hair); text-underline-offset: 3px; white-space: nowrap; }
 .caption.fresh { animation: capin 0.5s ease; }
 @keyframes capin { from { opacity: 0.3; } to { opacity: 1; } }
 
@@ -342,12 +338,6 @@ details.vall summary { cursor: pointer; color: var(--navy); font-weight: 600; }
       <h2 class="cap-title" id="cap-title"></h2>
       <p class="cap-text"><b id="cap-date"></b> <span id="cap-text"></span> <a class="cap-src" id="cap-src" target="_blank" rel="noopener" hidden>Source</a></p>
       <p class="cap-actors" id="cap-actors"></p>
-      <div class="cap-rel" id="cap-rel" hidden>
-        <span class="tick"></span>
-        <span><b id="rl-date"></b> <button id="rl-org"></button> released <b id="rl-title"></b>.</span>
-        <a class="rl-src" id="rl-src" target="_blank" rel="noopener">Source</a>
-        <span id="rl-text" hidden></span>
-      </div>
     </section>
     <aside class="panel" id="panel" aria-label="Guide and details">
       <div class="sheet-handle"><span></span></div>
@@ -510,7 +500,7 @@ const RC_LOGO = /*__RCLOGO__*/"";
   layoutHomes();
 
   let t = T1, playing = false, speed = 1, holdUntil = 0, last = performance.now();
-  let selected = null, hoverNode = null, storyEnd = null, currentEvent = null, currentRelease = null;
+  let selected = null, hoverNode = null, storyEnd = null, currentEvent = null, shownRelease = null;
   const hidden = new Set(); let showPast = false;
   let activeSig = "";
 
@@ -863,32 +853,31 @@ const RC_LOGO = /*__RCLOGO__*/"";
     $("cap-actors").innerHTML = ev.ids.length ? "With " + actorList(ev.ids.slice(0, 8)) + "." : "";
     if (fresh) flash(capEl, "fresh");
   }
-  const relEl = $("cap-rel");
-  function setRelease(r, fresh) {
-    if (!r || hidden.has("release") || t - r.t > 200) { relEl.hidden = true; return; }
-    relEl.hidden = false;
-    $("rl-date").textContent = fmt(r.t, r.prec) + ".";
+  // A release takes the caption only when someone picks it; during playback it shows as a tag on the map.
+  function showRelease(r) {
     const org = r.org && byId[r.org];
-    const ob = $("rl-org"); ob.textContent = org ? nameAt(org, r.t) : (r.orgName || ""); ob.dataset.id = org ? org.id : ""; ob.disabled = !org;
-    $("rl-title").textContent = r.title;
-    $("rl-text").textContent = r.text || "";
-    relEl.title = r.text || "";
-    setSrc($("rl-src"), r.src);
-
+    const who = org ? nameAt(org, r.t) : (r.orgName || "");
+    $("cap-title").textContent = (who ? who + " releases " : "") + r.title;
+    $("cap-date").textContent = fmt(r.t, r.prec) + ".";
+    $("cap-text").textContent = r.text || "";
+    setSrc($("cap-src"), r.src);
+    $("cap-actors").innerHTML = org ? "With " + actorChip(org.id) + "." : "";
+    shownRelease = r;
+    flash(capEl, "fresh");
   }
   capEl.addEventListener("click", e => {
-    const b = e.target.closest(".actor, #rl-org"); if (b && b.dataset.id) select({ kind: "node", id: b.dataset.id });
+    const b = e.target.closest(".actor"); if (b && b.dataset.id) select({ kind: "node", id: b.dataset.id });
   });
 
-  function fireEvent(ev) {
+  function fireEvent(ev, picked) {
     computeState();
     if (ev.kind === "release") {
       const n = byId[ev.org];
       if (n) releaseTag(n, ev);
-      currentRelease = ev; setRelease(ev, true);
+      if (picked) { showRelease(ev); markChron(); }
     } else {
       ripple(byId[ev.ids[0]]);
-      currentEvent = ev; setCaption(ev, true); markChron();
+      currentEvent = ev; shownRelease = null; setCaption(ev, true); markChron();
     }
   }
   const holdFor = ev => (ev.kind === "release" ? HOLD_REL[ev.weight] || 650 : HOLD[ev.weight] || 1300) / speed;
@@ -948,7 +937,7 @@ const RC_LOGO = /*__RCLOGO__*/"";
   speedBtn.addEventListener("click", () => { speed = speed === 1 ? 2 : speed === 2 ? 4 : 1; speedBtn.textContent = speed + "×"; });
 
   function jumpToEvent(ev) {
-    setTime(ev.t); fireEvent(ev);
+    setTime(ev.t); fireEvent(ev, true);
     if (playing) holdUntil = performance.now() + holdFor(ev);
   }
 
@@ -960,11 +949,9 @@ const RC_LOGO = /*__RCLOGO__*/"";
     track.setAttribute("aria-valuenow", yearOf(t)); track.setAttribute("aria-valuetext", fmt(t, "d"));
     const y = String(yearOf(t)); if (bigYear.textContent !== y) bigYear.textContent = y;
     nowDate.textContent = fmt(t, "d");
-    let ev = null, rel = null;
-    for (const e of timeline) { if (e.t > t + 0.01) break; if (e.kind === "moment") ev = e; else rel = e; }
-    if (ev !== currentEvent) { currentEvent = ev; setCaption(ev, false); markChron(); }
-    if (rel !== currentRelease) { currentRelease = rel; }
-    setRelease(currentRelease, false);
+    let ev = null;
+    for (const e of timeline) { if (e.t > t + 0.01) break; if (e.kind === "moment") ev = e; }
+    if (ev !== currentEvent || (shownRelease && Math.abs(t - shownRelease.t) > 0.5)) { currentEvent = ev; shownRelease = null; setCaption(ev, false); markChron(); }
     timeline.forEach(e => e.mk.classList.toggle("done", e.t <= t));
     if (computeState()) refreshPanel(); else refreshPanel(true);
     updateOnDate();
@@ -1066,7 +1053,7 @@ const RC_LOGO = /*__RCLOGO__*/"";
         ${lg("money", "Money", "Investment flows towards the receiver. Thick lines are takeovers.", '<line x1="1" y1="6" x2="33" y2="6" stroke="var(--money)" stroke-width="2" stroke-dasharray="5 4"/><line x1="1" y1="16" x2="33" y2="16" stroke="var(--money)" stroke-width="4" opacity=".6"/>')}
         ${lg("tie", "Allies", "Friends, family, mentors and close partners.", '<path d="M1 17 Q17 2 33 17" fill="none" stroke="var(--tie)" stroke-width="2"/>')}
         ${lg("rift", "Rifts", "Feuds, firings and lawsuits.", '<path d="M1 17 Q17 2 33 17" fill="none" stroke="var(--rift)" stroke-width="2" stroke-dasharray="7 3 2 3"/>')}
-        ${lg("release", "Releases", "Models and products. A tag rises from the company, and a mark sits under the timeline.", '<rect x="2" y="5" width="30" height="12" rx="6" fill="var(--navy)"/>')}
+        ${lg("release", "Releases", "Models and products. A tag rises from the company as each one lands. Click its mark under the timeline to read about it.", '<rect x="2" y="5" width="30" height="12" rx="6" fill="var(--navy)"/>')}
         <div class="lg static"><svg viewBox="0 0 34 22"><line x1="1" y1="11" x2="33" y2="11" stroke="var(--bluegrey)" stroke-width="1"/><circle cx="17" cy="11" r="6" fill="var(--rose)"/></svg><span><b>Now</b><span>The rose drop on the timeline is the date the map shows.</span></span></div>
       </div>
       <p style="margin-top:10px;font-size:13px">Click anyone to see their ties on the current date. Drag the timeline, or use the arrow buttons to step through events.</p>
@@ -1165,7 +1152,7 @@ const RC_LOGO = /*__RCLOGO__*/"";
   function markChron() {
     pb.querySelectorAll(".chron button").forEach(b => {
       const e = timeline[+b.dataset.ev];
-      b.classList.toggle("now", e === currentEvent || (e === currentRelease && e.t === t));
+      b.classList.toggle("now", shownRelease ? e === shownRelease : e === currentEvent);
       b.classList.toggle("future", e.t > t);
     });
     if (playing && !selected) { const now = pb.querySelector(".chron .now"); if (now) { const r = now.getBoundingClientRect(), pr = pb.getBoundingClientRect(); if (r.top < pr.top || r.bottom > pr.bottom) pb.scrollTop += r.top - pr.top - pr.height / 2; } }
@@ -1192,7 +1179,7 @@ const RC_LOGO = /*__RCLOGO__*/"";
   function toggleCat(cat) {
     if (hidden.has(cat)) hidden.delete(cat); else hidden.add(cat);
     svg.classList.toggle("hide-" + cat, hidden.has(cat));
-    if (cat === "release") { document.body.classList.toggle("hide-release", hidden.has(cat)); setRelease(currentRelease, false); }
+    if (cat === "release") { document.body.classList.toggle("hide-release", hidden.has(cat)); if (shownRelease && hidden.has(cat)) { shownRelease = null; setCaption(currentEvent, false); markChron(); } }
     document.querySelectorAll(`[data-cat="${cat}"]`).forEach(b => b.setAttribute("aria-pressed", String(!hidden.has(cat))));
     lastPanelKey = ""; if (selected) refreshPanel();
   }

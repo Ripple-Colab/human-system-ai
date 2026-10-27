@@ -1,0 +1,157 @@
+{
+ "musk": {
+  "artist": "Gage Skidmore",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Elon_Musk_-_54820081119_%283x4_cropped%2C_Rule_of_thirds%29.jpg"
+ },
+ "altman": {
+  "artist": "首相官邸ホームページ / Office of the Prime Minister of Japan Official Website",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Meeting_with_Masayoshi_Son_and_Sam_Altman_%28February_3%2C_2025%29_%283x4_cropped_on_Altman%29.jpg"
+ },
+ "brockman": {
+  "artist": "TechCrunch",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Disrupt_SF_TechCrunch_Disrupt_San_Francisco_2019_-_Day_2_%2848838200316%29_%28cropped%29.jpg"
+ },
+ "karpathy": {
+  "artist": "Gladwin Analytics",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Andrej_Karpathy%2C_OpenAI.png"
+ },
+ "d_amodei": {
+  "artist": "TechCrunch",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_01_%28cropped%29.jpg"
+ },
+ "kaplan": {
+  "artist": "TechCrunch",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jared_Kaplan_%28cropped%29.jpg"
+ },
+ "hassabis": {
+  "artist": "John Sears",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Demis_Hassabis%2C_2024_Nobel_Prize_Laureate_in_Chemistry_7_%28cropped%29.jpg"
+ },
+ "suleyman": {
+  "artist": "Christopher Wilson",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mustafa_Suleyman_photo_%28cropped%29.jpg"
+ },
+ "page": {
+  "artist": "Stansfield PL",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped_2%29.jpg"
+ },
+ "brin": {
+  "artist": "The White House",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Sergey_Brin_DC_Summit_2026_%28cropped%29.jpg"
+ },
+ "pichai": {
+  "artist": "Photographer: Lukasz Kobus (European Commission)",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sundar_Pichai_-_2023_%28cropped%29.jpg"
+ },
+ "lecun": {
+  "artist": "Jérémy Barande",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg"
+ },
+ "zuckerberg": {
+  "artist": "The White House",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:P20260929DT-1655_%2855561811540%29_%28cropped_2%29.jpg"
+ },
+ "friedman": {
+  "artist": "Doc Searls",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:20060424_Nat_Friedman.jpg"
+ },
+ "gross": {
+  "artist": "TechCrunch",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:TechCrunch_Disrupt_San_Francisco_2018_-_day_2_%2843613758885%29.jpg"
+ },
+ "nadella": {
+  "artist": "Brian Smale and Microsoft",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:MS-Exec-Nadella-Satya-2017-08-31-22_%28cropped%29.jpg"
+ },
+ "huang": {
+  "artist": "Anderseidesvik",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jensen_Huang_Stanford_2026-04-30_010_%28cropped%29.jpg"
+ },
+ "thiel": {
+  "artist": "Gage Skidmore",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Peter_Thiel_by_Gage_Skidmore.jpg"
+ },
+ "hoffman": {
+  "artist": "U.S. Secretary of Defense",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2022_Reid_Hoffman_%28cropped%29.jpg"
+ },
+ "tallinn": {
+  "artist": "Stimqdrmtmob",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Jaan_Tallinn.jpg"
+ },
+ "zilis": {
+  "artist": "Steve Jurvetson",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shivon_Zilis_in_2017.jpg"
+ },
+ "son": {
+  "artist": "European Communities, 2025 / EC - Audiovisual Service",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Masayoshi_Son_%28P066533-522034%2C_cropped%29.jpg"
+ },
+ "ellison": {
+  "artist": "Oracle PR Hartmann Studios",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Larry_Ellison_2016.png"
+ },
+ "trump": {
+  "artist": "Daniel Torok",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg"
+ },
+ "sutskever": {
+  "artist": "Eladkarmel",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ilya_Sutskever_and_Sam_Altman_in_TAU_%28cropped%29.jpg"
+ },
+ "legg": {
+  "artist": "Libor.burian",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Shane_Legg.jpg"
+ },
+ "hinton": {
+  "artist": "Cmichel67",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Geoffrey_Hinton_in_2026.jpg"
+ },
+ "wang": {
+  "artist": "Meta Platforms, Inc.",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Alexandr_Wang%2C_Chief_A.I._Officer%2C_Meta.jpg"
+ },
+ "mensch": {
+  "artist": "Jan2342342423",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Arthur_Mensch.png"
+ },
+ "dangelo": {
+  "artist": "Village Global",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Adam_D%27Angelo_-_The_Grove_2022.jpg"
+ },
+ "sbf": {
+  "artist": "Cointelegraph",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sam_Bankman-Fried_%28cropped%29.png"
+ }
+}
