@@ -1924,24 +1924,6 @@
    "src": "https://abcnews.go.com/Technology/wireStory/elon-musk-merging-spacex-artificial-intelligence-company-xai-129796634"
   },
   {
-   "a": "musk",
-   "b": "trump",
-   "type": "tie",
-   "label": "Endorsement, campaign money, DOGE",
-   "from": "2024-07-13",
-   "to": "2025-06-05",
-   "src": "https://www.cbsnews.com/news/elon-musk-277-million-trump-republican-candidates-donations/"
-  },
-  {
-   "a": "musk",
-   "b": "trump",
-   "type": "rift",
-   "label": "Public falling-out",
-   "from": "2025-06-05",
-   "to": "2025-09-21",
-   "src": "https://en.wikipedia.org/wiki/Trump%E2%80%93Musk_feud"
-  },
-  {
    "a": "trump",
    "b": "altman",
    "type": "tie",
@@ -2021,15 +2003,6 @@
    "from": "2025-06",
    "to": "2025-09",
    "src": "https://www.bloomberg.com/news/articles/2025-06-17/altman-says-meta-offered-openai-staffers-100-million-bonuses"
-  },
-  {
-   "a": "musk",
-   "b": "trump",
-   "type": "tie",
-   "label": "Made up; big Republican donor again",
-   "from": "2025-09-21",
-   "to": null,
-   "src": "https://www.cnbc.com/2026/10/12/elon-musk-republican-donations-2026-midterm-election.html"
   },
   {
    "a": "babuschkin",
@@ -2774,17 +2747,6 @@
    "src": "https://en.wikipedia.org/wiki/Safe_Superintelligence_Inc."
   },
   {
-   "date": "2024-07-13",
-   "title": "Musk endorses Trump",
-   "text": "He goes on to spend more than $250m helping Trump and other Republicans win.",
-   "ids": [
-    "musk",
-    "trump"
-   ],
-   "weight": 2,
-   "src": "https://www.cbsnews.com/news/elon-musk-277-million-trump-republican-candidates-donations/"
-  },
-  {
    "date": "2024-08-02",
    "title": "Google re-hires Noam Shazeer",
    "text": "A licence deal worth about $2.7bn brings the Character.AI founders back.",
@@ -2900,17 +2862,6 @@
    "src": "https://en.wikipedia.org/wiki/X_Corp."
   },
   {
-   "date": "2025-06-05",
-   "title": "Musk and Trump fall out",
-   "text": "Days after Musk leaves his government role, the two trade insults in public.",
-   "ids": [
-    "musk",
-    "trump"
-   ],
-   "weight": 2,
-   "src": "https://en.wikipedia.org/wiki/Trump%E2%80%93Musk_feud"
-  },
-  {
    "date": "2025-06-12",
    "title": "Meta buys into Scale AI",
    "text": "$14.3bn for 49%. Alexandr Wang joins Meta to lead a new superintelligence lab.",
@@ -2946,17 +2897,6 @@
    ],
    "weight": 1,
    "src": "https://www.outlookbusiness.com/deeptech/artificial-intelligence/igor-babuschkin-quits-elon-musks-xai-to-launch-ai-safety-focused-venture-capital-firm"
-  },
-  {
-   "date": "2025-09-21",
-   "title": "Musk and Trump make up",
-   "text": "Three months after their public row, they shake hands at Charlie Kirk's memorial. By 2026 Musk is again the biggest known Republican donor.",
-   "ids": [
-    "musk",
-    "trump"
-   ],
-   "weight": 2,
-   "src": "https://www.fortune.com/2025/09/21/trump-elon-musk-charlie-kirk-memorial-service-feud-alliance-doge-tesla"
   },
   {
    "date": "2025-10-28",

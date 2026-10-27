@@ -471,6 +471,8 @@ const RC_LOGO = /*__RCLOGO__*/"";
   const timeline = moments.concat(releases).sort((a, b) => a.t - b.t || (a.kind === "moment" ? -1 : 1));
   timeline.forEach((e, i) => { e.i = i; });
   const playable = e => e.kind === "moment" || !hidden.has("release");
+  const RELEASE_STAY = 150;
+  releases.forEach(r => { const n = r.org && byId[r.org]; if (n) (n.relTimes = n.relTimes || []).push(r.t); });
 
   const STORIES = [
     { yr: "2012–14", title: "Google buys DeepMind", text: "Musk, Thiel and Tallinn back a London lab. Facebook and Google both want it.", from: "2012-06", to: "2014-03", focus: "deepmind" },
@@ -654,8 +656,13 @@ const RC_LOGO = /*__RCLOGO__*/"";
       l.active = l.f <= t && t < l.e && l.na.vis && l.nb.vis && !(l.na.absorb > 0.5 || l.nb.absorb > 0.5);
       l.past = !l.active && l.e <= t && l.na.vis && l.nb.vis;
     });
-    // Every node sits on a line: an actor with no active tie leaves the map until it has one again
-    nodes.forEach(n => { n.lone = n.vis && !n.links.some(l => l.active); if (n.lone && !(n.kind === "org" && n.absorb > 0)) n.vis = false; });
+    // Every node sits on a line: an actor with no active tie leaves the map until it has one again.
+    // A company that has just released something stays, so the release has somewhere to land.
+    nodes.forEach(n => {
+      n.lone = n.vis && !n.links.some(l => l.active);
+      const releasing = n.relTimes && n.relTimes.some(rt => rt <= t + 0.01 && t - rt < RELEASE_STAY);
+      if (n.lone && !releasing && !(n.kind === "org" && n.absorb > 0)) n.vis = false;
+    });
 
     const sig = links.map(l => l.active ? "1" : "0").join("") + nodes.map(n => n.vis ? "1" : "0").join("");
     if (sig === activeSig && !force) return false;
@@ -828,10 +835,7 @@ const RC_LOGO = /*__RCLOGO__*/"";
   const capEl = document.getElementById("caption");
   const $ = id => document.getElementById(id);
   function actorChip(id) { const n = byId[id]; return `<button class="actor" data-id="${n.id}">${esc(nameAt(n, t))}</button>`; }
-  function actorList(ids) {
-    const b = ids.map(actorChip);
-    return b.length > 1 ? b.slice(0, -1).join(", ") + " and " + b[b.length - 1] : b.join("");
-  }
+  function actorList(ids) { return ids.map(actorChip).join(", "); }
   function flash(elm, cls) { elm.classList.remove(cls); void elm.offsetWidth; elm.classList.add(cls); }
   function setSrc(a, url) { const u = safeUrl(url); a.hidden = !u; if (u) a.href = u; }
   function setCaption(ev, fresh, intro) {
@@ -850,7 +854,7 @@ const RC_LOGO = /*__RCLOGO__*/"";
     $("cap-title").textContent = ev.title;
     $("cap-text").textContent = ev.text;
     setSrc($("cap-src"), ev.src);
-    $("cap-actors").innerHTML = ev.ids.length ? "With " + actorList(ev.ids.slice(0, 8)) + "." : "";
+    $("cap-actors").innerHTML = actorList(ev.ids.slice(0, 8));
     if (fresh) flash(capEl, "fresh");
   }
   // A release takes the caption only when someone picks it; during playback it shows as a tag on the map.
@@ -861,7 +865,7 @@ const RC_LOGO = /*__RCLOGO__*/"";
     $("cap-date").textContent = fmt(r.t, r.prec) + ".";
     $("cap-text").textContent = r.text || "";
     setSrc($("cap-src"), r.src);
-    $("cap-actors").innerHTML = org ? "With " + actorChip(org.id) + "." : "";
+    $("cap-actors").innerHTML = org ? actorChip(org.id) : "";
     shownRelease = r;
     flash(capEl, "fresh");
   }
@@ -1046,7 +1050,7 @@ const RC_LOGO = /*__RCLOGO__*/"";
     return `
       <h3>How to read it</h3>
       <div class="legend">
-        <div class="lg static"><svg viewBox="0 0 34 22"><circle cx="9" cy="11" r="8" fill="var(--ice)" stroke="var(--shade)"/><path d="${squircle(16)}" transform="translate(26,11)" fill="#fff" stroke="var(--shade)"/></svg><span><b>Actors</b><span>Circles are people. Rounded squares are organisations. An actor leaves the map while it has no active tie.</span></span></div>
+        <div class="lg static"><svg viewBox="0 0 34 22"><circle cx="9" cy="11" r="8" fill="var(--ice)" stroke="var(--shade)"/><path d="${squircle(16)}" transform="translate(26,11)" fill="#fff" stroke="var(--shade)"/></svg><span><b>Actors</b><span>Circles are people. Rounded squares are organisations. An actor leaves the map while it has no active tie, unless it has just released something.</span></span></div>
         <div class="lg static"><svg viewBox="0 0 34 22"><path d="${squircle(10)}" transform="translate(6,14)" fill="#fff" stroke="var(--shade)"/><path d="${squircle(20)}" transform="translate(22,11)" fill="#fff" stroke="var(--shade)"/></svg><span><b>Size</b><span>${HAS_VALUES ? "Companies: value on that date, from stock-market value or the last funding round. Each step up is ten times more. Dashed edge: no public value. People: how many ties they have that day." : "Size shows how many ties each actor has."}</span></span></div>
         ${sizeKey()}
         ${lg("work", "Work", "Founded, works at, or sits on the board.", '<line x1="1" y1="8" x2="33" y2="8" stroke="var(--work)" stroke-width="2"/><line x1="1" y1="16" x2="33" y2="16" stroke="var(--work)" stroke-width="2" stroke-dasharray="1 3.5" stroke-linecap="round"/>')}
