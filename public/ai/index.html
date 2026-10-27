@@ -109,6 +109,7 @@ svg.hide-work .hit.work, svg.hide-money .hit.money, svg.hide-tie .hit.tie, svg.h
 .nd .body { transition: opacity 0.6s ease, transform 0.6s cubic-bezier(.2,.8,.2,1); transform-origin: 0 0; }
 .nd.off { pointer-events: none; }
 .nd.off .body { opacity: 0; transform: scale(0.3); }
+.nd.org.lone .body { opacity: 0.5; }
 .nd.dim .body { opacity: 0.18; }
 .sq { fill: #FFFFFF; stroke: var(--shade); stroke-width: 1; }
 .sq.unvalued { stroke-dasharray: 3 3; }
@@ -493,8 +494,7 @@ const RC_LOGO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO8AAABQCAYAAADx7
   const timeline = moments.concat(releases).sort((a, b) => a.t - b.t || (a.kind === "moment" ? -1 : 1));
   timeline.forEach((e, i) => { e.i = i; });
   const playable = e => e.kind === "moment" || !hidden.has("release");
-  const RELEASE_STAY = 150;
-  releases.forEach(r => { const n = r.org && byId[r.org]; if (n) (n.relTimes = n.relTimes || []).push(r.t); });
+
 
   const STORIES = [
     { yr: "2012–14", title: "Google buys DeepMind", text: "Musk, Thiel and Tallinn back a London lab. Facebook and Google both want it.", from: "2012-06", to: "2014-03", focus: "deepmind" },
@@ -678,12 +678,11 @@ const RC_LOGO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO8AAABQCAYAAADx7
       l.active = l.f <= t && t < l.e && l.na.vis && l.nb.vis && !(l.na.absorb > 0.5 || l.nb.absorb > 0.5);
       l.past = !l.active && l.e <= t && l.na.vis && l.nb.vis;
     });
-    // Every node sits on a line: an actor with no active tie leaves the map until it has one again.
-    // A company that has just released something stays, so the release has somewhere to land.
+    // A person with no active tie leaves the map until they have one again.
+    // Organisations are the map's landmarks: once they appear they stay, drawn faint while they have no tie.
     nodes.forEach(n => {
       n.lone = n.vis && !n.links.some(l => l.active);
-      const releasing = n.relTimes && n.relTimes.some(rt => rt <= t + 0.01 && t - rt < RELEASE_STAY);
-      if (n.lone && !releasing && !(n.kind === "org" && n.absorb > 0)) n.vis = false;
+      if (n.lone && n.kind === "person") n.vis = false;
     });
 
     const sig = links.map(l => l.active ? "1" : "0").join("") + nodes.map(n => n.vis ? "1" : "0").join("");
@@ -932,7 +931,7 @@ const RC_LOGO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO8AAABQCAYAAADx7
 
   let dragging = false;
   function tFromX(clientX) { const r = track.getBoundingClientRect(); return T0 + Math.max(0, Math.min(1, (clientX - r.left) / r.width)) * (T1 - T0); }
-  track.addEventListener("pointerdown", e => { if (e.target.classList.contains("mk") || e.target.classList.contains("rk")) return; dragging = true; track.setPointerCapture(e.pointerId); pause(); storyEnd = null; setTime(tFromX(e.clientX)); });
+  track.addEventListener("pointerdown", e => { if (e.target.classList.contains("mk") || e.target.classList.contains("rk")) return; dragging = true; track.setPointerCapture(e.pointerId); pause(); storyEnd = null; clearTags(); setTime(tFromX(e.clientX)); });
   track.addEventListener("pointermove", e => { if (dragging) setTime(tFromX(e.clientX)); });
   track.addEventListener("pointerup", () => { dragging = false; });
   track.addEventListener("keydown", e => {
@@ -962,7 +961,9 @@ const RC_LOGO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO8AAABQCAYAAADx7
   const speedBtn = $("speed");
   speedBtn.addEventListener("click", () => { speed = speed === 1 ? 2 : speed === 2 ? 4 : 1; speedBtn.textContent = speed + "×"; });
 
+  function clearTags() { gN.querySelectorAll(".rtag").forEach(g => g.remove()); }
   function jumpToEvent(ev) {
+    clearTags();
     setTime(ev.t); fireEvent(ev, true);
     if (playing) holdUntil = performance.now() + holdFor(ev);
   }
@@ -1072,7 +1073,7 @@ const RC_LOGO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO8AAABQCAYAAADx7
     return `
       <h3>How to read it</h3>
       <div class="legend">
-        <div class="lg static"><svg viewBox="0 0 34 22"><circle cx="9" cy="11" r="8" fill="var(--ice)" stroke="var(--shade)"/><path d="${squircle(16)}" transform="translate(26,11)" fill="#fff" stroke="var(--shade)"/></svg><span><b>Actors</b><span>Circles are people. Rounded squares are organisations. An actor leaves the map while it has no active tie, unless it has just released something.</span></span></div>
+        <div class="lg static"><svg viewBox="0 0 34 22"><circle cx="9" cy="11" r="8" fill="var(--ice)" stroke="var(--shade)"/><path d="${squircle(16)}" transform="translate(26,11)" fill="#fff" stroke="var(--shade)"/></svg><span><b>Actors</b><span>Circles are people. Rounded squares are organisations. A person leaves the map while they have no active tie. Organisations stay once they appear, faint while they have none.</span></span></div>
         <div class="lg static"><svg viewBox="0 0 34 22"><path d="${squircle(10)}" transform="translate(6,14)" fill="#fff" stroke="var(--shade)"/><path d="${squircle(20)}" transform="translate(22,11)" fill="#fff" stroke="var(--shade)"/></svg><span><b>Size</b><span>${HAS_VALUES ? "Companies: value on that date, from stock-market value or the last funding round. Each step up is ten times more. Dashed edge: no public value. People: how many ties they have that day." : "Size shows how many ties each actor has."}</span></span></div>
         ${sizeKey()}
         ${lg("work", "Work", "Founded, works at, or sits on the board.", '<line x1="1" y1="8" x2="33" y2="8" stroke="var(--work)" stroke-width="2"/><line x1="1" y1="16" x2="33" y2="16" stroke="var(--work)" stroke-width="2" stroke-dasharray="1 3.5" stroke-linecap="round"/>')}
