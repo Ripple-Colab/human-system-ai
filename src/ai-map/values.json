@@ -1,0 +1,1419 @@
+{
+ "google": {
+  "kind": "listed",
+  "note": "Alphabet market value (Google Inc. before October 2015). Year ends and latest from StockAnalysis (Nasdaq Data Link).",
+  "points": [
+   {
+    "date": "2011-12-31",
+    "usd": 209410000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/googl/market-cap/"
+   },
+   {
+    "date": "2012-12-31",
+    "usd": 231570000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/googl/market-cap/"
+   },
+   {
+    "date": "2013-12-31",
+    "usd": 374790000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/googl/market-cap/"
+   },
+   {
+    "date": "2014-12-31",
+    "usd": 359980000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/googl/market-cap/"
+   },
+   {
+    "date": "2015-12-31",
+    "usd": 535060000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/googl/market-cap/"
+   },
+   {
+    "date": "2016-12-31",
+    "usd": 546190000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/googl/market-cap/"
+   },
+   {
+    "date": "2017-12-31",
+    "usd": 731900000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/googl/market-cap/"
+   },
+   {
+    "date": "2018-12-31",
+    "usd": 726730000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/googl/market-cap/"
+   },
+   {
+    "date": "2019-12-31",
+    "usd": 923770000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/googl/market-cap/"
+   },
+   {
+    "date": "2020-12-31",
+    "usd": 1190000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/googl/market-cap/"
+   },
+   {
+    "date": "2021-12-31",
+    "usd": 1920000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/googl/market-cap/"
+   },
+   {
+    "date": "2022-12-31",
+    "usd": 1140000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/googl/market-cap/"
+   },
+   {
+    "date": "2023-12-31",
+    "usd": 1750000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/googl/market-cap/"
+   },
+   {
+    "date": "2024-12-31",
+    "usd": 2320000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/googl/market-cap/"
+   },
+   {
+    "date": "2025-12-31",
+    "usd": 3781297000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/googl/market-cap/"
+   },
+   {
+    "date": "2026-10-26",
+    "usd": 3870000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/googl/market-cap/"
+   }
+  ]
+ },
+ "microsoft": {
+  "kind": "listed",
+  "note": "Microsoft market value. Year ends and latest from StockAnalysis (Nasdaq Data Link).",
+  "points": [
+   {
+    "date": "2011-12-31",
+    "usd": 218380000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/msft/market-cap/"
+   },
+   {
+    "date": "2012-12-31",
+    "usd": 224800000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/msft/market-cap/"
+   },
+   {
+    "date": "2013-12-31",
+    "usd": 312300000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/msft/market-cap/"
+   },
+   {
+    "date": "2014-12-31",
+    "usd": 382880000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/msft/market-cap/"
+   },
+   {
+    "date": "2015-12-31",
+    "usd": 443170000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/msft/market-cap/"
+   },
+   {
+    "date": "2016-12-31",
+    "usd": 483160000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/msft/market-cap/"
+   },
+   {
+    "date": "2017-12-31",
+    "usd": 659910000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/msft/market-cap/"
+   },
+   {
+    "date": "2018-12-31",
+    "usd": 779670000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/msft/market-cap/"
+   },
+   {
+    "date": "2019-12-31",
+    "usd": 1200000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/msft/market-cap/"
+   },
+   {
+    "date": "2020-12-31",
+    "usd": 1680000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/msft/market-cap/"
+   },
+   {
+    "date": "2021-12-31",
+    "usd": 2530000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/msft/market-cap/"
+   },
+   {
+    "date": "2022-12-31",
+    "usd": 1790000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/msft/market-cap/"
+   },
+   {
+    "date": "2023-12-31",
+    "usd": 2790000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/msft/market-cap/"
+   },
+   {
+    "date": "2024-12-31",
+    "usd": 3130000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/msft/market-cap/"
+   },
+   {
+    "date": "2025-12-31",
+    "usd": 3590000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/msft/market-cap/"
+   },
+   {
+    "date": "2026-10-27",
+    "usd": 3950000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/msft/market-cap/"
+   }
+  ]
+ },
+ "meta": {
+  "kind": "listed",
+  "note": "Meta (Facebook) market value from its May 2012 listing; the 2011 figure is the private Goldman Sachs round.",
+  "points": [
+   {
+    "date": "2011-01-21",
+    "usd": 50000000000,
+    "basis": "funding round",
+    "src": "https://www.eweek.com/news/facebook-worth-50b-after-goldman-sachs-investment/"
+   },
+   {
+    "date": "2012-05-18",
+    "usd": 81740000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/meta/market-cap/"
+   },
+   {
+    "date": "2012-12-31",
+    "usd": 57670000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/meta/market-cap/"
+   },
+   {
+    "date": "2013-12-31",
+    "usd": 134160000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/meta/market-cap/"
+   },
+   {
+    "date": "2014-12-31",
+    "usd": 217510000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/meta/market-cap/"
+   },
+   {
+    "date": "2015-12-31",
+    "usd": 295980000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/meta/market-cap/"
+   },
+   {
+    "date": "2016-12-31",
+    "usd": 331590000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/meta/market-cap/"
+   },
+   {
+    "date": "2017-12-31",
+    "usd": 512760000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/meta/market-cap/"
+   },
+   {
+    "date": "2018-12-31",
+    "usd": 376720000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/meta/market-cap/"
+   },
+   {
+    "date": "2019-12-31",
+    "usd": 585320000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/meta/market-cap/"
+   },
+   {
+    "date": "2020-12-31",
+    "usd": 778040000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/meta/market-cap/"
+   },
+   {
+    "date": "2021-12-31",
+    "usd": 935640000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/meta/market-cap/"
+   },
+   {
+    "date": "2022-12-31",
+    "usd": 319090000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/meta/market-cap/"
+   },
+   {
+    "date": "2023-12-31",
+    "usd": 909630000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/meta/market-cap/"
+   },
+   {
+    "date": "2024-12-31",
+    "usd": 1480000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/meta/market-cap/"
+   },
+   {
+    "date": "2025-12-31",
+    "usd": 1660000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/meta/market-cap/"
+   },
+   {
+    "date": "2026-10-23",
+    "usd": 1640000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/meta/market-cap/"
+   }
+  ]
+ },
+ "nvidia": {
+  "kind": "listed",
+  "note": "Nvidia market value. Year ends from StockAnalysis (Nasdaq Data Link); latest from its statistics page.",
+  "points": [
+   {
+    "date": "2011-12-31",
+    "usd": 8450000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/nvda/market-cap/"
+   },
+   {
+    "date": "2012-12-31",
+    "usd": 7650000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/nvda/market-cap/"
+   },
+   {
+    "date": "2013-12-31",
+    "usd": 9100000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/nvda/market-cap/"
+   },
+   {
+    "date": "2014-12-31",
+    "usd": 10890000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/nvda/market-cap/"
+   },
+   {
+    "date": "2015-12-31",
+    "usd": 17730000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/nvda/market-cap/"
+   },
+   {
+    "date": "2016-12-31",
+    "usd": 57520000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/nvda/market-cap/"
+   },
+   {
+    "date": "2017-12-31",
+    "usd": 117270000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/nvda/market-cap/"
+   },
+   {
+    "date": "2018-12-31",
+    "usd": 81420000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/nvda/market-cap/"
+   },
+   {
+    "date": "2019-12-31",
+    "usd": 144020000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/nvda/market-cap/"
+   },
+   {
+    "date": "2020-12-31",
+    "usd": 323240000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/nvda/market-cap/"
+   },
+   {
+    "date": "2021-12-31",
+    "usd": 735860000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/nvda/market-cap/"
+   },
+   {
+    "date": "2022-12-31",
+    "usd": 359500000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/nvda/market-cap/"
+   },
+   {
+    "date": "2023-12-31",
+    "usd": 1220000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/nvda/market-cap/"
+   },
+   {
+    "date": "2024-12-31",
+    "usd": 3290000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/nvda/market-cap/"
+   },
+   {
+    "date": "2025-12-31",
+    "usd": 4530000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/nvda/market-cap/"
+   },
+   {
+    "date": "2026-10-26",
+    "usd": 5220000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/nvda/statistics/"
+   }
+  ]
+ },
+ "amazon": {
+  "kind": "listed",
+  "note": "Amazon market value. Year ends and latest from StockAnalysis (Nasdaq Data Link).",
+  "points": [
+   {
+    "date": "2011-12-31",
+    "usd": 78720000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/amzn/market-cap/"
+   },
+   {
+    "date": "2012-12-31",
+    "usd": 113630000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/amzn/market-cap/"
+   },
+   {
+    "date": "2013-12-31",
+    "usd": 182540000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/amzn/market-cap/"
+   },
+   {
+    "date": "2014-12-31",
+    "usd": 143700000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/amzn/market-cap/"
+   },
+   {
+    "date": "2015-12-31",
+    "usd": 316830000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/amzn/market-cap/"
+   },
+   {
+    "date": "2016-12-31",
+    "usd": 356310000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/amzn/market-cap/"
+   },
+   {
+    "date": "2017-12-31",
+    "usd": 563540000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/amzn/market-cap/"
+   },
+   {
+    "date": "2018-12-31",
+    "usd": 734420000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/amzn/market-cap/"
+   },
+   {
+    "date": "2019-12-31",
+    "usd": 916150000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/amzn/market-cap/"
+   },
+   {
+    "date": "2020-12-31",
+    "usd": 1630000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/amzn/market-cap/"
+   },
+   {
+    "date": "2021-12-31",
+    "usd": 1691003000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/amzn/market-cap/"
+   },
+   {
+    "date": "2022-12-31",
+    "usd": 856939000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/amzn/market-cap/"
+   },
+   {
+    "date": "2023-12-31",
+    "usd": 1570153000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/amzn/market-cap/"
+   },
+   {
+    "date": "2024-12-31",
+    "usd": 2306888000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/amzn/market-cap/"
+   },
+   {
+    "date": "2025-12-31",
+    "usd": 2467516000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/amzn/market-cap/"
+   },
+   {
+    "date": "2026-10-23",
+    "usd": 2680000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/amzn/market-cap/"
+   }
+  ]
+ },
+ "tesla": {
+  "kind": "listed",
+  "note": "Tesla market value. Year ends and latest from StockAnalysis (Nasdaq Data Link).",
+  "points": [
+   {
+    "date": "2011-12-31",
+    "usd": 2980000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/tsla/market-cap/"
+   },
+   {
+    "date": "2012-12-31",
+    "usd": 3850000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/tsla/market-cap/"
+   },
+   {
+    "date": "2013-12-31",
+    "usd": 18440000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/tsla/market-cap/"
+   },
+   {
+    "date": "2014-12-31",
+    "usd": 27890000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/tsla/market-cap/"
+   },
+   {
+    "date": "2015-12-31",
+    "usd": 31430000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/tsla/market-cap/"
+   },
+   {
+    "date": "2016-12-31",
+    "usd": 32030000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/tsla/market-cap/"
+   },
+   {
+    "date": "2017-12-31",
+    "usd": 52330000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/tsla/market-cap/"
+   },
+   {
+    "date": "2018-12-31",
+    "usd": 57150000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/tsla/market-cap/"
+   },
+   {
+    "date": "2019-12-31",
+    "usd": 75400000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/tsla/market-cap/"
+   },
+   {
+    "date": "2020-12-31",
+    "usd": 668900000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/tsla/market-cap/"
+   },
+   {
+    "date": "2021-12-31",
+    "usd": 1060000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/tsla/market-cap/"
+   },
+   {
+    "date": "2022-12-31",
+    "usd": 388970000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/tsla/market-cap/"
+   },
+   {
+    "date": "2023-12-31",
+    "usd": 789900000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/tsla/market-cap/"
+   },
+   {
+    "date": "2024-12-31",
+    "usd": 1300000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/tsla/market-cap/"
+   },
+   {
+    "date": "2025-12-31",
+    "usd": 1500000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/tsla/market-cap/"
+   },
+   {
+    "date": "2026-10-23",
+    "usd": 1470000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/tsla/market-cap/"
+   }
+  ]
+ },
+ "oracle": {
+  "kind": "listed",
+  "note": "Oracle market value. Year ends and latest from StockAnalysis (Nasdaq Data Link); about half its September 2025 peak by October 2026.",
+  "points": [
+   {
+    "date": "2011-12-31",
+    "usd": 128910000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/orcl/market-cap/"
+   },
+   {
+    "date": "2012-12-31",
+    "usd": 157750000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/orcl/market-cap/"
+   },
+   {
+    "date": "2013-12-31",
+    "usd": 172070000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/orcl/market-cap/"
+   },
+   {
+    "date": "2014-12-31",
+    "usd": 197480000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/orcl/market-cap/"
+   },
+   {
+    "date": "2015-12-31",
+    "usd": 153470000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/orcl/market-cap/"
+   },
+   {
+    "date": "2016-12-31",
+    "usd": 157740000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/orcl/market-cap/"
+   },
+   {
+    "date": "2017-12-31",
+    "usd": 195720000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/orcl/market-cap/"
+   },
+   {
+    "date": "2018-12-31",
+    "usd": 162040000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/orcl/market-cap/"
+   },
+   {
+    "date": "2019-12-31",
+    "usd": 169940000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/orcl/market-cap/"
+   },
+   {
+    "date": "2020-12-31",
+    "usd": 190450000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/orcl/market-cap/"
+   },
+   {
+    "date": "2021-12-31",
+    "usd": 232890000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/orcl/market-cap/"
+   },
+   {
+    "date": "2022-12-31",
+    "usd": 220390000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/orcl/market-cap/"
+   },
+   {
+    "date": "2023-12-31",
+    "usd": 289820000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/orcl/market-cap/"
+   },
+   {
+    "date": "2024-12-31",
+    "usd": 466080000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/orcl/market-cap/"
+   },
+   {
+    "date": "2025-12-31",
+    "usd": 560000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/orcl/market-cap/"
+   },
+   {
+    "date": "2026-10-23",
+    "usd": 382450000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/orcl/market-cap/"
+   }
+  ]
+ },
+ "softbank": {
+  "kind": "listed",
+  "note": "SoftBank Group market value in USD as converted by CompaniesMarketCap at its own exchange rates; the October 2026 figure matches about 24.3 trillion yen on 26 October 2026.",
+  "points": [
+   {
+    "date": "2011-12-31",
+    "usd": 31820000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/softbank/marketcap/"
+   },
+   {
+    "date": "2012-12-31",
+    "usd": 40410000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/softbank/marketcap/"
+   },
+   {
+    "date": "2013-12-31",
+    "usd": 104460000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/softbank/marketcap/"
+   },
+   {
+    "date": "2014-12-31",
+    "usd": 71730000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/softbank/marketcap/"
+   },
+   {
+    "date": "2015-12-31",
+    "usd": 60610000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/softbank/marketcap/"
+   },
+   {
+    "date": "2016-12-31",
+    "usd": 72720000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/softbank/marketcap/"
+   },
+   {
+    "date": "2017-12-31",
+    "usd": 86090000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/softbank/marketcap/"
+   },
+   {
+    "date": "2018-12-31",
+    "usd": 72130000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/softbank/marketcap/"
+   },
+   {
+    "date": "2019-12-31",
+    "usd": 90480000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/softbank/marketcap/"
+   },
+   {
+    "date": "2020-12-31",
+    "usd": 140780000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/softbank/marketcap/"
+   },
+   {
+    "date": "2021-12-31",
+    "usd": 80370000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/softbank/marketcap/"
+   },
+   {
+    "date": "2022-12-31",
+    "usd": 61710000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/softbank/marketcap/"
+   },
+   {
+    "date": "2023-12-31",
+    "usd": 65400000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/softbank/marketcap/"
+   },
+   {
+    "date": "2024-12-31",
+    "usd": 84540000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/softbank/marketcap/"
+   },
+   {
+    "date": "2025-12-31",
+    "usd": 161960000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/softbank/marketcap/"
+   },
+   {
+    "date": "2026-10",
+    "usd": 154160000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/softbank/marketcap/"
+   }
+  ]
+ },
+ "openai": {
+  "kind": "private",
+  "note": "OpenAI private valuations from rounds and staff share sales; talks at about $1.4 trillion (September 2026) had not closed.",
+  "points": [
+   {
+    "date": "2021-04",
+    "usd": 14000000000,
+    "basis": "tender offer",
+    "src": "https://x.com/MorningBrew/status/1841576035067871299"
+   },
+   {
+    "date": "2023-01-05",
+    "usd": 29000000000,
+    "basis": "tender offer",
+    "src": "https://siliconangle.com/?p=603508"
+   },
+   {
+    "date": "2024-02-16",
+    "usd": 86000000000,
+    "basis": "tender offer",
+    "src": "https://news.bloomberglaw.com/private-equity/openai-deal-lets-employees-sell-shares-at-86-billion-valuation"
+   },
+   {
+    "date": "2024-10-02",
+    "usd": 157000000000,
+    "basis": "funding round",
+    "src": "https://www.bloomberg.com/news/articles/2024-10-02/openai-has-closed-new-funding-round-raising-over-6-5-billion"
+   },
+   {
+    "date": "2025-03-31",
+    "usd": 300000000000,
+    "basis": "funding round",
+    "src": "https://siliconangle.com/2025/03/31/openai-bags-40b-funding-increasing-post-money-valuation-300b"
+   },
+   {
+    "date": "2025-10-02",
+    "usd": 500000000000,
+    "basis": "tender offer",
+    "src": "https://www.techzine.eu/news/infrastructure/135139/openai-valued-at-500-billion-after-6-6-billion-share-sale"
+   },
+   {
+    "date": "2026-03-31",
+    "usd": 852000000000,
+    "basis": "funding round",
+    "src": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html"
+   },
+   {
+    "date": "2026-08-10",
+    "usd": 852000000000,
+    "basis": "tender offer",
+    "src": "https://dataconomy.com/2026/08/11/openai-completes-7-billion-tender-offer-for-employee-shares/"
+   }
+  ]
+ },
+ "anthropic": {
+  "kind": "private",
+  "note": "Anthropic post-money valuations. Anthropic disclosed none before 2025; the 2021 to 2024 figures are press and aggregator reports. Public S-1 filed 26 October 2026; not yet listed.",
+  "points": [
+   {
+    "date": "2021-05",
+    "usd": 550000000,
+    "basis": "funding round",
+    "src": "https://stockanalysis.com/private/anthropic/valuation/"
+   },
+   {
+    "date": "2022-04",
+    "usd": 4100000000,
+    "basis": "funding round",
+    "src": "https://stockanalysis.com/private/anthropic/valuation/"
+   },
+   {
+    "date": "2023-05-23",
+    "usd": 4100000000,
+    "basis": "funding round",
+    "src": "https://stockanalysis.com/private/anthropic/valuation/"
+   },
+   {
+    "date": "2024-01",
+    "usd": 18400000000,
+    "basis": "funding round",
+    "src": "https://stockanalysis.com/private/anthropic/valuation/"
+   },
+   {
+    "date": "2025-03-03",
+    "usd": 61500000000,
+    "basis": "funding round",
+    "src": "https://stockanalysis.com/private/anthropic/valuation/"
+   },
+   {
+    "date": "2025-09-02",
+    "usd": 183000000000,
+    "basis": "funding round",
+    "src": "https://stockanalysis.com/private/anthropic/valuation/"
+   },
+   {
+    "date": "2025-11-18",
+    "usd": 350000000000,
+    "basis": "funding round",
+    "src": "https://www.nasdaq.com/articles/microsoft-and-nvidia-deals-push-anthropic-toward-350-bln-valuation"
+   },
+   {
+    "date": "2026-02-12",
+    "usd": 380000000000,
+    "basis": "funding round",
+    "src": "https://www.cnbc.com/2026/02/12/anthropic-closes-30-billion-funding-round-at-380-billion-valuation.html"
+   },
+   {
+    "date": "2026-05-28",
+    "usd": 965000000000,
+    "basis": "funding round",
+    "src": "https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/"
+   }
+  ]
+ },
+ "xai": {
+  "kind": "private",
+  "end": "2026-02-02",
+  "note": "xAI valuations. From March 2025 the figures include X (xAI $80bn plus X $33bn). Merged into SpaceX on 2 February 2026 at $250bn; no separate value after.",
+  "points": [
+   {
+    "date": "2024-05-26",
+    "usd": 24000000000,
+    "basis": "funding round",
+    "src": "https://chinadailyhk.com/hk/article/584196"
+   },
+   {
+    "date": "2024-12-23",
+    "usd": 50000000000,
+    "basis": "funding round",
+    "src": "https://www.tipranks.com/news/private-companies/xai-secures-6-billion-in-series-c-doubling-valuation"
+   },
+   {
+    "date": "2025-03-28",
+    "usd": 113000000000,
+    "basis": "merger value",
+    "src": "https://www.bloomberg.com/news/articles/2025-03-28/musk-says-that-his-xai-startup-has-acquired-x-for-33-billion"
+   },
+   {
+    "date": "2025-09",
+    "usd": 200000000000,
+    "basis": "funding round",
+    "src": "https://news.bloomberglaw.com/private-equity/musks-xai-raises-10-billion-at-200-billion-valuation"
+   },
+   {
+    "date": "2026-01-06",
+    "usd": 230000000000,
+    "basis": "funding round",
+    "src": "https://www.theweek.in/news/biz-tech/2026/01/07/new-20-billion-series-e-funding-lifts-value-of-elon-musk-led-x-ai.amp.html"
+   },
+   {
+    "date": "2026-02-02",
+    "usd": 250000000000,
+    "basis": "merger value",
+    "src": "https://www.scmp.com/news/world/united-states-canada/article/3342161/musk-merges-xai-spacex-bid-build-space-data-centres"
+   }
+  ]
+ },
+ "spacex": {
+  "kind": "private",
+  "note": "SpaceX private valuations to June 2026, then market value after its Nasdaq listing on 12 June 2026. From February 2026 includes xAI (SpaceX $1tn plus xAI $250bn).",
+  "points": [
+   {
+    "date": "2015-01-20",
+    "usd": 12000000000,
+    "basis": "funding round",
+    "src": "https://businessinsider.in/spacex-is-now-worth-more-than-dropbox-snapchat-or-airbnb/amp_articleshow/45972981.cms"
+   },
+   {
+    "date": "2017-07-27",
+    "usd": 21200000000,
+    "basis": "funding round",
+    "src": "https://www.cnbc.com/2017/07/27/spacex-is-now-one-of-the-worlds-most-valuable-privately-held-companies.html"
+   },
+   {
+    "date": "2018-12-18",
+    "usd": 30500000000,
+    "basis": "funding round",
+    "src": "https://www.business-standard.com/article/reuters/musk-s-spacex-to-raise-500-million-in-funding-wsj-118121801010_1.html"
+   },
+   {
+    "date": "2019-05",
+    "usd": 33300000000,
+    "basis": "funding round",
+    "src": "https://t3n.de/news/spacex-bewertung-steigt-36-1256110/"
+   },
+   {
+    "date": "2020-03",
+    "usd": 36000000000,
+    "basis": "funding round",
+    "src": "https://t3n.de/news/spacex-bewertung-steigt-36-1256110/"
+   },
+   {
+    "date": "2020-08-18",
+    "usd": 46000000000,
+    "basis": "funding round",
+    "src": "https://news.crunchbase.com/news/spacex-valuation-rockets-higher-with-new-1-9b-funding-boost"
+   },
+   {
+    "date": "2021-02-16",
+    "usd": 74000000000,
+    "basis": "funding round",
+    "src": "https://www.cnbc.com/2021/02/16/elon-musks-spacex-raised-850-million-at-419point99-a-share.html"
+   },
+   {
+    "date": "2021-10-08",
+    "usd": 100300000000,
+    "basis": "tender offer",
+    "src": "https://www.nbcnewyork.com/news/business/money-report/elon-musks-spacex-hits-100-billion-valuation-after-secondary-share-sale/3313552/"
+   },
+   {
+    "date": "2022-05-24",
+    "usd": 127000000000,
+    "basis": "funding round",
+    "src": "https://www.nbclosangeles.com/news/business/money-report/spacex-looks-to-raise-1-7-billion-in-new-funding-boosting-its-valuation-to-127-billion/2899335/"
+   },
+   {
+    "date": "2023-01",
+    "usd": 137000000000,
+    "basis": "funding round",
+    "src": "https://interestingengineering.com/culture/spacex-valued-137-billion-new-funding-round"
+   },
+   {
+    "date": "2023-07",
+    "usd": 150000000000,
+    "basis": "tender offer",
+    "src": "https://www.enca.com/business/spacex-tender-offer-values-it-around-150bn-report"
+   },
+   {
+    "date": "2023-12-13",
+    "usd": 180000000000,
+    "basis": "tender offer",
+    "src": "https://www.bloomberg.com/news/articles/2023-12-13/spacex-value-jumps-closer-to-180-billion-in-tender-offer"
+   },
+   {
+    "date": "2024-06-27",
+    "usd": 210000000000,
+    "basis": "tender offer",
+    "src": "https://www.bloomberg.com/news/articles/2024-06-27/spacex-tender-offer-said-to-value-company-at-record-210-billion"
+   },
+   {
+    "date": "2024-12-10",
+    "usd": 350000000000,
+    "basis": "tender offer",
+    "src": "https://www.bloomberg.com/news/articles/2024-12-10/spacex-share-sale-is-said-to-value-company-at-about-350-billion"
+   },
+   {
+    "date": "2025-07",
+    "usd": 400000000000,
+    "basis": "tender offer",
+    "src": "https://news.bgov.com/capital-markets/spacex-valuation-said-to-hit-around-400-billion-in-share-sale"
+   },
+   {
+    "date": "2025-12-12",
+    "usd": 800000000000,
+    "basis": "tender offer",
+    "src": "https://finance.yahoo.com/news/spacex-sets-800b-valuation-confirms-145533834.html"
+   },
+   {
+    "date": "2026-02-02",
+    "usd": 1250000000000,
+    "basis": "merger value",
+    "src": "https://www.scmp.com/news/world/united-states-canada/article/3342161/musk-merges-xai-spacex-bid-build-space-data-centres"
+   },
+   {
+    "date": "2026-06-11",
+    "usd": 1770000000000,
+    "basis": "funding round",
+    "src": "https://stockanalysis.com/stocks/spcx/market-cap/"
+   },
+   {
+    "date": "2026-06-12",
+    "usd": 2100000000000,
+    "basis": "market value",
+    "src": "https://www.cnbc.com/2026/06/13/spacex-ipo-sticks-the-landing-heres-what-investors-are-saying-about-its-epic-first-trading-day.html"
+   },
+   {
+    "date": "2026-10-23",
+    "usd": 2000000000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/spcx/market-cap/"
+   }
+  ]
+ },
+ "x": {
+  "kind": "private",
+  "end": "2025-03-28",
+  "note": "Twitter, then X. Listed November 2013 to October 2022; Musk bought it for $44bn. The 2023 and 2024 figures are Musk's staff share-grant price and Fidelity's fund mark, not sales. Merged into xAI at $33bn (excluding $12bn debt); no separate value after.",
+  "points": [
+   {
+    "date": "2011-08-02",
+    "usd": 8000000000,
+    "basis": "funding round",
+    "src": "https://mg.co.za/article/2011-08-03-twitter-valued-at-8billion-after-large-investment/"
+   },
+   {
+    "date": "2013-11-07",
+    "usd": 24460000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/twtr/market-cap/"
+   },
+   {
+    "date": "2013-12-31",
+    "usd": 36270000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/twitter/marketcap/"
+   },
+   {
+    "date": "2014-12-31",
+    "usd": 23040000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/twitter/marketcap/"
+   },
+   {
+    "date": "2015-12-31",
+    "usd": 16060000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/twitter/marketcap/"
+   },
+   {
+    "date": "2016-12-31",
+    "usd": 11650000000,
+    "basis": "market value",
+    "src": "https://companiesmarketcap.com/twitter/marketcap/"
+   },
+   {
+    "date": "2017-12-31",
+    "usd": 17760000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/twtr/market-cap/"
+   },
+   {
+    "date": "2018-12-31",
+    "usd": 21810000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/twtr/market-cap/"
+   },
+   {
+    "date": "2019-12-31",
+    "usd": 24830000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/twtr/market-cap/"
+   },
+   {
+    "date": "2020-12-31",
+    "usd": 42960000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/twtr/market-cap/"
+   },
+   {
+    "date": "2021-12-31",
+    "usd": 34500000000,
+    "basis": "market value",
+    "src": "https://stockanalysis.com/stocks/twtr/market-cap/"
+   },
+   {
+    "date": "2022-10-27",
+    "usd": 44000000000,
+    "basis": "purchase price",
+    "src": "https://news.bloomberglaw.com/artificial-intelligence/musk-says-that-his-xai-startup-has-acquired-x-for-33-billion"
+   },
+   {
+    "date": "2023-03-26",
+    "usd": 20000000000,
+    "basis": "investor estimate",
+    "src": "https://www.bloomberg.com/news/articles/2023-03-26/musk-s-stock-grants-value-twitter-at-20-billion-information"
+   },
+   {
+    "date": "2024-08-31",
+    "usd": 9400000000,
+    "basis": "investor estimate",
+    "src": "https://techcrunch.com/2024/09/29/fidelity-has-cut-xs-value-by-79-since-musk-purchase/"
+   },
+   {
+    "date": "2025-03-28",
+    "usd": 33000000000,
+    "basis": "merger value",
+    "src": "https://www.bloomberg.com/news/articles/2025-03-28/musk-says-that-his-xai-startup-has-acquired-x-for-33-billion"
+   }
+  ]
+ },
+ "mistral": {
+  "kind": "private",
+  "note": "Mistral AI valuations, reported in euros; USD as given in the reports. The 2026 figure is EUR 21bn converted at the rate the same reports used for the round (about 1.16).",
+  "points": [
+   {
+    "date": "2023-06-13",
+    "usd": 260000000,
+    "basis": "funding round",
+    "src": "https://www.irishtimes.com/technology/2023/06/14/four-week-old-ai-start-up-raises-record-105m-in-european-push"
+   },
+   {
+    "date": "2023-12-11",
+    "usd": 2000000000,
+    "basis": "funding round",
+    "src": "https://www.bloomberg.com/news/articles/2023-12-11/mistral-france-s-openai-rival-closes-385-million-round"
+   },
+   {
+    "date": "2024-06-11",
+    "usd": 6200000000,
+    "basis": "funding round",
+    "src": "https://www.nbcmiami.com/news/business/money-report/microsoft-backed-mistral-ai-raises-645-million-at-a-6-billion-valuation/3335240/"
+   },
+   {
+    "date": "2025-09-09",
+    "usd": 13700000000,
+    "basis": "funding round",
+    "src": "https://builtin.com/articles/mistral-raises-2b-series-c-13b-valuation-20250909"
+   },
+   {
+    "date": "2026-09-08",
+    "usd": 24400000000,
+    "basis": "funding round",
+    "src": "https://www.euronews.com/2026/09/08/mistral-ai-raises-record-3-billion-in-samsung-led-funding-round"
+   }
+  ]
+ },
+ "ssi": {
+  "kind": "private",
+  "note": "Safe Superintelligence valuations; neither figure confirmed by the company. No round reported since April 2025.",
+  "points": [
+   {
+    "date": "2024-09-04",
+    "usd": 5000000000,
+    "basis": "funding round",
+    "src": "https://techcrunch.com/2024/09/04/ilya-sutskevers-startup-safe-super-intelligence-raises-1b"
+   },
+   {
+    "date": "2025-04-12",
+    "usd": 32000000000,
+    "basis": "funding round",
+    "src": "https://theaiinsider.tech/2025/04/14/safe-superintelligence-reportedly-raises-2b-at-32b-valuation-in-pursuit-of-ai-safety-breakthrough/"
+   }
+  ]
+ },
+ "tml": {
+  "kind": "private",
+  "note": "Thinking Machines Lab. Only one closed round; talks at $40bn or more (September 2026) had not closed.",
+  "points": [
+   {
+    "date": "2025-07-15",
+    "usd": 12000000000,
+    "basis": "funding round",
+    "src": "https://yourstory.com/ai-story/former-openai-cto-mira-murati-thinking-machines-lab-raises-money"
+   }
+  ]
+ },
+ "scale": {
+  "kind": "private",
+  "note": "Scale AI valuations. The 2025 figure is implied by Meta paying $14.3bn for 49%.",
+  "points": [
+   {
+    "date": "2019-08-05",
+    "usd": 1000000000,
+    "basis": "funding round",
+    "src": "https://irei.com/news/silicon-valley-tech-unicorn-raises-100m-annotation-services-train-ai/"
+   },
+   {
+    "date": "2020-12-01",
+    "usd": 3500000000,
+    "basis": "funding round",
+    "src": "https://builtin.com/articles/scale-raises-155m-series-d-artificial-intelligence-hiring"
+   },
+   {
+    "date": "2021-04-13",
+    "usd": 7300000000,
+    "basis": "funding round",
+    "src": "https://fortune.com/2021/04/13/scale-ai-valuation-new-funding-fundraising-data-labeling-company-startups-vc/amp/"
+   },
+   {
+    "date": "2024-05-21",
+    "usd": 13800000000,
+    "basis": "funding round",
+    "src": "https://www.businesswire.com/news/home/20240521674964/en"
+   },
+   {
+    "date": "2025-06-12",
+    "usd": 29000000000,
+    "basis": "funding round",
+    "src": "https://techcrunch.com/2025/06/13/scale-ai-confirms-significant-investment-from-meta-says-ceo-alexandr-wang-is-leaving/"
+   }
+  ]
+ },
+ "inflection": {
+  "kind": "private",
+  "note": "Inflection AI. One reported valuation; Microsoft's March 2024 licensing deal and hires set no new value.",
+  "points": [
+   {
+    "date": "2023-06-29",
+    "usd": 4000000000,
+    "basis": "funding round",
+    "src": "https://decrypt.co/146757/ai-chatbot-startup-rockets-to-4-billion-valuation-with-microsoft-nvidia-backing?amp=1"
+   }
+  ]
+ },
+ "characterai": {
+  "kind": "private",
+  "end": "2026-10-12",
+  "note": "Character.AI. In August 2024 Google's licensing deal bought out investors at about $2.5bn. Filed for Chapter 11 bankruptcy on 12 October 2026; no value since.",
+  "points": [
+   {
+    "date": "2023-03-23",
+    "usd": 1000000000,
+    "basis": "funding round",
+    "src": "https://siliconangle.com/2023/03/23/character-ai-personalized-chatbot-service-raises-150m-1b-valuation/"
+   },
+   {
+    "date": "2024-08-02",
+    "usd": 2500000000,
+    "basis": "tender offer",
+    "src": "https://www.axios.com/2024/08/05/google-characterai-venture-capital"
+   }
+  ]
+ },
+ "huggingface": {
+  "kind": "private",
+  "note": "Hugging Face valuations. Nvidia agreed to buy it for $12.93bn (September 2026), to close in 2027.",
+  "points": [
+   {
+    "date": "2022-05-09",
+    "usd": 2000000000,
+    "basis": "funding round",
+    "src": "https://decrypt.co/153623/ai-startup-hugging-face-hits-4-5-billion-valuation-after-google-and-nvidia-backed-raise"
+   },
+   {
+    "date": "2023-08-24",
+    "usd": 4500000000,
+    "basis": "funding round",
+    "src": "https://voicebot.ai/2023/08/24/hugging-face-raises-235m-soaring-to-4-5b-valuation/"
+   },
+   {
+    "date": "2026-09-03",
+    "usd": 12930000000,
+    "basis": "purchase price",
+    "src": "https://forklog.com/en/nvidia-agrees-to-acquire-hugging-face-for-12-93-billion/"
+   }
+  ]
+ },
+ "ami": {
+  "kind": "private",
+  "note": "AMI Labs (Yann LeCun). Seed round of $1.03bn at $3.5bn before the money, about $4.5bn after.",
+  "points": [
+   {
+    "date": "2026-03-09",
+    "usd": 4500000000,
+    "basis": "funding round",
+    "src": "https://officechai.com/ai/former-meta-ai-chief-yann-lecun-raises-1-03-billion-seed-round-for-ami-labs-company-valued-at-3-5-billion"
+   }
+  ]
+ },
+ "deepseek": {
+  "kind": "none",
+  "note": "DeepSeek, funded by the hedge fund High-Flyer; no outside round or reported valuation",
+  "points": []
+ },
+ "eureka": {
+  "kind": "none",
+  "note": "Eureka Labs (Andrej Karpathy); no reported funding or valuation",
+  "points": []
+ },
+ "deepmind": {
+  "kind": "private",
+  "end": "2014-01-26",
+  "note": "DeepMind price paid by Google in January 2014; never disclosed, reports range $400m to $650m. Part of Google after; no value of its own.",
+  "points": [
+   {
+    "date": "2014-01-26",
+    "usd": 500000000,
+    "basis": "purchase price",
+    "src": "https://phys.org/news/2014-01-google-artificial-intelligence-firm-deepmind.pdf"
+   }
+  ]
+ },
+ "dnnresearch": {
+  "kind": "private",
+  "end": "2013-03-12",
+  "note": "DNNresearch (Hinton, Sutskever, Krizhevsky), bought by Google in March 2013 after an auction; $44m per Cade Metz's book Genius Makers. No value of its own after.",
+  "points": [
+   {
+    "date": "2013-03-12",
+    "usd": 44000000,
+    "basis": "purchase price",
+    "src": "https://www.goodreads.com/notes/57473123-genius-makers/83395142-ad"
+   }
+  ]
+ },
+ "brain": {
+  "kind": "none",
+  "note": "Internal Google team; no value of its own",
+  "points": []
+ },
+ "yc": {
+  "kind": "none",
+  "note": "Y Combinator, a startup accelerator; no company value",
+  "points": []
+ }
+}

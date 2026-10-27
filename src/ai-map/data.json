@@ -1,0 +1,3248 @@
+{
+ "meta": {
+  "start": "2012-01-01",
+  "end": "2026-10-27",
+  "note": "Dates are YYYY, YYYY-MM or YYYY-MM-DD. 'to': null means still true on the end date. 'check' marks a claim to verify. 'src' is the source that supports the item."
+ },
+ "people": [
+  {
+   "id": "musk",
+   "name": "Elon Musk",
+   "wiki": "Elon_Musk",
+   "bio": "Runs Tesla and SpaceX. Co-chaired OpenAI 2015–2018. Founded xAI in 2023; SpaceX bought it in 2026.",
+   "src": "https://en.wikipedia.org/wiki/Elon_Musk"
+  },
+  {
+   "id": "altman",
+   "name": "Sam Altman",
+   "wiki": "Sam_Altman",
+   "bio": "President of Y Combinator 2014–2019. OpenAI co-founder; CEO since 2019.",
+   "src": "https://en.wikipedia.org/wiki/Sam_Altman"
+  },
+  {
+   "id": "brockman",
+   "name": "Greg Brockman",
+   "wiki": "Greg_Brockman",
+   "bio": "Former Stripe CTO. OpenAI co-founder and president.",
+   "src": "https://en.wikipedia.org/wiki/Greg_Brockman"
+  },
+  {
+   "id": "sutskever",
+   "name": "Ilya Sutskever",
+   "wiki": "Ilya_Sutskever",
+   "bio": "Co-created AlexNet with Alex Krizhevsky and Hinton. OpenAI co-founder; its chief scientist until 2024. Co-founded Safe Superintelligence in 2024; its CEO since 2025.",
+   "src": "https://en.wikipedia.org/wiki/Ilya_Sutskever"
+  },
+  {
+   "id": "karpathy",
+   "name": "Andrej Karpathy",
+   "wiki": "Andrej_Karpathy",
+   "bio": "OpenAI founding member. Led Tesla's AI team 2017–2022. Founded Eureka Labs in 2024. Joined Anthropic in 2026.",
+   "src": "https://en.wikipedia.org/wiki/Andrej_Karpathy"
+  },
+  {
+   "id": "schulman",
+   "name": "John Schulman",
+   "wiki": "John_Schulman",
+   "bio": "OpenAI co-founder who co-led the post-training team behind ChatGPT. Moved to Anthropic in 2024, then Thinking Machines.",
+   "src": "https://hai.stanford.edu/people/john-schulman"
+  },
+  {
+   "id": "murati",
+   "name": "Mira Murati",
+   "wiki": "Mira_Murati",
+   "bio": "Worked on the Model X at Tesla. OpenAI CTO, briefly interim CEO. Founded Thinking Machines Lab in 2025.",
+   "src": "https://en.wikipedia.org/wiki/Mira_Murati"
+  },
+  {
+   "id": "d_amodei",
+   "name": "Dario Amodei",
+   "wiki": "Dario_Amodei",
+   "bio": "Led research at OpenAI, including GPT-2 and GPT-3. Left in 2020 to co-found Anthropic; its CEO.",
+   "src": "https://en.wikipedia.org/wiki/Dario_Amodei"
+  },
+  {
+   "id": "da_amodei",
+   "name": "Daniela Amodei",
+   "wiki": "Daniela_Amodei",
+   "bio": "Ran safety and policy at OpenAI. Co-founder and president of Anthropic.",
+   "src": "https://en.wikipedia.org/wiki/Daniela_Amodei"
+  },
+  {
+   "id": "clark",
+   "name": "Jack Clark",
+   "wiki": "Jack_Clark_(AI_policy_expert)",
+   "bio": "OpenAI's policy director. Co-founded Anthropic and led its policy work.",
+   "src": "https://en.wikipedia.org/wiki/Jack_Clark_(AI_policy_expert)"
+  },
+  {
+   "id": "olah",
+   "name": "Chris Olah",
+   "wiki": "Chris_Olah",
+   "bio": "Interpretability researcher at Google Brain and OpenAI. Anthropic co-founder.",
+   "src": "https://en.wikipedia.org/wiki/Chris_Olah"
+  },
+  {
+   "id": "brown",
+   "name": "Tom Brown",
+   "wiki": "Anthropic",
+   "bio": "Lead author of the GPT-3 paper at OpenAI. Anthropic co-founder.",
+   "src": "https://arxiv.org/abs/2005.14165v2"
+  },
+  {
+   "id": "kaplan",
+   "name": "Jared Kaplan",
+   "wiki": "Jared_Kaplan",
+   "bio": "Physicist who co-wrote OpenAI's scaling-laws paper. Anthropic co-founder and chief science officer.",
+   "src": "https://en.wikipedia.org/wiki/Jared_Kaplan"
+  },
+  {
+   "id": "leike",
+   "name": "Jan Leike",
+   "wiki": "Jan_Leike",
+   "bio": "Safety researcher at DeepMind, then co-led OpenAI's superalignment team. Joined Anthropic in 2024.",
+   "src": "https://en.wikipedia.org/wiki/Jan_Leike"
+  },
+  {
+   "id": "hassabis",
+   "name": "Demis Hassabis",
+   "wiki": "Demis_Hassabis",
+   "bio": "DeepMind co-founder. Its CEO until August 2026; now its chair and Alphabet's chief scientist. Shared the 2024 Nobel Prize in Chemistry for AlphaFold.",
+   "src": "https://axios.com/2026/08/05/google-deepmind-demis-hassabis-ai"
+  },
+  {
+   "id": "legg",
+   "name": "Shane Legg",
+   "wiki": "Shane_Legg",
+   "bio": "DeepMind co-founder and chief AGI scientist.",
+   "src": "https://en.wikipedia.org/wiki/Shane_Legg"
+  },
+  {
+   "id": "suleyman",
+   "name": "Mustafa Suleyman",
+   "wiki": "Mustafa_Suleyman",
+   "bio": "DeepMind co-founder. Co-founded Inflection AI in 2022. CEO of Microsoft AI since 2024.",
+   "src": "https://en.wikipedia.org/wiki/Mustafa_Suleyman"
+  },
+  {
+   "id": "page",
+   "name": "Larry Page",
+   "wiki": "Larry_Page",
+   "bio": "Google co-founder. Google CEO, then Alphabet CEO until 2019. Reportedly led the DeepMind purchase.",
+   "src": "https://en.wikipedia.org/wiki/Larry_Page"
+  },
+  {
+   "id": "brin",
+   "name": "Sergey Brin",
+   "wiki": "Sergey_Brin",
+   "bio": "Google co-founder. Came back to work on Gemini in 2023.",
+   "src": "https://en.wikipedia.org/wiki/Sergey_Brin"
+  },
+  {
+   "id": "pichai",
+   "name": "Sundar Pichai",
+   "wiki": "Sundar_Pichai",
+   "bio": "Google CEO since 2015 and Alphabet CEO since 2019.",
+   "src": "https://en.wikipedia.org/wiki/Sundar_Pichai"
+  },
+  {
+   "id": "hinton",
+   "name": "Geoffrey Hinton",
+   "wiki": "Geoffrey_Hinton",
+   "bio": "Deep-learning pioneer. At Google 2013–2023, then left to warn about AI risk. 2024 Nobel Prize in Physics.",
+   "src": "https://en.wikipedia.org/wiki/Geoffrey_Hinton"
+  },
+  {
+   "id": "shazeer",
+   "name": "Noam Shazeer",
+   "wiki": "Noam_Shazeer",
+   "bio": "Co-author of the Transformer paper. Co-founded Character.AI and returned to Google in 2024. Left for OpenAI in 2026.",
+   "src": "https://en.wikipedia.org/wiki/Noam_Shazeer"
+  },
+  {
+   "id": "lecun",
+   "name": "Yann LeCun",
+   "wiki": "Yann_LeCun",
+   "bio": "Founded Facebook AI Research in 2013. Meta's chief AI scientist until 2025, then co-founded AMI Labs.",
+   "src": "https://en.wikipedia.org/wiki/Yann_LeCun"
+  },
+  {
+   "id": "zuckerberg",
+   "name": "Mark Zuckerberg",
+   "wiki": "Mark_Zuckerberg",
+   "bio": "Founder and CEO of Facebook, renamed Meta in 2021.",
+   "src": "https://en.wikipedia.org/wiki/Mark_Zuckerberg"
+  },
+  {
+   "id": "wang",
+   "name": "Alexandr Wang",
+   "wiki": "Alexandr_Wang",
+   "bio": "Co-founded Scale AI in 2016. Meta's chief AI officer since 2025.",
+   "src": "https://en.wikipedia.org/wiki/Alexandr_Wang"
+  },
+  {
+   "id": "friedman",
+   "name": "Nat Friedman",
+   "wiki": "Nat_Friedman",
+   "bio": "Former GitHub CEO and AI investor with Daniel Gross. Joined Meta's superintelligence lab in 2025.",
+   "src": "https://en.wikipedia.org/wiki/Nat_Friedman"
+  },
+  {
+   "id": "gross",
+   "name": "Daniel Gross",
+   "wiki": "Daniel_Gross_(businessman)",
+   "bio": "Investor; co-founded Safe Superintelligence with Sutskever. Left for Meta in 2025.",
+   "src": "https://en.wikipedia.org/wiki/Daniel_Gross_(businessman)"
+  },
+  {
+   "id": "nadella",
+   "name": "Satya Nadella",
+   "wiki": "Satya_Nadella",
+   "bio": "Microsoft CEO since 2014. Struck the OpenAI partnership in 2019.",
+   "src": "https://en.wikipedia.org/wiki/Satya_Nadella"
+  },
+  {
+   "id": "huang",
+   "name": "Jensen Huang",
+   "wiki": "Jensen_Huang",
+   "bio": "Nvidia co-founder and CEO. Supplies the chips most AI labs train on.",
+   "src": "https://en.wikipedia.org/wiki/Jensen_Huang"
+  },
+  {
+   "id": "thiel",
+   "name": "Peter Thiel",
+   "wiki": "Peter_Thiel",
+   "bio": "PayPal co-founder with Musk. Early backer of DeepMind and OpenAI.",
+   "src": "https://en.wikipedia.org/wiki/Peter_Thiel"
+  },
+  {
+   "id": "hoffman",
+   "name": "Reid Hoffman",
+   "wiki": "Reid_Hoffman",
+   "bio": "PayPal executive, LinkedIn co-founder. Early OpenAI donor and board member. Co-founded Inflection AI.",
+   "src": "https://en.wikipedia.org/wiki/Reid_Hoffman"
+  },
+  {
+   "id": "tallinn",
+   "name": "Jaan Tallinn",
+   "wiki": "Jaan_Tallinn",
+   "bio": "Skype co-founder. Early DeepMind investor. Led Anthropic's first funding round.",
+   "src": "https://en.wikipedia.org/wiki/Jaan_Tallinn"
+  },
+  {
+   "id": "sbf",
+   "name": "Sam Bankman-Fried",
+   "wiki": "Sam_Bankman-Fried",
+   "bio": "FTX founder. Led Anthropic's 2022 round, months before FTX collapsed.",
+   "src": "https://en.wikipedia.org/wiki/Sam_Bankman-Fried"
+  },
+  {
+   "id": "toner",
+   "name": "Helen Toner",
+   "wiki": "Helen_Toner",
+   "bio": "OpenAI board member 2021–2023. Voted to remove Altman.",
+   "src": "https://en.wikipedia.org/wiki/Helen_Toner"
+  },
+  {
+   "id": "dangelo",
+   "name": "Adam D'Angelo",
+   "wiki": "Adam_D'Angelo",
+   "bio": "Quora CEO. On OpenAI's board since 2018; the one member kept after November 2023.",
+   "src": "https://en.wikipedia.org/wiki/Adam_D'Angelo"
+  },
+  {
+   "id": "zilis",
+   "name": "Shivon Zilis",
+   "wiki": "Shivon_Zilis",
+   "bio": "Neuralink executive and long-time Musk adviser. On OpenAI's board 2020–2023.",
+   "src": "https://en.wikipedia.org/wiki/Shivon_Zilis"
+  },
+  {
+   "id": "babuschkin",
+   "name": "Igor Babuschkin",
+   "wiki": "SpaceXAI",
+   "bio": "Researcher at DeepMind and OpenAI. Co-founded xAI in 2023; left in 2025 to start an AI safety fund.",
+   "src": "https://www.outlookbusiness.com/deeptech/artificial-intelligence/igor-babuschkin-quits-elon-musks-xai-to-launch-ai-safety-focused-venture-capital-firm"
+  },
+  {
+   "id": "mensch",
+   "name": "Arthur Mensch",
+   "wiki": "Arthur_Mensch",
+   "bio": "DeepMind researcher. Co-founded Mistral AI in 2023; its CEO.",
+   "src": "https://en.wikipedia.org/wiki/Arthur_Mensch"
+  },
+  {
+   "id": "liang",
+   "name": "Liang Wenfeng",
+   "wiki": "Liang_Wenfeng",
+   "bio": "Hedge-fund founder who started DeepSeek in 2023.",
+   "src": "https://en.wikipedia.org/wiki/Liang_Wenfeng"
+  },
+  {
+   "id": "son",
+   "name": "Masayoshi Son",
+   "wiki": "Masayoshi_Son",
+   "bio": "SoftBank founder. Chairs Stargate and became one of OpenAI's largest investors.",
+   "src": "https://en.wikipedia.org/wiki/Masayoshi_Son"
+  },
+  {
+   "id": "ellison",
+   "name": "Larry Ellison",
+   "wiki": "Larry_Ellison",
+   "bio": "Oracle co-founder. Close Musk friend; on Tesla's board 2018–2022. Stargate partner.",
+   "src": "https://en.wikipedia.org/wiki/Larry_Ellison"
+  },
+  {
+   "id": "trump",
+   "name": "Donald Trump",
+   "wiki": "Donald_Trump",
+   "bio": "US President 2017–2021 and again from January 2025. Launched Stargate at the White House.",
+   "src": "https://en.wikipedia.org/wiki/Second_inauguration_of_Donald_Trump"
+  },
+  {
+   "id": "zoph",
+   "name": "Barret Zoph",
+   "wiki": "Thinking_Machines_Lab",
+   "bio": "Former OpenAI research vice president. Co-founded Thinking Machines in 2025. Rejoined OpenAI in 2026, then moved to Google DeepMind.",
+   "src": "https://www.thestar.com.my/tech/tech-news/2026/08/27/thinking-machines-lab-co-founder-barret-zoph-joins-google"
+  },
+  {
+   "id": "delangue",
+   "name": "Clément Delangue",
+   "wiki": "Hugging_Face",
+   "bio": "French entrepreneur. Co-founded Hugging Face in 2016; its CEO.",
+   "src": "https://en.wikipedia.org/wiki/Hugging_Face"
+  },
+  {
+   "id": "chaumond",
+   "name": "Julien Chaumond",
+   "wiki": "Hugging_Face",
+   "bio": "French engineer. Co-founded Hugging Face in 2016; its CTO.",
+   "src": "https://en.wikipedia.org/wiki/Hugging_Face"
+  },
+  {
+   "id": "wolf",
+   "name": "Thomas Wolf",
+   "wiki": "Hugging_Face",
+   "bio": "Physicist turned AI researcher. Co-founded Hugging Face in 2016 and leads its science work.",
+   "src": "https://en.wikipedia.org/wiki/Hugging_Face"
+  }
+ ],
+ "orgs": [
+  {
+   "id": "google",
+   "name": "Google",
+   "wiki": "Google",
+   "founded": "1998",
+   "logo": "google",
+   "home": [
+    -0.62,
+    0.02
+   ],
+   "bio": "Search giant; parent company Alphabet from 2015.",
+   "src": "https://en.wikipedia.org/wiki/Google"
+  },
+  {
+   "id": "brain",
+   "name": "Google Brain",
+   "wiki": "Google_Brain",
+   "founded": "2011",
+   "logo": "google",
+   "home": [
+    -0.42,
+    -0.38
+   ],
+   "bio": "Google's deep-learning lab. Wrote the Transformer paper in 2017. Merged into Google DeepMind in 2023.",
+   "endsIn": "deepmind",
+   "end": "2023-04-20",
+   "src": "https://en.wikipedia.org/wiki/Google_Brain"
+  },
+  {
+   "id": "dnnresearch",
+   "name": "DNNresearch",
+   "wiki": "Geoffrey_Hinton",
+   "founded": "2012",
+   "mono": "DNN",
+   "home": [
+    -0.88,
+    0.42
+   ],
+   "bio": "Hinton, Sutskever and Krizhevsky's three-person company after AlexNet. Google bought it in 2013.",
+   "endsIn": "google",
+   "end": "2013-03-12",
+   "src": "https://en.wikipedia.org/wiki/Ilya_Sutskever"
+  },
+  {
+   "id": "deepmind",
+   "name": "DeepMind",
+   "wiki": "Google_DeepMind",
+   "founded": "2010",
+   "logo": "deepmind",
+   "home": [
+    -0.78,
+    -0.36
+   ],
+   "bio": "London AI lab. Google bought it in 2014. Became Google DeepMind in 2023.",
+   "rename": [
+    [
+     "2023-04-20",
+     "Google DeepMind"
+    ]
+   ],
+   "src": "https://en.wikipedia.org/wiki/Google_DeepMind"
+  },
+  {
+   "id": "openai",
+   "name": "OpenAI",
+   "wiki": "OpenAI",
+   "founded": "2015-12-11",
+   "logo": "openai",
+   "home": [
+    0.0,
+    -0.08
+   ],
+   "bio": "Founded as a non-profit lab in 2015. Added a capped-profit arm in 2019. Recapitalised as a public benefit corporation in 2025.",
+   "src": "https://en.wikipedia.org/wiki/OpenAI"
+  },
+  {
+   "id": "anthropic",
+   "name": "Anthropic",
+   "wiki": "Anthropic",
+   "founded": "2021-01",
+   "logo": "anthropic",
+   "home": [
+    0.22,
+    0.5
+   ],
+   "bio": "Founded in 2021 by seven people who left OpenAI. Makes the Claude models. Filed to list its shares in October 2026.",
+   "src": "https://en.wikipedia.org/wiki/Anthropic"
+  },
+  {
+   "id": "microsoft",
+   "name": "Microsoft",
+   "wiki": "Microsoft",
+   "founded": "1975",
+   "logo": "microsoft",
+   "home": [
+    0.66,
+    0.16
+   ],
+   "bio": "OpenAI's main backer from 2019. Also invested in Anthropic in 2025.",
+   "src": "https://en.wikipedia.org/wiki/Microsoft"
+  },
+  {
+   "id": "meta",
+   "name": "Meta",
+   "wiki": "Meta_Platforms",
+   "founded": "2004",
+   "logo": "meta",
+   "home": [
+    -0.56,
+    0.6
+   ],
+   "bio": "Facebook until October 2021. Runs FAIR and, from 2025, Meta Superintelligence Labs.",
+   "src": "https://en.wikipedia.org/wiki/Meta_Platforms"
+  },
+  {
+   "id": "nvidia",
+   "name": "Nvidia",
+   "wiki": "Nvidia",
+   "founded": "1993",
+   "logo": "nvidia",
+   "home": [
+    0.04,
+    -0.8
+   ],
+   "bio": "Makes the GPUs almost every lab trains on.",
+   "src": "https://en.wikipedia.org/wiki/Nvidia"
+  },
+  {
+   "id": "tesla",
+   "name": "Tesla",
+   "wiki": "Tesla,_Inc.",
+   "founded": "2003",
+   "logo": "tesla",
+   "home": [
+    0.6,
+    -0.62
+   ],
+   "bio": "Musk's car company; built its own self-driving AI team.",
+   "src": "https://en.wikipedia.org/wiki/Tesla,_Inc."
+  },
+  {
+   "id": "spacex",
+   "name": "SpaceX",
+   "wiki": "SpaceX",
+   "founded": "2002",
+   "logo": "spacex",
+   "home": [
+    0.9,
+    -0.5
+   ],
+   "bio": "Musk's rocket company. Bought xAI in February 2026. Listed its shares in June 2026.",
+   "src": "https://en.wikipedia.org/wiki/SpaceX"
+  },
+  {
+   "id": "x",
+   "name": "X (Twitter)",
+   "wiki": "Twitter,_Inc.",
+   "founded": "2006",
+   "logo": "x",
+   "home": [
+    0.92,
+    -0.12
+   ],
+   "bio": "Musk bought Twitter in October 2022 and renamed it X. Merged into xAI in 2025.",
+   "appears": "2022-10-27",
+   "endsIn": "xai",
+   "end": "2025-03-28",
+   "src": "https://en.wikipedia.org/wiki/Twitter,_Inc."
+  },
+  {
+   "id": "xai",
+   "name": "xAI",
+   "wiki": "SpaceXAI",
+   "founded": "2023-03-09",
+   "mono": "xAI",
+   "home": [
+    0.6,
+    -0.3
+   ],
+   "bio": "Musk's AI company, maker of Grok. SpaceX bought it in February 2026. Renamed SpaceXAI in July 2026.",
+   "src": "https://en.wikipedia.org/wiki/SpaceXAI",
+   "rename": [
+    [
+     "2026-07-06",
+     "SpaceXAI"
+    ]
+   ]
+  },
+  {
+   "id": "amazon",
+   "name": "Amazon",
+   "wiki": "Amazon_(company)",
+   "founded": "1994",
+   "logo": "amazon",
+   "home": [
+    0.55,
+    0.82
+   ],
+   "bio": "Anthropic's main cloud provider and one of its largest backers. Invested in OpenAI too in 2026.",
+   "src": "https://en.wikipedia.org/wiki/Amazon_(company)"
+  },
+  {
+   "id": "inflection",
+   "name": "Inflection AI",
+   "wiki": "Inflection_AI",
+   "founded": "2022-03",
+   "mono": "Inf",
+   "home": [
+    0.88,
+    0.42
+   ],
+   "bio": "Suleyman and Hoffman's chatbot company. Microsoft hired most of its staff in 2024.",
+   "src": "https://en.wikipedia.org/wiki/Inflection_AI"
+  },
+  {
+   "id": "mistral",
+   "name": "Mistral AI",
+   "wiki": "Mistral_AI",
+   "founded": "2023-04",
+   "logo": "mistralai",
+   "home": [
+    0.95,
+    0.7
+   ],
+   "bio": "Paris lab founded in 2023 by alumni of DeepMind and Meta.",
+   "src": "https://en.wikipedia.org/wiki/Mistral_AI"
+  },
+  {
+   "id": "ssi",
+   "name": "Safe Superintelligence",
+   "wiki": "Safe_Superintelligence_Inc.",
+   "founded": "2024-06-19",
+   "mono": "SSI",
+   "home": [
+    -0.18,
+    0.34
+   ],
+   "bio": "Sutskever's lab, founded June 2024. One goal: safe superintelligence.",
+   "src": "https://en.wikipedia.org/wiki/Safe_Superintelligence_Inc."
+  },
+  {
+   "id": "tml",
+   "name": "Thinking Machines Lab",
+   "wiki": "Thinking_Machines_Lab",
+   "founded": "2025-02-18",
+   "mono": "TML",
+   "home": [
+    0.02,
+    0.36
+   ],
+   "bio": "Murati's lab, launched February 2025 with many former OpenAI staff.",
+   "src": "https://en.wikipedia.org/wiki/Thinking_Machines_Lab"
+  },
+  {
+   "id": "eureka",
+   "name": "Eureka Labs",
+   "wiki": "Andrej_Karpathy",
+   "founded": "2024-07-16",
+   "mono": "EL",
+   "home": [
+    0.34,
+    -0.5
+   ],
+   "bio": "Karpathy's AI education company. On hold since he joined Anthropic in 2026.",
+   "src": "https://venturebeat.com/ai/ex-openai-and-tesla-engineer-andrej-karpathy-announces-ai-native-school-eureka-labs"
+  },
+  {
+   "id": "scale",
+   "name": "Scale AI",
+   "wiki": "Scale_AI",
+   "founded": "2016",
+   "mono": "Scale",
+   "home": [
+    -0.8,
+    0.82
+   ],
+   "bio": "Data-labelling company. Meta took a 49% stake in 2025.",
+   "src": "https://en.wikipedia.org/wiki/Scale_AI"
+  },
+  {
+   "id": "characterai",
+   "name": "Character.AI",
+   "wiki": "Character.ai",
+   "founded": "2021-11",
+   "mono": "c.ai",
+   "home": [
+    -0.25,
+    -0.72
+   ],
+   "bio": "Chatbot company of two ex-Google engineers. Google licensed its models and re-hired its founders in 2024.",
+   "src": "https://en.wikipedia.org/wiki/Character.ai"
+  },
+  {
+   "id": "deepseek",
+   "name": "DeepSeek",
+   "wiki": "DeepSeek",
+   "founded": "2023-07-17",
+   "logo": "deepseek",
+   "home": [
+    -0.95,
+    -0.02
+   ],
+   "bio": "Hangzhou lab funded by the hedge fund High-Flyer.",
+   "src": "https://en.wikipedia.org/wiki/DeepSeek"
+  },
+  {
+   "id": "softbank",
+   "name": "SoftBank",
+   "wiki": "SoftBank_Group",
+   "founded": "1981",
+   "mono": "SB",
+   "home": [
+    0.36,
+    -0.86
+   ],
+   "bio": "Japanese investor. Stargate partner and major OpenAI shareholder from 2025.",
+   "appears": "2025-01",
+   "src": "https://en.wikipedia.org/wiki/SoftBank_Group"
+  },
+  {
+   "id": "oracle",
+   "name": "Oracle",
+   "wiki": "Oracle_Corporation",
+   "founded": "1977",
+   "logo": "oracle",
+   "home": [
+    0.62,
+    -0.9
+   ],
+   "bio": "Database and cloud company. Builds Stargate data centres for OpenAI.",
+   "appears": "2018-12",
+   "src": "https://en.wikipedia.org/wiki/Oracle_Corporation"
+  },
+  {
+   "id": "yc",
+   "name": "Y Combinator",
+   "wiki": "Y_Combinator",
+   "founded": "2005",
+   "logo": "ycombinator",
+   "home": [
+    -0.22,
+    -0.5
+   ],
+   "bio": "Startup accelerator Altman ran from 2014. Its research arm co-funded OpenAI.",
+   "appears": "2014-02",
+   "src": "https://en.wikipedia.org/wiki/Y_Combinator"
+  },
+  {
+   "id": "ami",
+   "name": "AMI Labs",
+   "wiki": "Advanced_Machine_Intelligence_Labs",
+   "founded": "2025-12",
+   "mono": "AMI",
+   "home": [
+    -0.82,
+    0.25
+   ],
+   "bio": "LeCun's Paris lab for 'world model' AI. Founded in December 2025 after he left Meta.",
+   "src": "https://en.wikipedia.org/wiki/Advanced_Machine_Intelligence_Labs"
+  },
+  {
+   "id": "huggingface",
+   "name": "Hugging Face",
+   "wiki": "Hugging_Face",
+   "founded": "2016",
+   "logo": "huggingface",
+   "home": [
+    -0.62,
+    -0.72
+   ],
+   "bio": "New York start-up founded in 2016 as a chatbot app. Became the main hub for sharing open AI models.",
+   "src": "https://en.wikipedia.org/wiki/Hugging_Face"
+  }
+ ],
+ "links": [
+  {
+   "a": "musk",
+   "b": "tesla",
+   "type": "role",
+   "label": "CEO",
+   "from": "2012",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Elon_Musk"
+  },
+  {
+   "a": "musk",
+   "b": "spacex",
+   "type": "role",
+   "label": "Founder and CEO",
+   "from": "2012",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Elon_Musk"
+  },
+  {
+   "a": "musk",
+   "b": "deepmind",
+   "type": "invest",
+   "label": "Early investor",
+   "from": "2012",
+   "to": "2014-01-26",
+   "note": "Musk met Hassabis in 2012 and invested soon after. He was bought out when Google bought DeepMind.",
+   "src": "https://en.wikipedia.org/wiki/Google_DeepMind"
+  },
+  {
+   "a": "thiel",
+   "b": "deepmind",
+   "type": "invest",
+   "label": "Early investor (Founders Fund)",
+   "from": "2012",
+   "to": "2014-01-26",
+   "src": "https://en.wikipedia.org/wiki/Google_DeepMind"
+  },
+  {
+   "a": "tallinn",
+   "b": "deepmind",
+   "type": "invest",
+   "label": "Early investor",
+   "from": "2012",
+   "to": "2014-01-26",
+   "src": "https://en.wikipedia.org/wiki/Jaan_Tallinn"
+  },
+  {
+   "a": "hassabis",
+   "b": "deepmind",
+   "type": "founder",
+   "label": "Co-founder; CEO until August 2026, then chair",
+   "from": "2012",
+   "to": null,
+   "src": "https://axios.com/2026/08/05/google-deepmind-demis-hassabis-ai"
+  },
+  {
+   "a": "legg",
+   "b": "deepmind",
+   "type": "founder",
+   "label": "Co-founder",
+   "from": "2012",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Shane_Legg"
+  },
+  {
+   "a": "suleyman",
+   "b": "deepmind",
+   "type": "founder",
+   "label": "Co-founder, head of applied AI",
+   "from": "2012",
+   "to": "2019-12",
+   "src": "https://en.wikipedia.org/wiki/Mustafa_Suleyman"
+  },
+  {
+   "a": "suleyman",
+   "b": "google",
+   "type": "role",
+   "label": "VP, AI product and policy",
+   "from": "2019-12",
+   "to": "2022-01",
+   "src": "https://en.wikipedia.org/wiki/Mustafa_Suleyman"
+  },
+  {
+   "a": "suleyman",
+   "b": "inflection",
+   "type": "founder",
+   "label": "Co-founder and CEO",
+   "from": "2022-03",
+   "to": "2024-03-19",
+   "src": "https://en.wikipedia.org/wiki/Inflection_AI"
+  },
+  {
+   "a": "suleyman",
+   "b": "microsoft",
+   "type": "role",
+   "label": "CEO, Microsoft AI",
+   "from": "2024-03-19",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Microsoft_AI"
+  },
+  {
+   "a": "hoffman",
+   "b": "inflection",
+   "type": "founder",
+   "label": "Co-founder",
+   "from": "2022-03",
+   "to": "2024-03-19",
+   "src": "https://en.wikipedia.org/wiki/Inflection_AI"
+  },
+  {
+   "a": "musk",
+   "b": "hassabis",
+   "type": "tie",
+   "label": "Met in 2012; Musk invested in DeepMind",
+   "from": "2012",
+   "to": "2014-01-26",
+   "note": "Musk called Mars a backup for humanity. Hassabis replied that a dangerous AI could follow people there. Musk then invested, partly to keep watch on AI.",
+   "src": "https://ca.news.yahoo.com/elon-musk-invested-deep-mind-031751253.html"
+  },
+  {
+   "a": "musk",
+   "b": "page",
+   "type": "tie",
+   "label": "Close friends",
+   "from": "2012",
+   "to": "2015",
+   "note": "Musk has said he often stayed at Page's home.",
+   "src": "https://fortune.com/2023/09/12/elon-musk-larry-page-friendship-over-ai"
+  },
+  {
+   "a": "musk",
+   "b": "page",
+   "type": "rift",
+   "label": "Falling-out over AI",
+   "from": "2015",
+   "to": null,
+   "note": "At Musk's 44th birthday party, Page reportedly called him a 'speciesist' for siding with humans over future AI. Musk says the friendship ended after he recruited Sutskever to OpenAI.",
+   "src": "https://www.fortune.com/2023/11/18/elon-musk-ilya-sutskever-openai-leadership-upheaval-sam-altman"
+  },
+  {
+   "a": "musk",
+   "b": "thiel",
+   "type": "tie",
+   "label": "PayPal co-founders",
+   "from": "2012",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/PayPal_Mafia"
+  },
+  {
+   "a": "musk",
+   "b": "hoffman",
+   "type": "tie",
+   "label": "PayPal colleagues; both early OpenAI donors",
+   "from": "2012",
+   "to": "2024-11-14",
+   "src": "https://en.wikipedia.org/wiki/PayPal_Mafia"
+  },
+  {
+   "a": "musk",
+   "b": "hoffman",
+   "type": "rift",
+   "label": "Musk named him in his OpenAI lawsuit",
+   "from": "2024-11-14",
+   "to": null,
+   "note": "Musk's amended complaint alleged that Hoffman's seats on the boards of both OpenAI and Microsoft broke competition law.",
+   "src": "https://techcrunch.com/2024/11/14/musks-amended-lawsuit-against-openai-names-microsoft-as-defendant"
+  },
+  {
+   "a": "musk",
+   "b": "ellison",
+   "type": "tie",
+   "label": "Close friends",
+   "from": "2012",
+   "to": null,
+   "note": "Ellison sat on Tesla's board 2018–2022 and put $1bn into Musk's Twitter purchase.",
+   "src": "https://gulfnews.com/business/elon-musk-secures-over-7b-funding-for-twitter-including-1b-from-oracles-larry-ellison-1.87649574"
+  },
+  {
+   "a": "ellison",
+   "b": "tesla",
+   "type": "board",
+   "label": "Board member",
+   "from": "2018-12",
+   "to": "2022-08",
+   "src": "https://en.wikipedia.org/wiki/Larry_Ellison"
+  },
+  {
+   "a": "ellison",
+   "b": "x",
+   "type": "invest",
+   "label": "$1bn in the Twitter buyout",
+   "from": "2022-10-27",
+   "to": "2025-03-28",
+   "src": "https://gulfnews.com/business/elon-musk-secures-over-7b-funding-for-twitter-including-1b-from-oracles-larry-ellison-1.87649574"
+  },
+  {
+   "a": "ellison",
+   "b": "oracle",
+   "type": "founder",
+   "label": "Co-founder; chairman and CTO",
+   "from": "2018-12",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Larry_Ellison"
+  },
+  {
+   "a": "hinton",
+   "b": "dnnresearch",
+   "type": "founder",
+   "label": "Co-founder",
+   "from": "2012-12",
+   "to": "2013-03-12",
+   "src": "https://en.wikipedia.org/wiki/Ilya_Sutskever"
+  },
+  {
+   "a": "sutskever",
+   "b": "dnnresearch",
+   "type": "founder",
+   "label": "Co-founder",
+   "from": "2012-12",
+   "to": "2013-03-12",
+   "src": "https://en.wikipedia.org/wiki/Ilya_Sutskever"
+  },
+  {
+   "a": "hinton",
+   "b": "google",
+   "type": "role",
+   "label": "Google Brain researcher",
+   "from": "2013-03-12",
+   "to": "2023-05-01",
+   "src": "https://en.wikipedia.org/wiki/Geoffrey_Hinton"
+  },
+  {
+   "a": "sutskever",
+   "b": "brain",
+   "type": "role",
+   "label": "Research scientist",
+   "from": "2013-03-12",
+   "to": "2015-12-11",
+   "src": "https://en.wikipedia.org/wiki/Ilya_Sutskever"
+  },
+  {
+   "a": "hinton",
+   "b": "sutskever",
+   "type": "tie",
+   "label": "PhD adviser and student",
+   "from": "2012",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Ilya_Sutskever"
+  },
+  {
+   "a": "page",
+   "b": "google",
+   "type": "founder",
+   "label": "Co-founder; CEO, then Alphabet CEO",
+   "from": "2012",
+   "to": "2019-12-03",
+   "src": "https://en.wikipedia.org/wiki/Larry_Page"
+  },
+  {
+   "a": "brin",
+   "b": "google",
+   "type": "founder",
+   "label": "Co-founder",
+   "from": "2012",
+   "to": "2019-12-03",
+   "src": "https://en.wikipedia.org/wiki/Sergey_Brin"
+  },
+  {
+   "a": "brin",
+   "b": "deepmind",
+   "type": "role",
+   "label": "Back at work on Gemini",
+   "from": "2023",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Gemini_(language_model)"
+  },
+  {
+   "a": "pichai",
+   "b": "google",
+   "type": "role",
+   "label": "CEO",
+   "from": "2015-08-10",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Sundar_Pichai"
+  },
+  {
+   "a": "page",
+   "b": "hassabis",
+   "type": "tie",
+   "label": "Page reportedly led the DeepMind deal",
+   "from": "2014-01-26",
+   "to": "2019-12-03",
+   "src": "https://techcrunch.com/2014/01/26/google-deepmind/"
+  },
+  {
+   "a": "google",
+   "b": "deepmind",
+   "type": "acquire",
+   "label": "Bought for a reported $400m–$650m",
+   "from": "2014-01-26",
+   "to": null,
+   "src": "https://techcrunch.com/2014/01/26/google-deepmind/"
+  },
+  {
+   "a": "google",
+   "b": "brain",
+   "type": "acquire",
+   "label": "Google's in-house research lab",
+   "from": "2012",
+   "to": "2023-04-20",
+   "src": "https://en.wikipedia.org/wiki/Google_Brain"
+  },
+  {
+   "a": "shazeer",
+   "b": "brain",
+   "type": "role",
+   "label": "Engineer; Transformer co-author",
+   "from": "2012",
+   "to": "2021-10",
+   "src": "https://en.wikipedia.org/wiki/Noam_Shazeer"
+  },
+  {
+   "a": "shazeer",
+   "b": "characterai",
+   "type": "founder",
+   "label": "Co-founder and CEO",
+   "from": "2021-11",
+   "to": "2024-08-02",
+   "src": "https://en.wikipedia.org/wiki/Character.ai"
+  },
+  {
+   "a": "shazeer",
+   "b": "deepmind",
+   "type": "role",
+   "label": "Gemini co-lead",
+   "from": "2024-08-02",
+   "to": "2026-06-17",
+   "src": "https://en.wikipedia.org/wiki/Noam_Shazeer"
+  },
+  {
+   "a": "google",
+   "b": "characterai",
+   "type": "invest",
+   "label": "About $2.7bn licence deal; founders re-hired",
+   "from": "2024-08-02",
+   "to": null,
+   "src": "https://www.pymnts.com/artificial-intelligence-2/2024/google-reportedly-spent-2-7-billion-to-rehire-character-ai-founder/"
+  },
+  {
+   "a": "olah",
+   "b": "brain",
+   "type": "role",
+   "label": "Researcher",
+   "from": "2015",
+   "to": "2018",
+   "src": "https://en.wikipedia.org/wiki/Chris_Olah"
+  },
+  {
+   "a": "d_amodei",
+   "b": "brain",
+   "type": "role",
+   "label": "Research scientist",
+   "from": "2015",
+   "to": "2016",
+   "src": "https://en.wikipedia.org/wiki/Dario_Amodei"
+  },
+  {
+   "a": "leike",
+   "b": "deepmind",
+   "type": "role",
+   "label": "Led the agent alignment team",
+   "from": "2016",
+   "to": "2021-01",
+   "src": "https://en.wikipedia.org/wiki/Jan_Leike"
+  },
+  {
+   "a": "mensch",
+   "b": "deepmind",
+   "type": "role",
+   "label": "Researcher",
+   "from": "2020",
+   "to": "2023-05",
+   "src": "https://en.wikipedia.org/wiki/Arthur_Mensch"
+  },
+  {
+   "a": "babuschkin",
+   "b": "deepmind",
+   "type": "role",
+   "label": "Research engineer (AlphaStar)",
+   "from": "2017",
+   "to": "2020",
+   "src": "https://www.outlookbusiness.com/deeptech/artificial-intelligence/igor-babuschkin-quits-elon-musks-xai-to-launch-ai-safety-focused-venture-capital-firm"
+  },
+  {
+   "a": "zuckerberg",
+   "b": "meta",
+   "type": "founder",
+   "label": "Founder and CEO",
+   "from": "2012",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Mark_Zuckerberg"
+  },
+  {
+   "a": "lecun",
+   "b": "meta",
+   "type": "role",
+   "label": "Founded FAIR; chief AI scientist",
+   "from": "2013-12-09",
+   "to": "2025-12",
+   "src": "https://www.news4jax.com/business/2025/11/19/metas-chief-ai-scientist-yann-lecun-to-leave-meta-and-start-new-ai-research-company/"
+  },
+  {
+   "a": "lecun",
+   "b": "ami",
+   "type": "founder",
+   "label": "Co-founder and executive chair",
+   "from": "2025-12",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Advanced_Machine_Intelligence_Labs"
+  },
+  {
+   "a": "lecun",
+   "b": "musk",
+   "type": "rift",
+   "label": "Public sparring on X",
+   "from": "2024-05",
+   "to": null,
+   "src": "https://siliconangle.com/2024/05/29/elon-musk-metas-ai-maestro-yann-lecun-come-blows-online/"
+  },
+  {
+   "a": "musk",
+   "b": "zuckerberg",
+   "type": "rift",
+   "label": "Rivals: AI risk spat, then a cage-fight challenge",
+   "from": "2017-07",
+   "to": null,
+   "note": "In 2017 Musk said Zuckerberg's grasp of AI was 'limited'. In 2023 they agreed a cage fight that never happened.",
+   "src": "https://www.entrepreneur.com/business-news/elon-musk-says-mark-zuckerbergs-understanding-of-ai-is/297729"
+  },
+  {
+   "a": "musk",
+   "b": "openai",
+   "type": "founder",
+   "label": "Co-chair and main early donor",
+   "from": "2015-12-11",
+   "to": "2018-02-20",
+   "src": "https://openai.com/blog/introducing-openai/"
+  },
+  {
+   "a": "altman",
+   "b": "openai",
+   "type": "founder",
+   "label": "Co-chair; CEO from 2019",
+   "from": "2015-12-11",
+   "to": "2023-11-17",
+   "src": "https://en.wikipedia.org/wiki/Sam_Altman"
+  },
+  {
+   "a": "altman",
+   "b": "openai",
+   "type": "founder",
+   "label": "CEO (reinstated)",
+   "from": "2023-11-21",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Removal_of_Sam_Altman_from_OpenAI"
+  },
+  {
+   "a": "brockman",
+   "b": "openai",
+   "type": "founder",
+   "label": "Co-founder; CTO, then president",
+   "from": "2015-12-11",
+   "to": "2023-11-17",
+   "src": "https://en.wikipedia.org/wiki/Greg_Brockman"
+  },
+  {
+   "a": "brockman",
+   "b": "openai",
+   "type": "founder",
+   "label": "President (returned)",
+   "from": "2023-11-21",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Greg_Brockman"
+  },
+  {
+   "a": "sutskever",
+   "b": "openai",
+   "type": "founder",
+   "label": "Co-founder; chief scientist",
+   "from": "2015-12-11",
+   "to": "2024-05-14",
+   "src": "https://en.wikipedia.org/wiki/Ilya_Sutskever"
+  },
+  {
+   "a": "karpathy",
+   "b": "openai",
+   "type": "founder",
+   "label": "Founding member",
+   "from": "2015-12-11",
+   "to": "2017-06-20",
+   "src": "https://en.wikipedia.org/wiki/Andrej_Karpathy"
+  },
+  {
+   "a": "schulman",
+   "b": "openai",
+   "type": "founder",
+   "label": "Co-founder",
+   "from": "2015-12-11",
+   "to": "2024-08-05",
+   "src": "https://en.wikipedia.org/wiki/John_Schulman"
+  },
+  {
+   "a": "thiel",
+   "b": "openai",
+   "type": "invest",
+   "label": "Founding donor",
+   "from": "2015-12-11",
+   "to": "2018",
+   "src": "https://openai.com/blog/introducing-openai/"
+  },
+  {
+   "a": "hoffman",
+   "b": "openai",
+   "type": "invest",
+   "label": "Founding donor",
+   "from": "2015-12-11",
+   "to": "2019",
+   "src": "https://openai.com/blog/introducing-openai/"
+  },
+  {
+   "a": "hoffman",
+   "b": "openai",
+   "type": "board",
+   "label": "Board member",
+   "from": "2019",
+   "to": "2023-03-03",
+   "src": "https://en.wikipedia.org/wiki/Reid_Hoffman"
+  },
+  {
+   "a": "yc",
+   "b": "openai",
+   "type": "invest",
+   "label": "YC Research, founding donor",
+   "from": "2015-12-11",
+   "to": "2019-03",
+   "src": "https://openai.com/blog/introducing-openai/"
+  },
+  {
+   "a": "amazon",
+   "b": "openai",
+   "type": "invest",
+   "label": "AWS, founding pledge",
+   "from": "2015-12-11",
+   "to": "2019-03",
+   "src": "https://openai.com/blog/introducing-openai/"
+  },
+  {
+   "a": "altman",
+   "b": "yc",
+   "type": "role",
+   "label": "President",
+   "from": "2014-02-21",
+   "to": "2019-03-08",
+   "src": "https://en.wikipedia.org/wiki/Sam_Altman"
+  },
+  {
+   "a": "musk",
+   "b": "altman",
+   "type": "tie",
+   "label": "OpenAI co-founders",
+   "from": "2015-12-11",
+   "to": "2018-02-20",
+   "src": "https://openai.com/blog/introducing-openai/"
+  },
+  {
+   "a": "musk",
+   "b": "altman",
+   "type": "rift",
+   "label": "Feud; lawsuit from 2024",
+   "from": "2018-02-20",
+   "to": null,
+   "note": "Musk left after failing to take control of OpenAI, per OpenAI's 2024 account. He later called it a betrayal of its non-profit mission and sued.",
+   "src": "https://en.wikipedia.org/wiki/Musk_v._Altman"
+  },
+  {
+   "a": "musk",
+   "b": "openai",
+   "type": "rift",
+   "label": "Sued it and bid $97.4bn; lost at trial",
+   "from": "2024-02-29",
+   "to": null,
+   "note": "In May 2026 a jury found he had sued too late. His lawyer said he would appeal.",
+   "src": "https://www.aljazeera.com/news/2026/5/18/elon-musk-loses-lawsuit-against-openai"
+  },
+  {
+   "a": "musk",
+   "b": "sutskever",
+   "type": "tie",
+   "label": "Musk recruited him from Google",
+   "from": "2015-12-11",
+   "to": "2018-02-20",
+   "note": "Musk calls it one of the toughest recruiting battles he fought. He says it ended his friendship with Page.",
+   "src": "https://www.fortune.com/2023/11/18/elon-musk-ilya-sutskever-openai-leadership-upheaval-sam-altman"
+  },
+  {
+   "a": "huang",
+   "b": "nvidia",
+   "type": "founder",
+   "label": "Co-founder and CEO",
+   "from": "2012",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Jensen_Huang"
+  },
+  {
+   "a": "nvidia",
+   "b": "openai",
+   "type": "partner",
+   "label": "First DGX-1 supercomputer, hand-delivered by Huang",
+   "from": "2016-08",
+   "to": null,
+   "src": "https://www.fortune.com/2016/08/15/elon-musk-artificial-intelligence-openai-nvidia-supercomputer"
+  },
+  {
+   "a": "nvidia",
+   "b": "openai",
+   "type": "invest",
+   "label": "Investor since 2024; $30bn in 2026",
+   "from": "2024-10-02",
+   "to": null,
+   "note": "Nvidia's 2025 letter of intent to invest up to $100bn was never finalised. It put in $30bn in the February 2026 round instead.",
+   "src": "https://www.aol.com/articles/openai-just-closed-110-billion-134637714.html"
+  },
+  {
+   "a": "zilis",
+   "b": "openai",
+   "type": "board",
+   "label": "Board member",
+   "from": "2020",
+   "to": "2023",
+   "src": "https://www.courthousenews.com/mother-of-musk-children-testifies-about-openai-board-role-in-tech-billionaire-feud/"
+  },
+  {
+   "a": "musk",
+   "b": "zilis",
+   "type": "tie",
+   "label": "Works for Musk at Neuralink; long-time adviser",
+   "from": "2016",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Shivon_Zilis"
+  },
+  {
+   "a": "karpathy",
+   "b": "tesla",
+   "type": "role",
+   "label": "Director of AI, Autopilot",
+   "from": "2017-06-20",
+   "to": "2022-07-13",
+   "src": "https://en.wikipedia.org/wiki/Andrej_Karpathy"
+  },
+  {
+   "a": "musk",
+   "b": "karpathy",
+   "type": "tie",
+   "label": "Hired him away from OpenAI",
+   "from": "2017-06-20",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Andrej_Karpathy"
+  },
+  {
+   "a": "karpathy",
+   "b": "openai",
+   "type": "role",
+   "label": "Returned as researcher",
+   "from": "2023-02-08",
+   "to": "2024-02-13",
+   "src": "https://en.wikipedia.org/wiki/Andrej_Karpathy"
+  },
+  {
+   "a": "karpathy",
+   "b": "eureka",
+   "type": "founder",
+   "label": "Founder; on hold from 2026",
+   "from": "2024-07-16",
+   "to": null,
+   "src": "https://venturebeat.com/ai/ex-openai-and-tesla-engineer-andrej-karpathy-announces-ai-native-school-eureka-labs"
+  },
+  {
+   "a": "murati",
+   "b": "tesla",
+   "type": "role",
+   "label": "Senior product manager, Model X",
+   "from": "2013",
+   "to": "2016",
+   "src": "https://en.wikipedia.org/wiki/Mira_Murati"
+  },
+  {
+   "a": "murati",
+   "b": "openai",
+   "type": "role",
+   "label": "VP, then CTO",
+   "from": "2018",
+   "to": "2024-09-25",
+   "src": "https://en.wikipedia.org/wiki/Mira_Murati"
+  },
+  {
+   "a": "murati",
+   "b": "tml",
+   "type": "founder",
+   "label": "Founder and CEO",
+   "from": "2025-02-18",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Thinking_Machines_Lab"
+  },
+  {
+   "a": "schulman",
+   "b": "anthropic",
+   "type": "role",
+   "label": "Researcher",
+   "from": "2024-08-05",
+   "to": "2025-02-06",
+   "src": "https://en.wikipedia.org/wiki/John_Schulman"
+  },
+  {
+   "a": "schulman",
+   "b": "tml",
+   "type": "founder",
+   "label": "Co-founder, chief scientist",
+   "from": "2025-02-06",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/John_Schulman"
+  },
+  {
+   "a": "d_amodei",
+   "b": "openai",
+   "type": "role",
+   "label": "VP of research",
+   "from": "2016",
+   "to": "2020-12-29",
+   "src": "https://en.wikipedia.org/wiki/Dario_Amodei"
+  },
+  {
+   "a": "da_amodei",
+   "b": "openai",
+   "type": "role",
+   "label": "VP, safety and policy",
+   "from": "2018",
+   "to": "2020-12-29",
+   "src": "https://en.wikipedia.org/wiki/Daniela_Amodei"
+  },
+  {
+   "a": "clark",
+   "b": "openai",
+   "type": "role",
+   "label": "Policy director",
+   "from": "2016",
+   "to": "2020-12-29",
+   "src": "https://en.wikipedia.org/wiki/Jack_Clark_(AI_policy_expert)"
+  },
+  {
+   "a": "olah",
+   "b": "openai",
+   "type": "role",
+   "label": "Interpretability lead",
+   "from": "2018",
+   "to": "2020-12-29",
+   "src": "https://en.wikipedia.org/wiki/Chris_Olah"
+  },
+  {
+   "a": "brown",
+   "b": "openai",
+   "type": "role",
+   "label": "Engineer; GPT-3 lead author",
+   "from": "2018",
+   "to": "2020-12-29",
+   "src": "https://arxiv.org/abs/2005.14165v2",
+   "check": "Start year unconfirmed: reports say he first joined around 2016, spent a year at Google Brain, then returned."
+  },
+  {
+   "a": "kaplan",
+   "b": "openai",
+   "type": "role",
+   "label": "Researcher",
+   "from": "2019",
+   "to": "2020-12-29",
+   "src": "https://en.wikipedia.org/wiki/Jared_Kaplan"
+  },
+  {
+   "a": "d_amodei",
+   "b": "anthropic",
+   "type": "founder",
+   "label": "Co-founder and CEO",
+   "from": "2021-01",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Anthropic"
+  },
+  {
+   "a": "da_amodei",
+   "b": "anthropic",
+   "type": "founder",
+   "label": "Co-founder and president",
+   "from": "2021-01",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Anthropic"
+  },
+  {
+   "a": "clark",
+   "b": "anthropic",
+   "type": "founder",
+   "label": "Co-founder; long-time head of policy",
+   "from": "2021-01",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Jack_Clark_(AI_policy_expert)"
+  },
+  {
+   "a": "olah",
+   "b": "anthropic",
+   "type": "founder",
+   "label": "Co-founder, interpretability",
+   "from": "2021-01",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Anthropic"
+  },
+  {
+   "a": "brown",
+   "b": "anthropic",
+   "type": "founder",
+   "label": "Co-founder",
+   "from": "2021-01",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Anthropic"
+  },
+  {
+   "a": "kaplan",
+   "b": "anthropic",
+   "type": "founder",
+   "label": "Co-founder, chief science officer",
+   "from": "2021-01",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Anthropic"
+  },
+  {
+   "a": "d_amodei",
+   "b": "da_amodei",
+   "type": "tie",
+   "label": "Siblings",
+   "from": "2012",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Daniela_Amodei"
+  },
+  {
+   "a": "tallinn",
+   "b": "anthropic",
+   "type": "invest",
+   "label": "Led the $124m first round",
+   "from": "2021-05-28",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Anthropic"
+  },
+  {
+   "a": "sbf",
+   "b": "anthropic",
+   "type": "invest",
+   "label": "FTX led the $580m round",
+   "from": "2022-04-29",
+   "to": "2024-03-22",
+   "note": "FTX collapsed in November 2022. Its bankruptcy estate sold the stake in 2024.",
+   "src": "https://blockworks.co/news/ftx-to-sell-anthropic-shares"
+  },
+  {
+   "a": "google",
+   "b": "anthropic",
+   "type": "invest",
+   "label": "Investor since 2023; up to $40bn more pledged",
+   "from": "2023-02-03",
+   "to": null,
+   "src": "https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic"
+  },
+  {
+   "a": "amazon",
+   "b": "anthropic",
+   "type": "invest",
+   "label": "$8bn by 2024; up to $25bn more",
+   "from": "2023-09-25",
+   "to": null,
+   "src": "https://www.cnbc.com/2026/04/20/amazon-invest-up-to-25-billion-in-anthropic-part-of-ai-infrastructure.html"
+  },
+  {
+   "a": "microsoft",
+   "b": "anthropic",
+   "type": "invest",
+   "label": "Up to $5bn",
+   "from": "2025-11-18",
+   "to": null,
+   "src": "https://pureai.com/articles/2025/11/18/microsoft-and-nvidia-deepen-ties-with-anthropic.aspx"
+  },
+  {
+   "a": "nvidia",
+   "b": "anthropic",
+   "type": "invest",
+   "label": "Up to $10bn",
+   "from": "2025-11-18",
+   "to": null,
+   "src": "https://pureai.com/articles/2025/11/18/microsoft-and-nvidia-deepen-ties-with-anthropic.aspx"
+  },
+  {
+   "a": "leike",
+   "b": "openai",
+   "type": "role",
+   "label": "Co-lead, superalignment",
+   "from": "2021-01",
+   "to": "2024-05-17",
+   "src": "https://en.wikipedia.org/wiki/Jan_Leike"
+  },
+  {
+   "a": "leike",
+   "b": "anthropic",
+   "type": "role",
+   "label": "Alignment lead",
+   "from": "2024-05-28",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Jan_Leike"
+  },
+  {
+   "a": "nadella",
+   "b": "microsoft",
+   "type": "role",
+   "label": "CEO",
+   "from": "2014-02-04",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Satya_Nadella"
+  },
+  {
+   "a": "microsoft",
+   "b": "openai",
+   "type": "invest",
+   "label": "$1bn, then $10bn more; about 27% after 2025",
+   "from": "2019-07-22",
+   "to": null,
+   "src": "https://www.aljazeera.com/economy/2025/10/28/openai-restructures-into-public-benefit-firm-microsoft-takes-27-stake"
+  },
+  {
+   "a": "nadella",
+   "b": "altman",
+   "type": "tie",
+   "label": "Partners since 2019",
+   "from": "2019-07-22",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Removal_of_Sam_Altman_from_OpenAI"
+  },
+  {
+   "a": "altman",
+   "b": "microsoft",
+   "type": "role",
+   "label": "Hired to lead a new AI team (never started)",
+   "from": "2023-11-20",
+   "to": "2023-11-21",
+   "src": "https://en.wikipedia.org/wiki/Removal_of_Sam_Altman_from_OpenAI"
+  },
+  {
+   "a": "brockman",
+   "b": "microsoft",
+   "type": "role",
+   "label": "Hired with Altman (never started)",
+   "from": "2023-11-20",
+   "to": "2023-11-21",
+   "src": "https://en.wikipedia.org/wiki/Removal_of_Sam_Altman_from_OpenAI"
+  },
+  {
+   "a": "hoffman",
+   "b": "microsoft",
+   "type": "board",
+   "label": "Board member",
+   "from": "2017-03",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Reid_Hoffman"
+  },
+  {
+   "a": "microsoft",
+   "b": "inflection",
+   "type": "acquire",
+   "label": "Hired most staff; $650m licence",
+   "from": "2024-03-19",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Inflection_AI"
+  },
+  {
+   "a": "microsoft",
+   "b": "mistral",
+   "type": "invest",
+   "label": "Partnership and a small stake",
+   "from": "2024-02-26",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Mistral_AI"
+  },
+  {
+   "a": "mensch",
+   "b": "mistral",
+   "type": "founder",
+   "label": "Co-founder and CEO",
+   "from": "2023-04",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Mistral_AI"
+  },
+  {
+   "a": "nvidia",
+   "b": "mistral",
+   "type": "invest",
+   "label": "Investor",
+   "from": "2024-06",
+   "to": null,
+   "src": "https://www.verdict.co.uk/ai-startup-mistral-raises-e600m/"
+  },
+  {
+   "a": "toner",
+   "b": "openai",
+   "type": "board",
+   "label": "Board member",
+   "from": "2021",
+   "to": "2023-11-29",
+   "src": "https://en.wikipedia.org/wiki/Helen_Toner"
+  },
+  {
+   "a": "dangelo",
+   "b": "openai",
+   "type": "board",
+   "label": "Board member",
+   "from": "2018",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Adam_D'Angelo"
+  },
+  {
+   "a": "sutskever",
+   "b": "altman",
+   "type": "tie",
+   "label": "Co-founders",
+   "from": "2015-12-11",
+   "to": "2023-11-17",
+   "src": "https://en.wikipedia.org/wiki/Ilya_Sutskever"
+  },
+  {
+   "a": "sutskever",
+   "b": "altman",
+   "type": "rift",
+   "label": "Voted to fire him, then regretted it",
+   "from": "2023-11-17",
+   "to": "2023-11-20",
+   "src": "https://en.wikipedia.org/wiki/Removal_of_Sam_Altman_from_OpenAI"
+  },
+  {
+   "a": "toner",
+   "b": "altman",
+   "type": "rift",
+   "label": "Voted to fire him",
+   "from": "2023-11-17",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Removal_of_Sam_Altman_from_OpenAI"
+  },
+  {
+   "a": "dangelo",
+   "b": "altman",
+   "type": "rift",
+   "label": "Voted to fire him; stayed on the new board",
+   "from": "2023-11-17",
+   "to": "2023-11-21",
+   "src": "https://en.wikipedia.org/wiki/Removal_of_Sam_Altman_from_OpenAI"
+  },
+  {
+   "a": "sutskever",
+   "b": "ssi",
+   "type": "founder",
+   "label": "Co-founder; CEO from July 2025",
+   "from": "2024-06-19",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Safe_Superintelligence_Inc."
+  },
+  {
+   "a": "gross",
+   "b": "ssi",
+   "type": "founder",
+   "label": "Co-founder and CEO",
+   "from": "2024-06-19",
+   "to": "2025-07-03",
+   "src": "https://en.wikipedia.org/wiki/Safe_Superintelligence_Inc."
+  },
+  {
+   "a": "gross",
+   "b": "friedman",
+   "type": "tie",
+   "label": "Investing partners (NFDG)",
+   "from": "2021",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Daniel_Gross_(businessman)"
+  },
+  {
+   "a": "gross",
+   "b": "meta",
+   "type": "role",
+   "label": "Meta Superintelligence Labs",
+   "from": "2025-07",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Meta_Superintelligence_Labs"
+  },
+  {
+   "a": "friedman",
+   "b": "meta",
+   "type": "role",
+   "label": "Meta Superintelligence Labs",
+   "from": "2025-06-30",
+   "to": null,
+   "src": "https://www.cnbc.com/2025/06/30/mark-zuckerberg-creating-meta-superintelligence-labs-read-the-memo.html"
+  },
+  {
+   "a": "meta",
+   "b": "ssi",
+   "type": "rift",
+   "label": "Tried to buy SSI; rebuffed",
+   "from": "2025",
+   "to": "2025-06",
+   "src": "https://www.nbcchicago.com/news/business/money-report/meta-tried-to-buy-ilya-sutskevers-32-billion-ai-startup-but-is-now-planning-to-hire-its-ceo/3772293/"
+  },
+  {
+   "a": "wang",
+   "b": "scale",
+   "type": "founder",
+   "label": "Founder and CEO",
+   "from": "2016",
+   "to": "2025-06-12",
+   "src": "https://en.wikipedia.org/wiki/Scale_AI"
+  },
+  {
+   "a": "wang",
+   "b": "meta",
+   "type": "role",
+   "label": "Chief AI officer",
+   "from": "2025-06-12",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Alexandr_Wang"
+  },
+  {
+   "a": "meta",
+   "b": "scale",
+   "type": "invest",
+   "label": "$14.3bn for 49%",
+   "from": "2025-06-12",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Scale_AI"
+  },
+  {
+   "a": "zuckerberg",
+   "b": "wang",
+   "type": "tie",
+   "label": "Recruited him to run Meta's AI push",
+   "from": "2025-06-12",
+   "to": null,
+   "src": "https://www.cnbc.com/2025/06/30/mark-zuckerberg-creating-meta-superintelligence-labs-read-the-memo.html"
+  },
+  {
+   "a": "musk",
+   "b": "x",
+   "type": "role",
+   "label": "Owner",
+   "from": "2022-10-27",
+   "to": "2025-03-28",
+   "src": "https://en.wikipedia.org/wiki/Twitter_under_Elon_Musk"
+  },
+  {
+   "a": "musk",
+   "b": "xai",
+   "type": "founder",
+   "label": "Founder",
+   "from": "2023-03-09",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/SpaceXAI"
+  },
+  {
+   "a": "babuschkin",
+   "b": "xai",
+   "type": "founder",
+   "label": "Co-founder",
+   "from": "2023-07-12",
+   "to": "2025-08-13",
+   "src": "https://www.outlookbusiness.com/deeptech/artificial-intelligence/igor-babuschkin-quits-elon-musks-xai-to-launch-ai-safety-focused-venture-capital-firm"
+  },
+  {
+   "a": "xai",
+   "b": "x",
+   "type": "acquire",
+   "label": "xAI took over X in an all-stock deal",
+   "from": "2025-03-28",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/X_Corp."
+  },
+  {
+   "a": "nvidia",
+   "b": "xai",
+   "type": "partner",
+   "label": "GPUs for the Colossus supercomputer",
+   "from": "2024-09",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Colossus_(supercomputer)"
+  },
+  {
+   "a": "musk",
+   "b": "huang",
+   "type": "tie",
+   "label": "Chip supplier; mutual praise",
+   "from": "2016-08",
+   "to": null,
+   "src": "https://www.fortune.com/2016/08/15/elon-musk-artificial-intelligence-openai-nvidia-supercomputer"
+  },
+  {
+   "a": "spacex",
+   "b": "xai",
+   "type": "acquire",
+   "label": "SpaceX bought xAI in an all-stock deal",
+   "from": "2026-02-02",
+   "to": null,
+   "src": "https://abcnews.go.com/Technology/wireStory/elon-musk-merging-spacex-artificial-intelligence-company-xai-129796634"
+  },
+  {
+   "a": "musk",
+   "b": "trump",
+   "type": "tie",
+   "label": "Endorsement, campaign money, DOGE",
+   "from": "2024-07-13",
+   "to": "2025-06-05",
+   "src": "https://www.cbsnews.com/news/elon-musk-277-million-trump-republican-candidates-donations/"
+  },
+  {
+   "a": "musk",
+   "b": "trump",
+   "type": "rift",
+   "label": "Public falling-out",
+   "from": "2025-06-05",
+   "to": "2025-09-21",
+   "src": "https://en.wikipedia.org/wiki/Trump%E2%80%93Musk_feud"
+  },
+  {
+   "a": "trump",
+   "b": "altman",
+   "type": "tie",
+   "label": "Launched Stargate together",
+   "from": "2025-01-21",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Stargate_LLC"
+  },
+  {
+   "a": "son",
+   "b": "softbank",
+   "type": "founder",
+   "label": "Founder, chairman and CEO",
+   "from": "2025-01",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Masayoshi_Son"
+  },
+  {
+   "a": "softbank",
+   "b": "openai",
+   "type": "invest",
+   "label": "Stargate partner; led 2025 round; $30bn in 2026",
+   "from": "2025-01-21",
+   "to": null,
+   "src": "https://www.aol.com/articles/openai-just-closed-110-billion-134637714.html"
+  },
+  {
+   "a": "oracle",
+   "b": "openai",
+   "type": "partner",
+   "label": "Stargate partner; builds data centres",
+   "from": "2025-01-21",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Stargate_LLC"
+  },
+  {
+   "a": "son",
+   "b": "altman",
+   "type": "tie",
+   "label": "Stargate partners",
+   "from": "2025-01-21",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Stargate_LLC"
+  },
+  {
+   "a": "ellison",
+   "b": "altman",
+   "type": "tie",
+   "label": "Stargate partners",
+   "from": "2025-01-21",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Stargate_LLC"
+  },
+  {
+   "a": "liang",
+   "b": "deepseek",
+   "type": "founder",
+   "label": "Founder and CEO",
+   "from": "2023-07-17",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/DeepSeek"
+  },
+  {
+   "a": "openai",
+   "b": "deepseek",
+   "type": "rift",
+   "label": "OpenAI says DeepSeek may have trained on its models' output",
+   "from": "2025-01-29",
+   "to": null,
+   "src": "https://www.axios.com/2025/01/29/openai-deepseek-ai-models-data-training"
+  },
+  {
+   "a": "meta",
+   "b": "openai",
+   "type": "rift",
+   "label": "Talent raid: Altman says offers reached $100m",
+   "from": "2025-06",
+   "to": "2025-09",
+   "src": "https://www.bloomberg.com/news/articles/2025-06-17/altman-says-meta-offered-openai-staffers-100-million-bonuses"
+  },
+  {
+   "a": "musk",
+   "b": "trump",
+   "type": "tie",
+   "label": "Made up; big Republican donor again",
+   "from": "2025-09-21",
+   "to": null,
+   "src": "https://www.cnbc.com/2026/10/12/elon-musk-republican-donations-2026-midterm-election.html"
+  },
+  {
+   "a": "babuschkin",
+   "b": "openai",
+   "type": "role",
+   "label": "Researcher",
+   "from": "2020",
+   "to": "2022",
+   "src": "https://www.outlookbusiness.com/deeptech/artificial-intelligence/igor-babuschkin-quits-elon-musks-xai-to-launch-ai-safety-focused-venture-capital-firm",
+   "check": "Reports differ on when he left OpenAI; he spent about a year back at DeepMind before co-founding xAI."
+  },
+  {
+   "a": "karpathy",
+   "b": "anthropic",
+   "type": "role",
+   "label": "Pre-training research",
+   "from": "2026-05-19",
+   "to": null,
+   "src": "https://www.cnbc.com/2026/05/19/anthropic-hires-openai-cofounder-andrej-karpathy-former-tesla-ai-lead.html"
+  },
+  {
+   "a": "shazeer",
+   "b": "openai",
+   "type": "role",
+   "label": "Joined from Google",
+   "from": "2026-06-17",
+   "to": null,
+   "src": "https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html"
+  },
+  {
+   "a": "zoph",
+   "b": "tml",
+   "type": "founder",
+   "label": "Co-founder and CTO",
+   "from": "2025-02-18",
+   "to": "2026-01-14",
+   "src": "https://en.wikipedia.org/wiki/Thinking_Machines_Lab"
+  },
+  {
+   "a": "zoph",
+   "b": "openai",
+   "type": "role",
+   "label": "Rejoined; left after about five months",
+   "from": "2026-01-14",
+   "to": "2026-06",
+   "src": "https://officechai.com/ai/thinking-machines-co-founder-barrett-zoph-leaves-openai-to-join-google/"
+  },
+  {
+   "a": "zoph",
+   "b": "deepmind",
+   "type": "role",
+   "label": "Vice president of research",
+   "from": "2026-08-26",
+   "to": null,
+   "src": "https://www.thestar.com.my/tech/tech-news/2026/08/27/thinking-machines-lab-co-founder-barret-zoph-joins-google"
+  },
+  {
+   "a": "trump",
+   "b": "anthropic",
+   "type": "rift",
+   "label": "His government blacklisted it; the courts are split",
+   "from": "2026-02-27",
+   "to": null,
+   "note": "Anthropic refused to let the military use Claude for mass domestic surveillance or fully autonomous weapons. In August 2026 a federal judge in California set the Pentagon's ban aside. In September 2026 a federal appeals court in Washington upheld a second ban made under a different law.",
+   "src": "https://courthousenews.com/dc-circuit-finds-pentagon-justified-in-labeling-anthropic-supply-chain-risk/"
+  },
+  {
+   "a": "xai",
+   "b": "openai",
+   "type": "rift",
+   "label": "Sued OpenAI over trade secrets and staff",
+   "from": "2025-09",
+   "to": null,
+   "src": "https://decrypt.co/341517/elon-musks-xai-sues-openai-again-this-time-over-alleged-trade-secret-theft"
+  },
+  {
+   "a": "amazon",
+   "b": "openai",
+   "type": "partner",
+   "label": "$38bn AWS cloud deal, expanded in 2026",
+   "from": "2025-11-03",
+   "to": null,
+   "src": "https://www.eweek.com/news/amazon-openai-cloud-deal/"
+  },
+  {
+   "a": "amazon",
+   "b": "openai",
+   "type": "invest",
+   "label": "Up to $50bn in the 2026 round",
+   "from": "2026-02-27",
+   "to": null,
+   "src": "https://www.aol.com/articles/openai-just-closed-110-billion-134637714.html"
+  },
+  {
+   "a": "tesla",
+   "b": "xai",
+   "type": "invest",
+   "label": "$2bn stake, now held as SpaceX shares",
+   "from": "2026-01-16",
+   "to": null,
+   "src": "https://driveteslacanada.ca/news/tesla-announces-2-billion-investment-in-xai-heres-how-it-differs-from-the-shareholder-vote/"
+  },
+  {
+   "a": "nvidia",
+   "b": "ami",
+   "type": "invest",
+   "label": "Investor in the $1.03bn first round",
+   "from": "2026-03-10",
+   "to": null,
+   "src": "https://siliconangle.com/2026/03/10/yann-lecuns-new-startup-ami-labs-raises-1-03b-train-world-models/"
+  },
+  {
+   "a": "nvidia",
+   "b": "ssi",
+   "type": "invest",
+   "label": "Reported $5bn stake and chip access",
+   "from": "2026-07-27",
+   "to": null,
+   "src": "https://www.thestar.com.my/tech/tech-news/2026/07/28/nvidia-to-invest-5-billion-in-ilya-sutskever039s-ai-startup-source-says"
+  },
+  {
+   "a": "delangue",
+   "b": "huggingface",
+   "type": "founder",
+   "label": "Co-founder and CEO",
+   "from": "2016",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Hugging_Face"
+  },
+  {
+   "a": "chaumond",
+   "b": "huggingface",
+   "type": "founder",
+   "label": "Co-founder and CTO",
+   "from": "2016",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Hugging_Face"
+  },
+  {
+   "a": "wolf",
+   "b": "huggingface",
+   "type": "founder",
+   "label": "Co-founder and chief science officer",
+   "from": "2016",
+   "to": null,
+   "src": "https://en.wikipedia.org/wiki/Hugging_Face"
+  },
+  {
+   "a": "google",
+   "b": "huggingface",
+   "type": "invest",
+   "label": "Investor in the 2023 round",
+   "from": "2023-08-24",
+   "to": null,
+   "src": "https://techcrunch.com/2023/08/24/hugging-face-raises-235m-from-investors-including-salesforce-and-nvidia"
+  },
+  {
+   "a": "amazon",
+   "b": "huggingface",
+   "type": "invest",
+   "label": "Investor in the 2023 round",
+   "from": "2023-08-24",
+   "to": null,
+   "src": "https://techcrunch.com/2023/08/24/hugging-face-raises-235m-from-investors-including-salesforce-and-nvidia"
+  },
+  {
+   "a": "nvidia",
+   "b": "huggingface",
+   "type": "invest",
+   "label": "Investor in the 2023 round",
+   "from": "2023-08-24",
+   "to": "2026-09-03",
+   "src": "https://techcrunch.com/2023/08/24/hugging-face-raises-235m-from-investors-including-salesforce-and-nvidia"
+  },
+  {
+   "a": "nvidia",
+   "b": "huggingface",
+   "type": "partner",
+   "label": "Agreed to buy it for about $11.9bn; not yet closed",
+   "from": "2026-09-03",
+   "to": null,
+   "src": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000078/nvda-20260902.htm"
+  }
+ ],
+ "events": [
+  {
+   "date": "2012-09-30",
+   "title": "AlexNet wins ImageNet",
+   "text": "Hinton, Sutskever and Krizhevsky's neural network won the image-recognition contest by a wide margin, and deep-learning research grew quickly after that.",
+   "ids": [
+    "hinton",
+    "sutskever"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/AlexNet"
+  },
+  {
+   "date": "2012-12",
+   "title": "Big tech bids for three researchers",
+   "text": "Google, Microsoft, Baidu and DeepMind bid in a private auction for Hinton's new company, DNNresearch.",
+   "ids": [
+    "dnnresearch",
+    "hinton",
+    "sutskever",
+    "google",
+    "deepmind",
+    "microsoft"
+   ],
+   "weight": 1,
+   "src": "https://en.wikipedia.org/wiki/Geoffrey_Hinton"
+  },
+  {
+   "date": "2013-03-12",
+   "title": "Google buys DNNresearch",
+   "text": "Hinton and Sutskever join Google. Hinton's group becomes part of Google Brain.",
+   "ids": [
+    "google",
+    "dnnresearch",
+    "hinton",
+    "sutskever"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/Google_Brain"
+  },
+  {
+   "date": "2013-12-09",
+   "title": "Facebook hires Yann LeCun",
+   "text": "LeCun founds Facebook AI Research. Facebook had also held talks to buy DeepMind.",
+   "ids": [
+    "lecun",
+    "meta",
+    "zuckerberg"
+   ],
+   "weight": 1,
+   "src": "https://en.wikipedia.org/wiki/Yann_LeCun"
+  },
+  {
+   "date": "2014-01-26",
+   "title": "Google buys DeepMind",
+   "text": "Google pays a reported $400m–$650m for the London lab, beating Facebook. Early investors such as Musk and Thiel are bought out. DeepMind gets an ethics board.",
+   "ids": [
+    "google",
+    "deepmind",
+    "hassabis",
+    "legg",
+    "suleyman",
+    "page",
+    "musk"
+   ],
+   "weight": 3,
+   "src": "https://techcrunch.com/2014/01/26/google-deepmind/"
+  },
+  {
+   "date": "2014-02-04",
+   "title": "Satya Nadella becomes Microsoft CEO",
+   "text": "He will later make the bet on OpenAI.",
+   "ids": [
+    "nadella",
+    "microsoft"
+   ],
+   "weight": 1,
+   "src": "https://en.wikipedia.org/wiki/Satya_Nadella"
+  },
+  {
+   "date": "2014-02-21",
+   "title": "Sam Altman takes over Y Combinator",
+   "text": "Paul Graham hands the accelerator to Altman.",
+   "ids": [
+    "altman",
+    "yc"
+   ],
+   "weight": 1,
+   "src": "https://en.wikipedia.org/wiki/Sam_Altman"
+  },
+  {
+   "date": "2015",
+   "title": "Musk and Page fall out over AI",
+   "text": "At Musk's 44th birthday party, Page reportedly calls him a 'speciesist' for putting humans ahead of future AI. Musk later says the friendship ended over OpenAI.",
+   "ids": [
+    "musk",
+    "page"
+   ],
+   "weight": 2,
+   "src": "https://fortune.com/2023/09/12/elon-musk-larry-page-friendship-over-ai"
+  },
+  {
+   "date": "2015-12-11",
+   "title": "OpenAI is founded",
+   "text": "A non-profit lab with $1bn pledged by Musk, Altman, Hoffman, Thiel, Amazon and others. Musk wins Sutskever away from Google.",
+   "ids": [
+    "openai",
+    "musk",
+    "altman",
+    "brockman",
+    "sutskever",
+    "karpathy",
+    "schulman",
+    "thiel",
+    "hoffman"
+   ],
+   "weight": 3,
+   "src": "https://openai.com/blog/introducing-openai/"
+  },
+  {
+   "date": "2016",
+   "title": "Hugging Face starts as a chatbot app",
+   "text": "Clément Delangue, Julien Chaumond and Thomas Wolf launch a chatbot for teenagers in New York. They later turn it into a hub for sharing AI models.",
+   "ids": [
+    "huggingface",
+    "delangue",
+    "chaumond",
+    "wolf"
+   ],
+   "weight": 1,
+   "src": "https://en.wikipedia.org/wiki/Hugging_Face"
+  },
+  {
+   "date": "2016-03-15",
+   "title": "AlphaGo beats Lee Sedol",
+   "text": "DeepMind's program wins four of five games against one of the world's best Go players.",
+   "ids": [
+    "deepmind",
+    "hassabis"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/AlphaGo"
+  },
+  {
+   "date": "2016-08",
+   "title": "Jensen Huang hand-delivers the first DGX-1",
+   "text": "Nvidia's first AI supercomputer goes to OpenAI. Musk thanks Huang in public.",
+   "ids": [
+    "huang",
+    "nvidia",
+    "openai",
+    "musk"
+   ],
+   "weight": 1,
+   "src": "https://www.fortune.com/2016/08/15/elon-musk-artificial-intelligence-openai-nvidia-supercomputer"
+  },
+  {
+   "date": "2017-06-12",
+   "title": "'Attention Is All You Need'",
+   "text": "Eight Google researchers, Shazeer among them, publish the Transformer. Nearly every large language model since is built on it.",
+   "ids": [
+    "brain",
+    "shazeer"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/Attention_Is_All_You_Need"
+  },
+  {
+   "date": "2017-06-20",
+   "title": "Karpathy leaves OpenAI for Tesla",
+   "text": "Musk hires him to run AI for Autopilot.",
+   "ids": [
+    "karpathy",
+    "tesla",
+    "musk",
+    "openai"
+   ],
+   "weight": 1,
+   "src": "https://en.wikipedia.org/wiki/Andrej_Karpathy"
+  },
+  {
+   "date": "2017-07-25",
+   "title": "Musk and Zuckerberg trade blows over AI risk",
+   "text": "Zuckerberg calls AI doomsday talk 'pretty irresponsible'. Musk replies that his understanding of the subject is 'limited'.",
+   "ids": [
+    "musk",
+    "zuckerberg"
+   ],
+   "weight": 1,
+   "src": "https://www.entrepreneur.com/business-news/elon-musk-says-mark-zuckerbergs-understanding-of-ai-is/297729"
+  },
+  {
+   "date": "2018",
+   "title": "Hugging Face's Transformers library",
+   "text": "Hugging Face releases a free PyTorch version of Google's BERT model. It grows into Transformers, a widely used open library for AI models.",
+   "ids": [
+    "huggingface",
+    "wolf",
+    "google"
+   ],
+   "weight": 1,
+   "src": "https://en.wikipedia.org/wiki/Hugging_Face_Transformers"
+  },
+  {
+   "date": "2018-02-20",
+   "title": "Musk leaves OpenAI's board",
+   "text": "Officially to avoid a conflict with Tesla's AI work. OpenAI later says he left after the others refused him control.",
+   "ids": [
+    "musk",
+    "openai",
+    "altman"
+   ],
+   "weight": 3,
+   "src": "https://en.wikipedia.org/wiki/OpenAI"
+  },
+  {
+   "date": "2019-03-11",
+   "title": "OpenAI adds a capped-profit arm",
+   "text": "Altman steps down as head of Y Combinator to lead OpenAI.",
+   "ids": [
+    "openai",
+    "altman",
+    "yc"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/OpenAI"
+  },
+  {
+   "date": "2019-07-22",
+   "title": "Microsoft invests $1bn in OpenAI",
+   "text": "The start of the partnership that will fund ChatGPT. Microsoft becomes OpenAI's exclusive cloud.",
+   "ids": [
+    "microsoft",
+    "openai",
+    "nadella",
+    "altman"
+   ],
+   "weight": 3,
+   "src": "https://en.wikipedia.org/wiki/OpenAI"
+  },
+  {
+   "date": "2019-12",
+   "title": "Suleyman moves from DeepMind to Google",
+   "text": "He had been placed on leave at DeepMind after staff complaints about his management.",
+   "ids": [
+    "suleyman",
+    "deepmind",
+    "google"
+   ],
+   "weight": 1,
+   "src": "https://en.wikipedia.org/wiki/Mustafa_Suleyman"
+  },
+  {
+   "date": "2019-12-03",
+   "title": "Page and Brin step back",
+   "text": "Pichai becomes CEO of Alphabet as well as Google.",
+   "ids": [
+    "page",
+    "brin",
+    "pichai",
+    "google"
+   ],
+   "weight": 1,
+   "src": "https://en.wikipedia.org/wiki/Alphabet_Inc."
+  },
+  {
+   "date": "2020-05-28",
+   "title": "GPT-3",
+   "text": "OpenAI's 175-billion-parameter model. Tom Brown is lead author. Dario Amodei leads the research, which builds on Jared Kaplan's scaling laws.",
+   "ids": [
+    "openai",
+    "brown",
+    "d_amodei",
+    "kaplan"
+   ],
+   "weight": 2,
+   "src": "https://arxiv.org/abs/2005.14165v2"
+  },
+  {
+   "date": "2020-12-29",
+   "title": "Safety researchers leave OpenAI",
+   "text": "Dario Amodei leaves with a group of OpenAI's safety and research staff. Reports say they disagreed with its direction after the Microsoft deal.",
+   "ids": [
+    "d_amodei",
+    "da_amodei",
+    "clark",
+    "olah",
+    "brown",
+    "kaplan",
+    "openai"
+   ],
+   "weight": 3,
+   "src": "https://en.wikipedia.org/wiki/Dario_Amodei"
+  },
+  {
+   "date": "2021-01",
+   "title": "Anthropic is founded",
+   "text": "Seven former OpenAI staff start a safety-focused lab, set up as a public benefit corporation.",
+   "ids": [
+    "anthropic",
+    "d_amodei",
+    "da_amodei",
+    "clark",
+    "olah",
+    "brown",
+    "kaplan"
+   ],
+   "weight": 3,
+   "src": "https://en.wikipedia.org/wiki/Anthropic"
+  },
+  {
+   "date": "2021-05-28",
+   "title": "Anthropic raises $124m",
+   "text": "Skype co-founder Jaan Tallinn leads the first round.",
+   "ids": [
+    "anthropic",
+    "tallinn"
+   ],
+   "weight": 1,
+   "src": "https://en.wikipedia.org/wiki/Anthropic"
+  },
+  {
+   "date": "2022-03",
+   "title": "Inflection AI is founded",
+   "text": "Suleyman and Hoffman start a personal-AI company.",
+   "ids": [
+    "inflection",
+    "suleyman",
+    "hoffman"
+   ],
+   "weight": 1,
+   "src": "https://en.wikipedia.org/wiki/Inflection_AI"
+  },
+  {
+   "date": "2022-04-29",
+   "title": "FTX leads Anthropic's $580m round",
+   "text": "Sam Bankman-Fried's money arrives. FTX collapses seven months later.",
+   "ids": [
+    "sbf",
+    "anthropic"
+   ],
+   "weight": 1,
+   "src": "https://en.wikipedia.org/wiki/Sam_Bankman-Fried"
+  },
+  {
+   "date": "2022-10-27",
+   "title": "Musk buys Twitter",
+   "text": "$44bn, with $1bn from Larry Ellison. He renames it X in 2023.",
+   "ids": [
+    "musk",
+    "x",
+    "ellison"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/Twitter_under_Elon_Musk"
+  },
+  {
+   "date": "2022-11-30",
+   "title": "ChatGPT launches",
+   "text": "It reaches 100 million users in about two months.",
+   "ids": [
+    "openai",
+    "altman",
+    "schulman",
+    "murati"
+   ],
+   "weight": 3,
+   "src": "https://en.wikipedia.org/wiki/ChatGPT"
+  },
+  {
+   "date": "2023-01-23",
+   "title": "Microsoft commits about $10bn more",
+   "text": "The largest bet yet on OpenAI.",
+   "ids": [
+    "microsoft",
+    "openai",
+    "nadella"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/OpenAI"
+  },
+  {
+   "date": "2023-02-03",
+   "title": "Google invests in Anthropic",
+   "text": "About $300m, plus a cloud partnership. Google now backs both DeepMind and a rival lab.",
+   "ids": [
+    "google",
+    "anthropic"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/Anthropic"
+  },
+  {
+   "date": "2023-03-09",
+   "title": "Musk sets up xAI",
+   "text": "Incorporated quietly; announced in July with Babuschkin and ten other co-founders.",
+   "ids": [
+    "musk",
+    "xai",
+    "babuschkin"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/SpaceXAI"
+  },
+  {
+   "date": "2023-04-20",
+   "title": "Google Brain and DeepMind merge",
+   "text": "Google DeepMind is formed, with Hassabis as CEO. The Brain team folded into the new lab.",
+   "ids": [
+    "brain",
+    "deepmind",
+    "hassabis",
+    "google",
+    "pichai"
+   ],
+   "weight": 3,
+   "src": "https://en.wikipedia.org/wiki/Google_DeepMind"
+  },
+  {
+   "date": "2023-05-01",
+   "title": "Hinton quits Google to warn about AI",
+   "text": "He says he wants to speak freely about the risks.",
+   "ids": [
+    "hinton",
+    "google"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/Geoffrey_Hinton"
+  },
+  {
+   "date": "2023-06-21",
+   "title": "The cage-fight challenge",
+   "text": "Musk offers to fight Zuckerberg; Zuckerberg says 'send me location'. The fight never happens.",
+   "ids": [
+    "musk",
+    "zuckerberg"
+   ],
+   "weight": 1,
+   "src": "https://gmanetwork.com/news/scitech/technology/873787/elon-musk-and-mark-zuckerberg-agreed-to-hold-a-cage-fight-challenge/story"
+  },
+  {
+   "date": "2023-08-24",
+   "title": "Big tech backs Hugging Face",
+   "text": "Google, Amazon, Nvidia, Salesforce, IBM and others invest $235m in the company.",
+   "ids": [
+    "huggingface",
+    "google",
+    "amazon",
+    "nvidia",
+    "delangue"
+   ],
+   "weight": 1,
+   "src": "https://techcrunch.com/2023/08/24/hugging-face-raises-235m-from-investors-including-salesforce-and-nvidia"
+  },
+  {
+   "date": "2023-09-25",
+   "title": "Amazon invests up to $4bn in Anthropic",
+   "text": "AWS becomes Anthropic's main cloud. Amazon doubles it to $8bn in 2024.",
+   "ids": [
+    "amazon",
+    "anthropic"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/Anthropic"
+  },
+  {
+   "date": "2023-11-17",
+   "title": "OpenAI's board fires Sam Altman",
+   "text": "Sutskever, Toner, McCauley and D'Angelo say he was 'not consistently candid'. Brockman quits. Murati is named interim CEO.",
+   "ids": [
+    "altman",
+    "openai",
+    "sutskever",
+    "toner",
+    "dangelo",
+    "brockman",
+    "murati"
+   ],
+   "weight": 3,
+   "src": "https://en.wikipedia.org/wiki/Removal_of_Sam_Altman_from_OpenAI"
+  },
+  {
+   "date": "2023-11-20",
+   "title": "Microsoft offers Altman a home",
+   "text": "Nadella says Altman and Brockman will join Microsoft. Over 700 OpenAI staff threaten to follow. Sutskever says he deeply regrets his part in the board's actions.",
+   "ids": [
+    "microsoft",
+    "nadella",
+    "altman",
+    "brockman",
+    "sutskever"
+   ],
+   "weight": 3,
+   "src": "https://fortune.com/2023/11/20/ilya-sutskever-openai-cofounder-deeply-regrets-resign/"
+  },
+  {
+   "date": "2023-11-21",
+   "title": "Altman returns",
+   "text": "A new board led by Bret Taylor takes over. D'Angelo is the only director to stay.",
+   "ids": [
+    "altman",
+    "openai",
+    "brockman",
+    "dangelo",
+    "toner"
+   ],
+   "weight": 3,
+   "src": "https://en.wikipedia.org/wiki/Removal_of_Sam_Altman_from_OpenAI"
+  },
+  {
+   "date": "2024-02-29",
+   "title": "Musk sues OpenAI and Altman",
+   "text": "He claims they abandoned the non-profit mission. OpenAI publishes his old emails in reply.",
+   "ids": [
+    "musk",
+    "openai",
+    "altman"
+   ],
+   "weight": 3,
+   "src": "https://en.wikipedia.org/wiki/Musk_v._Altman"
+  },
+  {
+   "date": "2024-03-19",
+   "title": "Microsoft takes Inflection's team",
+   "text": "Suleyman becomes CEO of Microsoft AI. Microsoft pays Inflection about $650m.",
+   "ids": [
+    "microsoft",
+    "suleyman",
+    "inflection",
+    "nadella"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/Inflection_AI"
+  },
+  {
+   "date": "2024-05-14",
+   "title": "Sutskever and Leike leave OpenAI",
+   "text": "Leike says safety culture had 'taken a backseat to shiny products'. He joins Anthropic two weeks later.",
+   "ids": [
+    "sutskever",
+    "leike",
+    "openai",
+    "anthropic"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/Jan_Leike"
+  },
+  {
+   "date": "2024-06-19",
+   "title": "Sutskever founds Safe Superintelligence",
+   "text": "With Daniel Gross and Daniel Levy. No products until it reaches its one goal.",
+   "ids": [
+    "sutskever",
+    "ssi",
+    "gross"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/Safe_Superintelligence_Inc."
+  },
+  {
+   "date": "2024-07-13",
+   "title": "Musk endorses Trump",
+   "text": "He goes on to spend more than $250m helping Trump and other Republicans win.",
+   "ids": [
+    "musk",
+    "trump"
+   ],
+   "weight": 2,
+   "src": "https://www.cbsnews.com/news/elon-musk-277-million-trump-republican-candidates-donations/"
+  },
+  {
+   "date": "2024-08-02",
+   "title": "Google re-hires Noam Shazeer",
+   "text": "A licence deal worth about $2.7bn brings the Character.AI founders back.",
+   "ids": [
+    "google",
+    "shazeer",
+    "characterai",
+    "deepmind"
+   ],
+   "weight": 1,
+   "src": "https://www.pymnts.com/artificial-intelligence-2/2024/google-reportedly-spent-2-7-billion-to-rehire-character-ai-founder/"
+  },
+  {
+   "date": "2024-08-05",
+   "title": "Schulman leaves for Anthropic",
+   "text": "Another OpenAI co-founder goes, to focus on alignment. Brockman takes a sabbatical.",
+   "ids": [
+    "schulman",
+    "anthropic",
+    "openai"
+   ],
+   "weight": 2,
+   "src": "https://techcrunch.com/2024/08/05/openai-co-founder-leaves-for-anthropic"
+  },
+  {
+   "date": "2024-09-25",
+   "title": "Mira Murati leaves OpenAI",
+   "text": "Two research leaders leave the same day.",
+   "ids": [
+    "murati",
+    "openai"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/Mira_Murati"
+  },
+  {
+   "date": "2024-10-09",
+   "title": "Nobel prizes for Hassabis and Hinton",
+   "text": "Hassabis and John Jumper share chemistry for AlphaFold. Hinton shares physics the day before.",
+   "ids": [
+    "hassabis",
+    "hinton",
+    "deepmind"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/Demis_Hassabis"
+  },
+  {
+   "date": "2025-01-21",
+   "title": "Stargate is announced at the White House",
+   "text": "Altman, Son and Ellison stand with Trump to promise $500bn of AI data centres. Musk says they don't have the money.",
+   "ids": [
+    "altman",
+    "son",
+    "ellison",
+    "trump",
+    "openai",
+    "softbank",
+    "oracle",
+    "musk"
+   ],
+   "weight": 3,
+   "src": "https://en.wikipedia.org/wiki/Stargate_LLC"
+  },
+  {
+   "date": "2025-01-27",
+   "title": "The DeepSeek shock",
+   "text": "A cheap Chinese model matches the leaders. Nvidia loses about $590bn of market value in a day.",
+   "ids": [
+    "deepseek",
+    "liang",
+    "nvidia",
+    "openai"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/DeepSeek"
+  },
+  {
+   "date": "2025-02-10",
+   "title": "Musk bids $97.4bn for OpenAI",
+   "text": "Altman replies: 'no thank you but we will buy twitter for $9.74 billion if you want'. Court filings later show Musk sought Zuckerberg's help with the bid.",
+   "ids": [
+    "musk",
+    "altman",
+    "openai",
+    "zuckerberg"
+   ],
+   "weight": 3,
+   "src": "https://www.entrepreneur.com/business-news/elon-musk-asked-mark-zuckerberg-to-help-xai-buy-openai/496246"
+  },
+  {
+   "date": "2025-02-18",
+   "title": "Murati launches Thinking Machines Lab",
+   "text": "Schulman joins her as chief scientist.",
+   "ids": [
+    "murati",
+    "tml",
+    "schulman"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/Thinking_Machines_Lab"
+  },
+  {
+   "date": "2025-03-28",
+   "title": "xAI takes over X",
+   "text": "Musk merges his social network into his AI company.",
+   "ids": [
+    "xai",
+    "x",
+    "musk"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/X_Corp."
+  },
+  {
+   "date": "2025-06-05",
+   "title": "Musk and Trump fall out",
+   "text": "Days after Musk leaves his government role, the two trade insults in public.",
+   "ids": [
+    "musk",
+    "trump"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/Trump%E2%80%93Musk_feud"
+  },
+  {
+   "date": "2025-06-12",
+   "title": "Meta buys into Scale AI",
+   "text": "$14.3bn for 49%. Alexandr Wang joins Meta to lead a new superintelligence lab.",
+   "ids": [
+    "meta",
+    "scale",
+    "wang",
+    "zuckerberg"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/Scale_AI"
+  },
+  {
+   "date": "2025-07-03",
+   "title": "Daniel Gross leaves SSI for Meta",
+   "text": "Sutskever becomes SSI's CEO, after Meta's offer to buy the company is turned down.",
+   "ids": [
+    "gross",
+    "ssi",
+    "sutskever",
+    "meta"
+   ],
+   "weight": 2,
+   "src": "https://en.wikipedia.org/wiki/Safe_Superintelligence_Inc."
+  },
+  {
+   "date": "2025-08-13",
+   "title": "Babuschkin leaves xAI",
+   "text": "The co-founder starts a fund for AI safety research.",
+   "ids": [
+    "babuschkin",
+    "xai"
+   ],
+   "weight": 1,
+   "src": "https://www.outlookbusiness.com/deeptech/artificial-intelligence/igor-babuschkin-quits-elon-musks-xai-to-launch-ai-safety-focused-venture-capital-firm"
+  },
+  {
+   "date": "2025-09-21",
+   "title": "Musk and Trump make up",
+   "text": "Three months after their public row, they shake hands at Charlie Kirk's memorial. By 2026 Musk is again the biggest known Republican donor.",
+   "ids": [
+    "musk",
+    "trump"
+   ],
+   "weight": 2,
+   "src": "https://www.fortune.com/2025/09/21/trump-elon-musk-charlie-kirk-memorial-service-feud-alliance-doge-tesla"
+  },
+  {
+   "date": "2025-10-28",
+   "title": "OpenAI finishes its restructuring",
+   "text": "The for-profit becomes a public benefit corporation. Microsoft holds about 27%.",
+   "ids": [
+    "openai",
+    "microsoft"
+   ],
+   "weight": 2,
+   "src": "https://www.aljazeera.com/economy/2025/10/28/openai-restructures-into-public-benefit-firm-microsoft-takes-27-stake"
+  },
+  {
+   "date": "2025-11-18",
+   "title": "Microsoft and Nvidia invest in Anthropic",
+   "text": "Microsoft pledges up to $5bn and Nvidia up to $10bn. Anthropic commits to buy $30bn of Azure computing.",
+   "ids": [
+    "microsoft",
+    "nvidia",
+    "anthropic"
+   ],
+   "weight": 2,
+   "src": "https://pureai.com/articles/2025/11/18/microsoft-and-nvidia-deepen-ties-with-anthropic.aspx"
+  },
+  {
+   "date": "2025-11-19",
+   "title": "LeCun says he will leave Meta",
+   "text": "Meta's chief AI scientist leaves at the end of 2025. He co-founds AMI Labs to build 'world models'.",
+   "ids": [
+    "lecun",
+    "meta",
+    "ami"
+   ],
+   "weight": 1,
+   "src": "https://www.news4jax.com/business/2025/11/19/metas-chief-ai-scientist-yann-lecun-to-leave-meta-and-start-new-ai-research-company/"
+  },
+  {
+   "date": "2026-01-14",
+   "title": "Thinking Machines co-founders go back to OpenAI",
+   "text": "Murati says the lab has parted ways with its CTO, Barret Zoph. Within an hour, OpenAI says Zoph and co-founder Luke Metz are rejoining.",
+   "ids": [
+    "tml",
+    "murati",
+    "zoph",
+    "openai"
+   ],
+   "weight": 2,
+   "src": "https://techcrunch.com/2026/01/14/mira-muratis-startup-thinking-machines-lab-is-losing-two-of-its-co-founders-to-openai"
+  },
+  {
+   "date": "2026-02-02",
+   "title": "SpaceX buys xAI",
+   "text": "Musk folds his AI company, and X with it, into SpaceX in an all-stock deal. He says the aim is AI data centres in space.",
+   "ids": [
+    "spacex",
+    "xai",
+    "musk"
+   ],
+   "weight": 2,
+   "src": "https://abcnews.go.com/Technology/wireStory/elon-musk-merging-spacex-artificial-intelligence-company-xai-129796634"
+  },
+  {
+   "date": "2026-02-27",
+   "title": "The Pentagon blacklists Anthropic",
+   "text": "Anthropic will not let the military use Claude for mass domestic surveillance or fully autonomous weapons. Trump orders agencies to stop using it. Hours later, OpenAI announces a Pentagon deal.",
+   "ids": [
+    "anthropic",
+    "d_amodei",
+    "trump",
+    "openai",
+    "altman"
+   ],
+   "weight": 3,
+   "src": "https://techcrunch.com/2026/02/27/president-trump-orders-federal-agencies-to-stop-using-anthropic-after-pentagon-dispute/"
+  },
+  {
+   "date": "2026-02-27",
+   "title": "OpenAI raises $110bn",
+   "text": "Amazon commits $50bn; Nvidia and SoftBank put in $30bn each. Nvidia's 2025 letter promising up to $100bn is dropped.",
+   "ids": [
+    "openai",
+    "amazon",
+    "nvidia",
+    "softbank"
+   ],
+   "weight": 2,
+   "src": "https://www.aol.com/articles/openai-just-closed-110-billion-134637714.html"
+  },
+  {
+   "date": "2026-03-10",
+   "title": "LeCun's AMI Labs raises $1.03bn",
+   "text": "The Paris lab raises money to build 'world models'. Backers include Nvidia and Jeff Bezos.",
+   "ids": [
+    "ami",
+    "lecun",
+    "nvidia"
+   ],
+   "weight": 1,
+   "src": "https://siliconangle.com/2026/03/10/yann-lecuns-new-startup-ami-labs-raises-1-03b-train-world-models/"
+  },
+  {
+   "date": "2026-03-28",
+   "title": "The last xAI co-founder leaves",
+   "text": "All 11 people who co-founded xAI with Musk have now gone. Musk says he is rebuilding it from the ground up.",
+   "ids": [
+    "xai",
+    "musk",
+    "spacex"
+   ],
+   "weight": 1,
+   "src": "https://thenextweb.com/news/xai-all-cofounders-departed-musk-spacex-rebuild"
+  },
+  {
+   "date": "2026-04-24",
+   "title": "Google pledges up to $40bn to Anthropic",
+   "text": "It comes four days after Amazon pledges up to $25bn more. Both deals tie Anthropic to their chips and clouds.",
+   "ids": [
+    "google",
+    "amazon",
+    "anthropic"
+   ],
+   "weight": 2,
+   "src": "https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic"
+  },
+  {
+   "date": "2026-05-18",
+   "title": "Jury rejects Musk's case against OpenAI",
+   "text": "A federal jury in Oakland finds that Musk sued too late. It does not rule on the merits. His lawyer says he will appeal.",
+   "ids": [
+    "musk",
+    "openai",
+    "altman"
+   ],
+   "weight": 3,
+   "src": "https://www.aljazeera.com/news/2026/5/18/elon-musk-loses-lawsuit-against-openai"
+  },
+  {
+   "date": "2026-05-19",
+   "title": "Karpathy joins Anthropic",
+   "text": "The OpenAI co-founder puts his education company on hold. He will build a team that uses Claude to speed up pre-training research.",
+   "ids": [
+    "karpathy",
+    "anthropic",
+    "eureka"
+   ],
+   "weight": 2,
+   "src": "https://www.cnbc.com/2026/05/19/anthropic-hires-openai-cofounder-andrej-karpathy-former-tesla-ai-lead.html"
+  },
+  {
+   "date": "2026-06-12",
+   "title": "SpaceX goes public",
+   "text": "Its shares start trading on Nasdaq after the biggest share sale on record, raising $75bn. The company now owns xAI and X.",
+   "ids": [
+    "spacex",
+    "xai",
+    "musk"
+   ],
+   "weight": 3,
+   "src": "https://www.cnn.com/2026/06/12/business/live-news/spacex-goes-public-ipo"
+  },
+  {
+   "date": "2026-06-17",
+   "title": "Shazeer leaves Google for OpenAI",
+   "text": "The Gemini co-lead joins OpenAI less than two years after Google paid about $2.7bn to bring him back.",
+   "ids": [
+    "shazeer",
+    "google",
+    "deepmind",
+    "openai"
+   ],
+   "weight": 2,
+   "src": "https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html"
+  },
+  {
+   "date": "2026-07-27",
+   "title": "Nvidia backs Sutskever's SSI",
+   "text": "Nvidia invests a reported $5bn and gives the lab its newest chips. SSI has still not released a product.",
+   "ids": [
+    "nvidia",
+    "ssi",
+    "sutskever"
+   ],
+   "weight": 1,
+   "src": "https://www.thestar.com.my/tech/tech-news/2026/07/28/nvidia-to-invest-5-billion-in-ilya-sutskever039s-ai-startup-source-says"
+  },
+  {
+   "date": "2026-08-27",
+   "title": "Judge rules the Anthropic ban unlawful",
+   "text": "Judge Rita Lin finds the Pentagon punished Anthropic for speaking out. She sets the blacklisting aside. The government is expected to appeal.",
+   "ids": [
+    "anthropic",
+    "trump"
+   ],
+   "weight": 2,
+   "src": "https://www.aljazeera.com/news/2026/8/28/us-judge-blocks-pentagon-blacklisting-of-ai-firm-anthropic"
+  },
+  {
+   "date": "2026-09-03",
+   "title": "Nvidia agrees to buy Hugging Face",
+   "text": "About $12.9bn, including $1bn to keep its staff. Nvidia promises the platform stays open to all. Regulators must still approve it.",
+   "ids": [
+    "nvidia",
+    "huggingface",
+    "huang",
+    "delangue"
+   ],
+   "weight": 2,
+   "src": "https://www.cnbc.com/2026/09/03/nvidia-agrees-to-buy-hugging-face-for-almost-13-billion-ai-expansion.html"
+  },
+  {
+   "date": "2026-10-26",
+   "title": "Anthropic's IPO prospectus goes public",
+   "text": "It plans to list on Nasdaq as 'ANT'. Price and share count are not set yet.",
+   "ids": [
+    "anthropic",
+    "d_amodei",
+    "da_amodei"
+   ],
+   "weight": 3,
+   "src": "https://www.sec.gov/Archives/edgar/data/0002130357/000162828026067168/anthropicpbc-sx1.htm"
+  },
+  {
+   "date": "2026-06-01",
+   "title": "Anthropic files in confidence to go public",
+   "text": "It sends a draft prospectus to the SEC. The terms stay private for now.",
+   "ids": [
+    "anthropic"
+   ],
+   "weight": 1,
+   "src": "https://en.ain.ua/2026/06/02/anthropic-filed-a-confidential-ipo-application-in-doing-so-the-company-has-overtaken-rival-openai/"
+  },
+  {
+   "date": "2026-06-08",
+   "title": "OpenAI files in confidence to go public",
+   "text": "A week after Anthropic. It sets no date.",
+   "ids": [
+    "openai",
+    "altman"
+   ],
+   "weight": 1,
+   "src": "https://www.eweek.com/news/openai-confidential-ipo-filing-sec/"
+  },
+  {
+   "date": "2026-10-12",
+   "title": "Character.AI files for bankruptcy",
+   "text": "Lawsuits over harm to children weigh on it. Disney bids first, for a licence to its technology.",
+   "ids": [
+    "characterai"
+   ],
+   "weight": 1,
+   "src": "https://cbsnews.com/news/character-ai-files-bankruptcy-disney-license/"
+  },
+  {
+   "date": "2026-08-14",
+   "title": "SpaceX completes its purchase of Cursor",
+   "text": "SpaceX closes its all-stock purchase of the AI coding company, worth about $60bn. It agreed the deal in June.",
+   "ids": [
+    "spacex",
+    "xai",
+    "musk"
+   ],
+   "weight": 2,
+   "src": "https://gigazine.net/gsc_news/en/20260816-spacex-officially-closes-cursor-acquisition/"
+  },
+  {
+   "date": "2026-08-05",
+   "title": "Hassabis steps back at Google DeepMind",
+   "text": "He becomes its chair and Alphabet's chief scientist. Koray Kavukcuoglu runs the lab day to day.",
+   "ids": [
+    "hassabis",
+    "deepmind",
+    "pichai"
+   ],
+   "weight": 2,
+   "src": "https://semafor.com/article/08/05/2026/google-deepmind-boss-steps-down"
+  },
+  {
+   "date": "2026-09-25",
+   "title": "Appeals court upholds the Pentagon's Anthropic ban",
+   "text": "A Washington appeals court backs the Defense Department's ban, 2 to 1. The California ruling on the wider federal ban still stands.",
+   "ids": [
+    "anthropic",
+    "trump"
+   ],
+   "weight": 2,
+   "src": "https://breakingdefense.com/2026/09/dc-circuit-panel-upholds-pentagons-ban-on-anthropic-so-what-comes-next/"
+  }
+ ]
+}
