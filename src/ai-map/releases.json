@@ -1,0 +1,539 @@
+[
+ {
+  "date": "2013-07-29",
+  "org": "google",
+  "title": "word2vec",
+  "text": "Google's open-source tool turned words into lists of numbers that capture meaning. It became a standard building block for language AI.",
+  "weight": 1,
+  "src": "https://en.wikipedia.org/wiki/Word2vec"
+ },
+ {
+  "date": "2014-11-06",
+  "org": "amazon",
+  "title": "Echo and Alexa",
+  "text": "Amazon launched the Echo speaker with the Alexa voice assistant. It put a talking AI assistant into millions of homes.",
+  "weight": 1,
+  "src": "https://fortune.com/2014/11/06/forget-siri-amazon-now-brings-you-alexa"
+ },
+ {
+  "date": "2015-11-09",
+  "org": "brain",
+  "title": "TensorFlow",
+  "text": "Google Brain open-sourced its machine-learning software. It gave researchers and companies free tools to build neural networks.",
+  "weight": 1,
+  "src": "https://research.google/blog/tensorflow-googles-latest-machine-learning-system-open-sourced-for-everyone/"
+ },
+ {
+  "date": "2016-03-23",
+  "org": "microsoft",
+  "title": "Tay",
+  "text": "Microsoft's Twitter chatbot learned abuse from users and posted offensive tweets. Microsoft took it offline within a day.",
+  "weight": 1,
+  "src": "https://en.wikipedia.org/wiki/Tay_(chatbot)"
+ },
+ {
+  "date": "2017-01",
+  "org": "meta",
+  "title": "PyTorch",
+  "text": "Facebook's AI lab released PyTorch, a flexible deep-learning toolkit. It became the main tool for AI research.",
+  "weight": 1,
+  "src": "https://venturebeat.com/ai/facebook-to-release-pytorch-1-0-and-open-source-ai-tools-for-translation-and-gameplay"
+ },
+ {
+  "date": "2018-06-11",
+  "org": "openai",
+  "title": "GPT-1",
+  "text": "OpenAI showed a model pre-trained on raw text could then be tuned for many tasks. It started the GPT line.",
+  "weight": 1,
+  "src": "https://en.wikipedia.org/wiki/GPT-1"
+ },
+ {
+  "date": "2018-11-02",
+  "org": "google",
+  "title": "BERT",
+  "text": "Google open-sourced BERT, a language model pre-trained on large amounts of text. It beat previous records on 11 language tasks.",
+  "weight": 2,
+  "src": "https://research.google/blog/open-sourcing-bert-state-of-the-art-pre-training-for-natural-language-processing/"
+ },
+ {
+  "date": "2019-02-14",
+  "org": "openai",
+  "title": "GPT-2",
+  "text": "OpenAI held back its full GPT-2 model, saying it could be misused for fake news. It released it in stages instead.",
+  "weight": 1,
+  "src": "https://www.thedrum.com/news/2019/02/17/ai-text-writing-technology-too-dangerous-release-creators-claim"
+ },
+ {
+  "date": "2020-05-28",
+  "org": "openai",
+  "title": "GPT-3",
+  "text": "OpenAI's model, with 175 billion internal settings, learned new tasks from a few examples. OpenAI sold access to developers, not the model.",
+  "weight": 2,
+  "src": "https://openai.com/index/language-models-are-few-shot-learners"
+ },
+ {
+  "date": "2020-11-30",
+  "org": "deepmind",
+  "title": "AlphaFold 2",
+  "text": "DeepMind's AlphaFold 2 predicted protein shapes about as well as lab experiments at a scientific contest. Biologists called the problem largely solved.",
+  "weight": 2,
+  "src": "https://en.wikipedia.org/wiki/AlphaFold"
+ },
+ {
+  "date": "2021-01-05",
+  "org": "openai",
+  "title": "DALL·E and CLIP",
+  "text": "OpenAI showed DALL·E, which drew pictures from text descriptions, and CLIP, which matched images to words.",
+  "weight": 1,
+  "src": "https://www.axios.com/2021/01/05/openai-artificial-intelligence-model-images-dall-e"
+ },
+ {
+  "date": "2021-06-29",
+  "org": "microsoft",
+  "title": "GitHub Copilot",
+  "text": "GitHub, owned by Microsoft, previewed Copilot, which suggests code as you type. It ran on OpenAI's Codex model.",
+  "weight": 1,
+  "src": "https://github.blog/2021/06/29/introducing-github-copilot-ai-pair-programmer/"
+ },
+ {
+  "date": "2022-03-22",
+  "org": "nvidia",
+  "title": "H100 chip",
+  "text": "Nvidia announced the H100 'Hopper' chip. It became the most sought-after hardware for training large AI models.",
+  "weight": 1,
+  "src": "https://bigdatawire.com/2022/03/22/nvidia-launches-hopper-h100-gpu-new-dgxs-and-grace-megachips"
+ },
+ {
+  "date": "2022-04-04",
+  "org": "google",
+  "title": "PaLM",
+  "text": "Google's PaLM had 540 billion internal settings and trained on 6,144 chips. It showed reasoning improving as models grew.",
+  "weight": 1,
+  "src": "https://research.google/blog/pathways-language-model-palm-scaling-to-540-billion-parameters-for-breakthrough-performance/"
+ },
+ {
+  "date": "2022-07-12",
+  "org": "huggingface",
+  "title": "BLOOM",
+  "text": "Over 1,000 researchers, coordinated by Hugging Face, released a 176-billion-setting model covering 46 languages. Anyone could download it.",
+  "weight": 1,
+  "src": "https://huggingface.co/blog/bloom"
+ },
+ {
+  "date": "2022-08-22",
+  "org": null,
+  "orgName": "Stability AI",
+  "title": "Stable Diffusion",
+  "text": "Stability AI released an image generator whose model files anyone could download. It ran on home computers and spread fast.",
+  "weight": 2,
+  "src": "https://petapixel.com/2022/08/23/open-source-ai-image-generator-stable-diffusion-released-to-the-public/"
+ },
+ {
+  "date": "2022-09-16",
+  "org": "characterai",
+  "title": "Character.AI beta",
+  "text": "Ex-Google engineers Noam Shazeer and Daniel De Freitas opened their chatbot site to the public. Users talk to AI characters.",
+  "weight": 1,
+  "src": "https://en.wikipedia.org/wiki/Character.ai"
+ },
+ {
+  "date": "2022-11-30",
+  "org": "openai",
+  "title": "ChatGPT",
+  "text": "OpenAI released a free chatbot as a 'research preview'. It reached 100 million users in about two months.",
+  "weight": 2,
+  "src": "https://openfuture.eu/note/open-ai-releases-chatgpt/"
+ },
+ {
+  "date": "2023-02-06",
+  "org": "google",
+  "title": "Bard",
+  "text": "Google announced its Bard chatbot, built on its LaMDA model, to answer ChatGPT. It opened first to trusted testers.",
+  "weight": 1,
+  "src": "https://wraltechwire.com/2023/02/06/google-to-offer-chatgpt-rival-meet-bard/"
+ },
+ {
+  "date": "2023-02-07",
+  "org": "microsoft",
+  "title": "New Bing",
+  "text": "Microsoft built OpenAI's model into Bing search. Satya Nadella said he wanted Google to 'show that they can dance'.",
+  "weight": 1,
+  "src": "https://techcrunch.com/2023/02/07/microsoft-launches-the-new-bing-with-chatgpt-built-in/"
+ },
+ {
+  "date": "2023-02-24",
+  "org": "meta",
+  "title": "LLaMA",
+  "text": "Meta shared its LLaMA model with researchers. The files leaked online within about a week, and other open models followed.",
+  "weight": 2,
+  "src": "https://www.deeplearning.ai/the-batch/how-metas-llama-nlp-model-leaked"
+ },
+ {
+  "date": "2023-03-14",
+  "org": "openai",
+  "title": "GPT-4",
+  "text": "OpenAI's GPT-4 accepted images as well as text. It scored at human level on many professional and academic exams.",
+  "weight": 2,
+  "src": "https://en.wikipedia.org/wiki/GPT-4"
+ },
+ {
+  "date": "2023-03-14",
+  "org": "anthropic",
+  "title": "Claude",
+  "text": "Anthropic, founded by former OpenAI staff, opened its Claude assistant to wider use. It came as Claude and the cheaper Claude Instant.",
+  "weight": 1,
+  "src": "https://www.anthropic.com/news/introducing-claude"
+ },
+ {
+  "date": "2023-05-02",
+  "org": "inflection",
+  "title": "Pi",
+  "text": "Inflection, led by DeepMind co-founder Mustafa Suleyman, launched Pi, a chatbot built for supportive personal conversation rather than work.",
+  "weight": 1,
+  "src": "https://www.businesswire.com/news/home/20230502006113/en/"
+ },
+ {
+  "date": "2023-07-18",
+  "org": "meta",
+  "title": "Llama 2",
+  "text": "Meta released Llama 2 free for research and commercial use, with Microsoft as launch partner. Companies could now build products on it.",
+  "weight": 1,
+  "src": "https://www.axios.com/2023/07/18/meta-llama-2-release-commercial-use"
+ },
+ {
+  "date": "2023-09-27",
+  "org": "mistral",
+  "title": "Mistral 7B",
+  "text": "Paris start-up Mistral released its first model as a free torrent download. The licence allowed any use.",
+  "weight": 1,
+  "src": "https://techcrunch.com/2023/09/27/mistral-ai-makes-its-first-large-language-model-free-for-everyone/"
+ },
+ {
+  "date": "2023-11-03",
+  "org": "xai",
+  "title": "Grok",
+  "text": "Elon Musk's xAI launched Grok, a chatbot with live access to posts on X. Musk pitched it against OpenAI.",
+  "weight": 1,
+  "src": "https://en.wikipedia.org/wiki/Grok_(chatbot)"
+ },
+ {
+  "date": "2023-12-06",
+  "org": "deepmind",
+  "title": "Gemini 1.0",
+  "text": "Google DeepMind launched Gemini in three sizes, built to handle text, images and sound together. It was Google's answer to GPT-4.",
+  "weight": 1,
+  "src": "https://9to5google.com/2023/12/06/google-gemini-1-0/"
+ },
+ {
+  "date": "2024-02-15",
+  "org": "openai",
+  "title": "Sora",
+  "text": "OpenAI previewed Sora, which made realistic video clips up to a minute long from a text prompt.",
+  "weight": 1,
+  "src": "https://www.axios.com/2024/02/15/openai-text-to-video-sora"
+ },
+ {
+  "date": "2024-03-04",
+  "org": "anthropic",
+  "title": "Claude 3",
+  "text": "Anthropic's Claude 3 family came in three sizes: Haiku, Sonnet and Opus. Anthropic said Opus beat GPT-4 on several tests.",
+  "weight": 1,
+  "src": "https://www.anthropic.com/news/claude-3-family"
+ },
+ {
+  "date": "2024-03-16",
+  "org": "tesla",
+  "title": "FSD v12",
+  "text": "Tesla rolled out driving software run by one AI model trained on video. It replaced over 300,000 lines of hand-written code.",
+  "weight": 1,
+  "src": "https://electrek.co/2024/03/16/tesla-full-self-driving-beta-v12-finally-rolls-out/"
+ },
+ {
+  "date": "2024-05-13",
+  "org": "openai",
+  "title": "GPT-4o",
+  "text": "OpenAI's GPT-4o handled text, sound and images in one model. It could hold a spoken conversation with little delay.",
+  "weight": 1,
+  "src": "https://www.axios.com/2024/05/13/openai-google-chatgpt-ai"
+ },
+ {
+  "date": "2024-07-23",
+  "org": "meta",
+  "title": "Llama 3.1 405B",
+  "text": "Meta released a 405-billion-setting model it called the first frontier-level open model. Zuckerberg argued open source was the path forward.",
+  "weight": 1,
+  "src": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
+ },
+ {
+  "date": "2024-09-12",
+  "org": "openai",
+  "title": "o1",
+  "text": "OpenAI's o1 was trained to 'think' step by step before answering. Other labs released reasoning models after it.",
+  "weight": 2,
+  "src": "https://openai.com/index/introducing-openai-o1-preview/"
+ },
+ {
+  "date": "2024-09-26",
+  "org": "huggingface",
+  "title": "Hub passes 1 million models",
+  "text": "Hugging Face's Hub, the main site for sharing AI models, passed one million public models.",
+  "weight": 1,
+  "src": "https://gigazine.net/gsc_news/en/20240928-hugging-face-ai-models"
+ },
+ {
+  "date": "2024-11-25",
+  "org": "anthropic",
+  "title": "Model Context Protocol",
+  "text": "Anthropic published the Model Context Protocol, an open standard for linking AI assistants to outside tools and data. Rivals later adopted it.",
+  "weight": 1,
+  "src": "https://www.anthropic.com/news/model-context-protocol"
+ },
+ {
+  "date": "2024-12-03",
+  "org": "amazon",
+  "title": "Amazon Nova",
+  "text": "Amazon launched Nova, its own AI models for text, images and video. Amazon was also Anthropic's largest investor.",
+  "weight": 1,
+  "src": "https://www.nasdaq.com/press-release/introducing-amazon-nova-new-generation-foundation-models-2024-12-03"
+ },
+ {
+  "date": "2024-12-26",
+  "org": "deepseek",
+  "title": "DeepSeek-V3",
+  "text": "Chinese lab DeepSeek released a downloadable model close to the best, with a reported $5.6 million final training run.",
+  "weight": 1,
+  "src": "https://the-decoder.com/deepseeks-5-6m-chinese-llm-wonder-shakes-up-the-ai-elite/"
+ },
+ {
+  "date": "2025-01",
+  "org": "scale",
+  "title": "Humanity's Last Exam",
+  "text": "Scale AI and the Center for AI Safety published Humanity's Last Exam, about 3,000 expert questions. Top models scored under 10%.",
+  "weight": 1,
+  "src": "https://scale.com/blog/humanitys-last-exam-results"
+ },
+ {
+  "date": "2025-01-20",
+  "org": "deepseek",
+  "title": "DeepSeek-R1",
+  "text": "DeepSeek's free reasoning model rivalled OpenAI's o1. A week later Nvidia lost nearly $600 billion in market value in a day.",
+  "weight": 2,
+  "src": "https://gigazine.net/gsc_news/en/20250128-deepseek-tech-stock-sell-app-store"
+ },
+ {
+  "date": "2025-02-17",
+  "org": "xai",
+  "title": "Grok 3",
+  "text": "xAI launched Grok 3, trained on its Colossus supercomputer. Musk called it the 'smartest AI on Earth'.",
+  "weight": 1,
+  "src": "https://www.wionews.com/science-technology/smartest-ai-on-earth-elon-musk-to-launch-grok-3-today-all-about-it-8730196"
+ },
+ {
+  "date": "2025-02-24",
+  "org": "anthropic",
+  "title": "Claude Code",
+  "text": "Anthropic previewed Claude Code, a tool that reads, edits and tests code by itself from a developer's terminal.",
+  "weight": 2,
+  "src": "https://www.anthropic.com/news/claude-3-7-sonnet"
+ },
+ {
+  "date": "2025-03-25",
+  "org": "deepmind",
+  "title": "Gemini 2.5 Pro",
+  "text": "Google's Gemini 2.5 Pro, a model that reasons before answering, topped the LMArena leaderboard of user preferences.",
+  "weight": 1,
+  "src": "https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/"
+ },
+ {
+  "date": "2025-04-05",
+  "org": "meta",
+  "title": "Llama 4",
+  "text": "Meta released Llama 4, open models built for text and images. A row over its leaderboard testing followed.",
+  "weight": 1,
+  "src": "https://www.techtarget.com/whatis/feature/Meta-Llama-4-explained-Everything-you-need-to-know"
+ },
+ {
+  "date": "2025-05-22",
+  "org": "anthropic",
+  "title": "Claude 4",
+  "text": "Anthropic released Claude Opus 4 and Sonnet 4, aimed at coding and long tasks. Claude Code became generally available.",
+  "weight": 1,
+  "src": "https://www.anthropic.com/news/claude-4"
+ },
+ {
+  "date": "2025-07-09",
+  "org": "xai",
+  "title": "Grok 4",
+  "text": "xAI launched Grok 4 and a $300-a-month 'Heavy' tier. It came days after Grok posted antisemitic replies on X.",
+  "weight": 1,
+  "src": "https://techcrunch.com/2025/07/09/elon-musks-xai-launches-grok-4-alongside-a-300-monthly-subscription"
+ },
+ {
+  "date": "2025-08-05",
+  "org": "openai",
+  "title": "gpt-oss",
+  "text": "OpenAI released gpt-oss, its first downloadable models since GPT-2 in 2019. The licence allowed commercial use.",
+  "weight": 1,
+  "src": "https://openai.com/en/index/introducing-gpt-oss/"
+ },
+ {
+  "date": "2025-08-07",
+  "org": "openai",
+  "title": "GPT-5",
+  "text": "OpenAI's GPT-5 put fast and reasoning models behind an automatic switch. Users objected, and OpenAI brought back GPT-4o within days.",
+  "weight": 2,
+  "src": "https://infoq.com/news/2025/08/openai-gpt5-release"
+ },
+ {
+  "date": "2025-08-28",
+  "org": "microsoft",
+  "title": "MAI-1-preview",
+  "text": "Microsoft AI, led by Mustafa Suleyman, unveiled MAI-1-preview, its first large model built fully in-house.",
+  "weight": 1,
+  "src": "https://www.neowin.net/news/microsoft-reveals-two-in-house-ai-models-mai-voice-1-and-mai-1-preview/"
+ },
+ {
+  "date": "2025-10-01",
+  "org": "tml",
+  "title": "Tinker",
+  "text": "Mira Murati's Thinking Machines Lab launched Tinker, its first product: a service for customising open models with your own data.",
+  "weight": 1,
+  "src": "https://venturebeat.com/ai/thinking-machines-first-official-product-is-here-meet-tinker-an-api-for"
+ },
+ {
+  "date": "2025-11-18",
+  "org": "deepmind",
+  "title": "Gemini 3",
+  "text": "Google's Gemini 3 led many tests on release. Sam Altman then declared a 'code red' at OpenAI.",
+  "weight": 1,
+  "src": "https://aimagazine.com/news/openai-hits-code-red-after-googles-gemini-3"
+ },
+ {
+  "date": "2025-12-02",
+  "org": "mistral",
+  "title": "Mistral 3",
+  "text": "Mistral released its Mistral 3 family, topped by Large 3, as downloadable models free for any use.",
+  "weight": 1,
+  "src": "https://decrypt.co/350796/mistral-frontier-ai-family-deepseek"
+ },
+ {
+  "date": "2026-03",
+  "org": "nvidia",
+  "title": "Nemotron 3 Super",
+  "text": "Nvidia released Nemotron 3 Super, a free 120-billion-setting model, and published its training data.",
+  "weight": 1,
+  "src": "https://dataconomy.com/2026/03/12/nvidia-launches-120b-parameter-nemotron-3-super-open-model/"
+ },
+ {
+  "date": "2026-03-05",
+  "org": "openai",
+  "title": "GPT-5.4",
+  "text": "OpenAI's GPT-5.4 was its first general model able to operate a computer by reading the screen and using mouse and keyboard.",
+  "weight": 1,
+  "src": "https://interestingengineering.com/ai-robotics/gpt-5-4-openai-ai-model-release"
+ },
+ {
+  "date": "2026-04-07",
+  "org": "anthropic",
+  "title": "Claude Mythos Preview",
+  "text": "Anthropic withheld Claude Mythos Preview because it could find and exploit software flaws. Selected partners used it to fix them.",
+  "weight": 2,
+  "src": "https://www.anthropic.com/glasswing"
+ },
+ {
+  "date": "2026-04-08",
+  "org": "meta",
+  "title": "Muse Spark",
+  "text": "Meta Superintelligence Labs released Muse Spark, its first model, after Llama 4 disappointed. Unlike Llama, it launched closed.",
+  "weight": 1,
+  "src": "https://www.cnbc.com/2026/04/08/meta-debuts-first-major-ai-model-since-14-billion-deal-to-bring-in-alexandr-wang.html"
+ },
+ {
+  "date": "2026-04-23",
+  "org": "openai",
+  "title": "GPT-5.5",
+  "text": "GPT-5.5 was OpenAI's first newly pre-trained base model since GPT-4.5, aimed at long multi-step work. API prices doubled.",
+  "weight": 1,
+  "src": "https://cryptobriefing.com/openai-releases-gpt-55-outperforming-gpt-54-for-paid-chatgpt-users/"
+ },
+ {
+  "date": "2026-04-24",
+  "org": "deepseek",
+  "title": "DeepSeek V4",
+  "text": "DeepSeek previewed V4: a 1.6-trillion-setting Pro model and a smaller Flash model. Both could read about 750,000 words at once.",
+  "weight": 1,
+  "src": "https://api-docs.deepseek.com/news/news260424/"
+ },
+ {
+  "date": "2026-05-19",
+  "org": "deepmind",
+  "title": "Gemini 3.5 and Omni",
+  "text": "At Google I/O, Google released Gemini 3.5 Flash and Gemini Omni, which makes video from mixed inputs. Gemini 3.5 Pro was delayed.",
+  "weight": 1,
+  "src": "https://macrumors.com/2026/05/19/google-io-2026-roundup/"
+ },
+ {
+  "date": "2026-06-09",
+  "org": "anthropic",
+  "title": "Claude Fable 5",
+  "text": "Anthropic released Claude Fable 5, a public version of Mythos with added safeguards. Mythos 5, without them, went only to vetted organisations.",
+  "weight": 1,
+  "src": "https://platform.claude.com/docs/en/models/fable-5/overview"
+ },
+ {
+  "date": "2026-07-08",
+  "org": "xai",
+  "title": "Grok 4.5",
+  "text": "xAI, now part of SpaceX, launched Grok 4.5 for coding and multi-step tasks. It was trained with Cursor, which SpaceX was buying.",
+  "weight": 1,
+  "src": "https://www.thestar.com.my/tech/tech-news/2026/07/09/spacexai-launches-grok-45-model-for-coding-agentic-tasks"
+ },
+ {
+  "date": "2026-07-15",
+  "org": "tml",
+  "title": "Inkling",
+  "text": "Thinking Machines released Inkling, its first model, as free-to-download files. The lab said it was not the strongest available.",
+  "weight": 1,
+  "src": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/"
+ },
+ {
+  "date": "2026-07-24",
+  "org": "anthropic",
+  "title": "Claude Opus 5",
+  "text": "Anthropic's Claude Opus 5 came close to Fable 5 on many tasks at about half the price.",
+  "weight": 1,
+  "src": "https://www.anthropic.com/news/claude-opus-5"
+ },
+ {
+  "date": "2026-09-03",
+  "org": "openai",
+  "title": "GPT-6 Astra",
+  "text": "OpenAI's GPT-6 Astra was its first model rated 'Critical' for cyber-attack ability. Access began with vetted business customers.",
+  "weight": 2,
+  "src": "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html"
+ },
+ {
+  "date": "2026-09-30",
+  "org": "deepmind",
+  "title": "Gemini 4 Argon",
+  "text": "Google released Gemini 4 Argon, its most powerful model, to cyber-defence partners first. Public access had no date.",
+  "weight": 1,
+  "src": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/"
+ },
+ {
+  "date": "2026-10-06",
+  "org": "mistral",
+  "title": "Mistral Large 4",
+  "text": "Mistral previewed Large 4, a model with about one trillion settings. It promised free-to-download files by the end of October.",
+  "weight": 1,
+  "src": "https://mistral.ai/news/mistral-large-4/"
+ },
+ {
+  "date": "2026-10-15",
+  "org": "meta",
+  "title": "Muse Spark Open",
+  "text": "Meta released Muse Spark Open as free-to-download files. It was Meta's return to open models after April's closed launch.",
+  "weight": 1,
+  "src": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/"
+ }
+]

@@ -1,0 +1,5 @@
+src/ai-map/index.html
+src/ai-map/index.test.html
+src/ai-map/faces/*.tmp
+__pycache__/
+.DS_Store
