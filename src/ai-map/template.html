@@ -235,6 +235,18 @@ details.vall summary { cursor: pointer; color: var(--navy); font-weight: 600; }
 .about p { font-size: 13px; }
 .about .addr { user-select: all; font-weight: 600; color: var(--navy); }
 
+/* Key box: opened from "How to read it" in the header */
+.keybtn { border-left: 1px solid var(--hair); padding-left: 14px; margin-left: 4px; }
+.keybox {
+  position: absolute; top: 12px; right: calc(var(--panel-w) + 16px); width: min(340px, calc(100% - 32px)); max-height: calc(100% - 24px); overflow-y: auto;
+  background: var(--paper); border: 1px solid var(--hair); box-shadow: 0 8px 24px rgba(36, 49, 92, 0.10); padding: 14px 18px 12px; z-index: 6;
+}
+.kb-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 4px; }
+.kb-head h3 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 18px; color: var(--navy); }
+.kb-close { border: 0; background: none; font-size: 22px; line-height: 1; color: var(--navy); cursor: pointer; padding: 0 2px; }
+.kb-how { margin: 8px 0 0; font-size: 13px; color: var(--ink); }
+.keybox .legend .lg { cursor: default; }
+
 /* Tooltip */
 .tip { position: absolute; z-index: 6; pointer-events: none; padding: 7px 10px; background: var(--paper); border: 1px solid var(--hair); font-size: 13px; max-width: 260px; box-shadow: 0 4px 14px rgba(36, 49, 92, 0.08); }
 .tip b { display: block; font-weight: 700; color: var(--navy); }
@@ -278,6 +290,8 @@ details.vall summary { cursor: pointer; color: var(--navy); font-weight: 600; }
   .brand { flex: 1; }
   .flows { flex-wrap: nowrap; overflow-x: auto; width: 100%; order: 3; scrollbar-width: none; }
   .guide-btn { display: inline-flex; order: 2; border: 1px solid var(--hair); padding: 0 12px; }
+  .keybtn { order: 2; border-left: 0; margin-left: 0; padding-left: 2px; }
+  .keybox { right: 12px; left: 12px; width: auto; top: 8px; }
   .caption { width: auto; right: 0; border-right: 0; padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-top: 12px; }
   .cap-title { font-size: 20px; }
   .cap-text { font-size: 13px; }
@@ -320,6 +334,7 @@ details.vall summary { cursor: pointer; color: var(--navy); font-weight: 600; }
       <button class="tog" data-cat="release" aria-pressed="true"><svg class="sw" viewBox="0 0 20 8"><rect x="2" y="0.5" width="16" height="7" rx="3.5" fill="var(--navy)"/></svg>Releases</button>
       <button class="tog" id="f-past" aria-pressed="false" title="Keep a faint trace of relationships that have ended">Past links</button>
     </div>
+    <button class="tog keybtn" id="key-btn" aria-expanded="false" aria-controls="keybox">How to read it</button>
     <button class="tog guide-btn" id="guide-btn" aria-expanded="false">Guide</button>
   </header>
 
@@ -341,6 +356,10 @@ details.vall summary { cursor: pointer; color: var(--navy); font-weight: 600; }
       <div class="sheet-handle"><span></span></div>
       <div class="panel-scroll" id="panel-body"></div>
     </aside>
+    <section class="keybox" id="keybox" hidden aria-label="How to read it">
+      <div class="kb-head"><h3>How to read it</h3><button class="kb-close" id="key-close" aria-label="Close">×</button></div>
+      <div id="key-body"></div>
+    </section>
     <div class="tip" id="tip" hidden></div>
   </main>
 
@@ -468,17 +487,47 @@ const RC_LOGO = /*__RCLOGO__*/"";
     .filter(r => r.t >= T0 && r.t <= T1);
   const timeline = moments.concat(releases).sort((a, b) => a.t - b.t || (a.kind === "moment" ? -1 : 1));
   timeline.forEach((e, i) => { e.i = i; });
-  const playable = e => e.kind === "moment" || !hidden.has("release");
+  const otherEnd = (l, n) => (l.na === n ? l.nb : l.na);
+  let story = null;
+  const playable = e => story ? story.evSet.has(e) : (e.kind === "moment" || !hidden.has("release"));
 
 
+  // Each story has its own dates, its own cast (the actors kept in focus) and its own events (the only ones it stops on).
   const STORIES = [
-    { yr: "2012–14", title: "Google buys DeepMind", text: "Musk, Thiel and Tallinn back a London lab. Facebook and Google both want it.", from: "2012-06", to: "2014-03", focus: "deepmind" },
-    { yr: "2015–18", title: "Musk, Page and the founding of OpenAI", text: "A friendship ends over AI. A new lab poaches Google's best researcher.", from: "2015-05", to: "2018-04", focus: "musk" },
-    { yr: "2020–21", title: "The Anthropic split", text: "Seven people leave OpenAI over its direction and start a rival.", from: "2020-05", to: "2021-07", focus: "anthropic" },
-    { yr: "Nov 2023", title: "Five days at OpenAI", text: "The board fires Altman. Microsoft offers him a job. He is back by Wednesday.", from: "2023-11-10", to: "2023-12-01", focus: "altman" },
-    { yr: "2024–25", title: "The talent war", text: "Co-founders leave OpenAI. Meta pays billions to rebuild its lab.", from: "2024-04", to: "2025-09", focus: "meta" },
-    { yr: "2012–now", title: "Musk's web", text: "Friend, funder, rival. Follow every Musk relationship across the whole timeline.", from: "2012-01", to: null, focus: "musk", speed: 2 }
+    { yr: "2012–14", title: "Google buys DeepMind", text: "Musk, Thiel and Tallinn back a London lab. Google and Facebook race to hire deep-learning talent. Google wins DeepMind.",
+      from: "2012-11-15", to: "2014-02-15",
+      cast: ["deepmind", "google", "dnnresearch", "meta", "hassabis", "legg", "suleyman", "musk", "thiel", "tallinn", "page", "zuckerberg", "lecun", "hinton", "sutskever"],
+      events: ["Big tech bids for three researchers", "Google buys DNNresearch", "Facebook hires Yann LeCun", "Google buys DeepMind"] },
+    { yr: "2015–18", title: "Musk, Page and the founding of OpenAI", text: "A friendship ends over AI. A new lab hires Sutskever away from Google. Musk leaves its board three years later.",
+      from: "2014-12-15", to: "2018-03-01",
+      cast: ["musk", "page", "google", "brain", "openai", "altman", "brockman", "sutskever", "karpathy", "schulman", "thiel", "hoffman", "tesla"],
+      events: ["Musk and Page fall out over AI", "OpenAI is founded", "Karpathy leaves OpenAI for Tesla", "Musk leaves OpenAI's board"] },
+    { yr: "2020–21", title: "The Anthropic split", text: "After GPT-3, seven people leave OpenAI and start Anthropic.",
+      from: "2020-05-15", to: "2021-06-15",
+      cast: ["openai", "anthropic", "microsoft", "d_amodei", "da_amodei", "clark", "olah", "brown", "kaplan", "altman", "tallinn"],
+      events: ["GPT-3", "Safety researchers leave OpenAI", "Anthropic is founded", "Anthropic raises $124m"] },
+    { yr: "Nov 2023", title: "Five days at OpenAI", text: "The board fires Altman. Microsoft offers him a job. He is back by Wednesday.",
+      from: "2023-11-15", to: "2023-11-24",
+      cast: ["openai", "altman", "brockman", "sutskever", "toner", "dangelo", "murati", "microsoft", "nadella"],
+      events: ["OpenAI's board fires Sam Altman", "Microsoft offers Altman a home", "Altman returns"] },
+    { yr: "2024–26", title: "The talent war", text: "OpenAI's co-founders leave for new labs and rivals. Meta pays billions to rebuild its own. Some come back.",
+      from: "2024-05-01", to: "2026-06-30",
+      cast: ["openai", "anthropic", "ssi", "tml", "meta", "scale", "google", "sutskever", "leike", "schulman", "murati", "zoph", "gross", "wang", "friedman", "zuckerberg", "altman", "karpathy", "shazeer"],
+      events: ["Sutskever and Leike leave OpenAI", "Sutskever founds Safe Superintelligence", "Schulman leaves for Anthropic", "Mira Murati leaves OpenAI",
+               "Murati launches Thinking Machines Lab", "Meta buys into Scale AI", "Daniel Gross leaves SSI for Meta",
+               "Thinking Machines co-founders go back to OpenAI", "Karpathy joins Anthropic", "Shazeer leaves Google for OpenAI"] },
+    { yr: "2012–now", title: "Musk's web", text: "Friend, funder, rival. Every Musk tie across the whole timeline, and only the moments he is part of.",
+      from: "2012-01-01", to: null, cast: "musk-web", events: "musk", speed: 2 }
   ];
+  STORIES.forEach(st => {
+    if (st.cast === "musk-web") {
+      const m = byId.musk; st.castSet = new Set([m]); m.links.forEach(l => st.castSet.add(otherEnd(l, m)));
+    } else st.castSet = new Set(st.cast.map(id => byId[id]).filter(Boolean));
+    st.evList = st.events === "musk" ? moments.filter(e => e.ids.includes("musk"))
+      : st.events.map(ti => moments.find(e => e.title === ti)).filter(Boolean);
+    if (Array.isArray(st.events) && st.evList.length !== st.events.length) console.warn("story event missing", st.title);
+    st.evSet = new Set(st.evList);
+  });
 
   function nameAt(n, t) { let nm = n.name; if (n.renames) n.renames.forEach(r => { if (t >= r.t) nm = r.name; }); return nm; }
   function logoAt(n, t) { let lg = n.logo; if (n.renames) n.renames.forEach(r => { if (t >= r.t && r.logo !== undefined) lg = r.logo; }); return lg; }
@@ -712,6 +761,11 @@ const RC_LOGO = /*__RCLOGO__*/"";
   let focusSet = null, nearLinks = null;
   function computeFocus() {
     focusSet = null; nearLinks = null;
+    if (!selected && story) {
+      focusSet = story.castSet; nearLinks = new Set();
+      links.forEach(l => { if (l.active && focusSet.has(l.na) && focusSet.has(l.nb)) nearLinks.add(l); });
+      return;
+    }
     if (!selected) return;
     if (selected.kind === "node") {
       const n = byId[selected.id]; focusSet = new Set([n]); nearLinks = new Set();
@@ -1040,10 +1094,9 @@ const RC_LOGO = /*__RCLOGO__*/"";
     return `<li><button class="w${e.weight}" data-ev="${e.i}"><span class="d">${fmt(e.t, e.prec === "d" ? "m" : e.prec)}</span><span class="t">${esc(e.title)}</span></button></li>`;
   }
 
-  function guideHTML() {
-    const lg = (cat, title, text, svgInner) => `<button class="lg" data-cat="${cat}" aria-pressed="${!hidden.has(cat)}"><svg viewBox="0 0 34 22">${svgInner}</svg><span><b>${title}</b><span>${text}</span></span></button>`;
+  function keyHTML() {
+    const lg = (cat, title, text, svgInner) => `<div class="lg static"><svg viewBox="0 0 34 22">${svgInner}</svg><span><b>${title}</b><span>${text}</span></span></div>`;
     return `
-      <h3>How to read it</h3>
       <div class="legend">
         <div class="lg static"><svg viewBox="0 0 34 22"><circle cx="9" cy="11" r="8" fill="var(--ice)" stroke="var(--shade)"/><path d="${squircle(16)}" transform="translate(26,11)" fill="#fff" stroke="var(--shade)"/></svg><span><b>Actors</b><span>Circles are people, squares organisations. Faint means no active tie.</span></span></div>
         <div class="lg static"><svg viewBox="0 0 34 22"><path d="${squircle(10)}" transform="translate(6,14)" fill="#fff" stroke="var(--shade)"/><path d="${squircle(20)}" transform="translate(22,11)" fill="#fff" stroke="var(--shade)"/></svg><span><b>Size</b><span>${HAS_VALUES ? "Value on that date, from stock-market value or the last funding round." : "Size shows how many ties each actor has."}</span></span></div>
@@ -1054,7 +1107,12 @@ const RC_LOGO = /*__RCLOGO__*/"";
         ${lg("rift", "Rifts", "Feuds, firings and lawsuits.", '<path d="M1 17 Q17 2 33 17" fill="none" stroke="var(--rift)" stroke-width="2" stroke-dasharray="7 3 2 3"/>')}
         ${lg("release", "Releases", "Models and products.", '<rect x="2" y="5" width="30" height="12" rx="6" fill="var(--navy)"/>')}
       </div>
-      <p style="margin-top:10px;font-size:13px">Click anyone to see their ties on the current date. Drag the timeline, or use the arrow buttons to step through events.</p>
+      <p class="kb-how">Click anyone to see their ties on the current date. Drag the timeline, or use the arrow buttons to step through events.</p>
+    `;
+  }
+  function guideHTML() {
+    const lg = (cat, title, text, svgInner) => `<button class="lg" data-cat="${cat}" aria-pressed="${!hidden.has(cat)}"><svg viewBox="0 0 34 22">${svgInner}</svg><span><b>${title}</b><span>${text}</span></span></button>`;
+    return `
       <h3>Stories</h3>
       <div class="stories">${STORIES.map((s, i) => `<button class="story" data-story="${i}"><span class="yr">${s.yr}</span><b>${esc(s.title)}</b><span>${esc(s.text)}</span></button>`).join("")}</div>
       <h3>Chronicle</h3>
@@ -1062,12 +1120,25 @@ const RC_LOGO = /*__RCLOGO__*/"";
       <h3>About this map</h3>
       <div class="about">
         <p>Made by Mark Oldenbeuving at <a href="https://ripplecolab.com/?utm_source=lab&amp;utm_medium=map&amp;utm_campaign=ai-map" target="_blank" rel="noopener">Ripple CoLab</a>, with Claude, from public reporting. It uses the actor-and-flow view behind <a href="https://studio.ripplecolab.com/?utm_source=lab&amp;utm_medium=map&amp;utm_campaign=ai-map" target="_blank" rel="noopener">Ripple Studio</a>.</p>
-        <p>Every person, tie, event, release and value links to its source. Dates are to the day where known, otherwise to the month or year.</p>
-        <p>The data (CC BY 4.0) and code (MIT) are open on <a href="https://github.com/Ripple-Colab/human-system-ai" target="_blank" rel="noopener">GitHub</a>. Corrections are welcome as issues, with a source.</p>
-        <p>Company values are year-end stock-market values for listed companies, and funding-round, share-sale or purchase prices for private ones. A figure older than three years is not used.</p>
-        <p>Last updated ${fmt(T1, "d")}. To report an error, email <span class="addr">mark@ripplecolab.com</span>.</p>
-        <p>Logos from Simple Icons; trademarks belong to their owners.${Object.keys(FACES).length ? " Photos from Wikimedia Commons, credited on each person's page." : ""}</p>
+        <p>The data (CC BY 4.0) and code (MIT) are open on <a href="https://github.com/Ripple-Colab/human-system-ai" target="_blank" rel="noopener">GitHub</a>.</p>
+        <p>Last updated ${fmt(T1, "d")}. To report an error, open an <a href="https://github.com/Ripple-Colab/human-system-ai/issues" target="_blank" rel="noopener">issue on GitHub</a> with a source, or email <span class="addr">mark@ripplecolab.com</span>.</p>
       </div>`;
+  }
+
+  function storyHTML(st) {
+    const i = STORIES.indexOf(st);
+    const people = [...st.castSet].filter(n => n.kind === "person"), orgs = [...st.castSet].filter(n => n.kind === "org");
+    return `
+      <button class="back" data-exit-story>← Guide</button>
+      <h2>${esc(st.title)}</h2>
+      <p>${esc(st.text)}</p>
+      <p class="vsub">${fmt(parseD(st.from).t, "m")} to ${st.to ? fmt(parseD(st.to).t, "m") : "today"}. Only the actors and moments below stay in focus.</p>
+      <h3>What happens</h3>
+      <ul class="chron">${st.evList.map(chronRow).join("")}</ul>
+      <h3>Who is in it</h3>
+      <p class="pair">${orgs.concat(people).map(n => actorChip(n.id)).join(", ")}</p>
+      <div class="btnrow"><button class="btn" data-story="${i}">Play it again</button><button class="btn" data-exit-story>Leave the story</button></div>
+    `;
   }
 
   function relRow(l, n) {
@@ -1098,7 +1169,7 @@ const RC_LOGO = /*__RCLOGO__*/"";
     const rels = releases.filter(r => r.org === n.id);
     const src = srcOf(n);
     return `
-      <button class="back" data-back>← Guide</button>
+      <button class="back" data-back>← ${story ? "Story" : "Guide"}</button>
       <div class="who">${avatarHTML(n, "big")}<div><div class="kind">${n.kind === "person" ? "Person" : "Organisation"}</div><h2>${esc(nameAt(n, t))}</h2></div></div>
       <p>${esc(n.bio || "")}${src ? ` <a class="src" href="${esc(src)}" target="_blank" rel="noopener">Source</a>` : ""}</p>
       ${CREDITS[n.id] ? `<p class="credit">Photo: <a href="${esc(CREDITS[n.id].page)}" target="_blank" rel="noopener">${esc(CREDITS[n.id].artist || "Wikimedia Commons")}</a>, ${esc(CREDITS[n.id].license)}</p>` : ""}
@@ -1116,7 +1187,7 @@ const RC_LOGO = /*__RCLOGO__*/"";
     const dirWord = l.cat === "money" ? "→" : "·";
     const src = safeUrl(l.src);
     return `
-      <button class="back" data-back>← Guide</button>
+      <button class="back" data-back>← ${story ? "Story" : "Guide"}</button>
       <div class="linkhead">${swatch(l.cat, l.type)}<span>${TYPE_NAME[l.type]}</span></div>
       <h2>${esc(l.label)}</h2>
       <p class="pair">${actorChip(l.a)} ${dirWord} ${actorChip(l.b)}</p>
@@ -1131,6 +1202,7 @@ const RC_LOGO = /*__RCLOGO__*/"";
     let html;
     if (selected && selected.kind === "node") html = nodeHTML(byId[selected.id]);
     else if (selected && selected.kind === "link") { const l = links.find(x => x.id === selected.id); html = l ? linkHTML(l) : guideHTML(); }
+    else if (story) html = storyHTML(story);
     else html = guideHTML();
     const keep = selected ? 0 : pb.scrollTop;
     pb.innerHTML = html;
@@ -1159,6 +1231,7 @@ const RC_LOGO = /*__RCLOGO__*/"";
 
   pb.addEventListener("click", e => {
     const b = e.target.closest("button, a"); if (!b || b.tagName === "A") return;
+    if (b.hasAttribute("data-exit-story")) return exitStory();
     if (b.hasAttribute("data-back")) return select(null);
     if (b.dataset.cat) return toggleCat(b.dataset.cat);
     if (b.dataset.story) return playStory(STORIES[+b.dataset.story]);
@@ -1168,6 +1241,13 @@ const RC_LOGO = /*__RCLOGO__*/"";
     if (b.dataset.id) return select({ kind: "node", id: b.dataset.id });
   });
 
+  const keyBox = $("keybox"), keyBtn = $("key-btn");
+  function openKey() { $("key-body").innerHTML = keyHTML(); keyBox.hidden = false; keyBtn.setAttribute("aria-expanded", "true"); }
+  function closeKey() { keyBox.hidden = true; keyBtn.setAttribute("aria-expanded", "false"); }
+  keyBtn.addEventListener("click", e => { e.stopPropagation(); keyBox.hidden ? openKey() : closeKey(); });
+  $("key-close").addEventListener("click", closeKey);
+  document.addEventListener("click", e => { if (!keyBox.hidden && !keyBox.contains(e.target) && e.target !== keyBtn) closeKey(); });
+  function exitStory() { story = null; storyEnd = null; selected = null; lastPanelKey = ""; renderPanel(); }
   function select(s) {
     selected = s; lastPanelKey = "";
     renderPanel();
@@ -1188,11 +1268,13 @@ const RC_LOGO = /*__RCLOGO__*/"";
 
   function playStory(s) {
     const from = parseD(s.from).t;
+    pause(); clearTags();
+    story = s; selected = null; lastPanelKey = "";
     storyEnd = s.to ? parseD(s.to).t : T1;
-    pause(); setTime(from);
+    setTime(from);
     setCaption(currentEvent, true);
-    select({ kind: "node", id: s.focus });
-    if (s.speed) { speed = s.speed; speedBtn.textContent = speed + "×"; }
+    renderPanel(); pb.scrollTop = 0;
+    speed = s.speed || 1; speedBtn.textContent = speed + "×";
     if (window.innerWidth < 900) openSheet(false);
     setTimeout(() => { playing = true; holdUntil = performance.now() + 700; last = performance.now(); setPlayIcon(); }, 350);
   }
@@ -1200,7 +1282,12 @@ const RC_LOGO = /*__RCLOGO__*/"";
   document.addEventListener("keydown", e => {
     if (e.target.closest("input, textarea")) return;
     if (e.key === " " && !e.target.closest("button")) { e.preventDefault(); playing ? pause() : play(); }
-    else if (e.key === "Escape") { select(null); if (window.innerWidth < 900) openSheet(false); }
+    else if (e.key === "Escape") {
+      if (!keyBox.hidden) closeKey();
+      else if (selected) select(null);
+      else if (story) exitStory();
+      if (window.innerWidth < 900) openSheet(false);
+    }
   });
 
   /* ---------- Boot ---------- */
