@@ -241,8 +241,9 @@ details.vall summary { cursor: pointer; color: var(--navy); font-weight: 600; }
 .about p { font-size: 13px; }
 .about .addr { user-select: all; font-weight: 600; color: var(--navy); }
 
-/* Key box: opened from "How to read it" in the header */
-.keybtn { border-left: 1px solid var(--hair); padding-left: 14px; margin-left: 4px; }
+/* Key box: opened from "How to read it" or "About" in the header */
+.bar2 { display: contents; }
+.boxbtns { display: flex; align-items: center; gap: 14px; border-left: 1px solid var(--hair); padding-left: 18px; }
 .keybox {
   position: absolute; top: 12px; right: calc(var(--panel-w) + 16px); width: min(340px, calc(100% - 32px)); max-height: calc(100% - 24px); overflow-y: auto;
   background: var(--paper); border: 1px solid var(--hair); box-shadow: 0 8px 24px rgba(36, 49, 92, 0.10); padding: 14px 18px 12px; z-index: 6;
@@ -294,9 +295,10 @@ details.vall summary { cursor: pointer; color: var(--navy); font-weight: 600; }
   .brand .rule, .brand p { display: none; }
   .brand h1 { font-size: 21px; }
   .brand { flex: 1; }
-  .flows { flex-wrap: nowrap; overflow-x: auto; width: 100%; order: 3; scrollbar-width: none; }
+  .bar2 { display: flex; align-items: center; gap: 14px; order: 3; width: 100%; min-width: 0; }
+  .flows { flex-wrap: nowrap; overflow-x: auto; flex: 1 1 0; min-width: 0; scrollbar-width: none; }
+  .boxbtns { flex: none; gap: 12px; padding-left: 12px; }
   .guide-btn { display: inline-flex; order: 2; border: 1px solid var(--hair); padding: 0 12px; }
-  .keybtn { order: 2; border-left: 0; margin-left: 0; padding-left: 2px; }
   .keybox { right: 12px; left: 12px; width: auto; top: 8px; }
   .caption { width: auto; right: 0; border-right: 0; padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-top: 12px; }
   .cap-title { font-size: 20px; }
@@ -348,15 +350,20 @@ details.vall summary { cursor: pointer; color: var(--navy); font-weight: 600; }
       <span class="rule"></span>
       <h1>The Human System of AI</h1>
     </div>
-    <div class="flows" role="group" aria-label="Show or hide">
-      <button class="tog" data-cat="work" aria-pressed="true"><svg class="sw" viewBox="0 0 20 8"><line x1="1" y1="4" x2="19" y2="4" stroke="var(--work)" stroke-width="1.6"/></svg>Work</button>
-      <button class="tog" data-cat="money" aria-pressed="true"><svg class="sw" viewBox="0 0 20 8"><line x1="1" y1="4" x2="19" y2="4" stroke="var(--money)" stroke-width="2" stroke-dasharray="4 3"/></svg>Money</button>
-      <button class="tog" data-cat="tie" aria-pressed="true"><svg class="sw" viewBox="0 0 20 8"><path d="M1 7 Q10 0 19 7" fill="none" stroke="var(--tie)" stroke-width="1.8"/></svg>Allies</button>
-      <button class="tog" data-cat="rift" aria-pressed="true"><svg class="sw" viewBox="0 0 20 8"><path d="M1 7 Q10 0 19 7" fill="none" stroke="var(--rift)" stroke-width="1.8" stroke-dasharray="5 2 2 2"/></svg>Rifts</button>
-      <button class="tog" data-cat="release" aria-pressed="true"><svg class="sw" viewBox="0 0 20 8"><rect x="2" y="0.5" width="16" height="7" rx="3.5" fill="var(--navy)"/></svg>Releases</button>
-      <button class="tog" id="f-past" aria-pressed="false" title="Keep a faint trace of relationships that have ended">Past links</button>
+    <div class="bar2">
+      <div class="flows" role="group" aria-label="Show or hide">
+        <button class="tog" data-cat="work" aria-pressed="true"><svg class="sw" viewBox="0 0 20 8"><line x1="1" y1="4" x2="19" y2="4" stroke="var(--work)" stroke-width="1.6"/></svg>Work</button>
+        <button class="tog" data-cat="money" aria-pressed="true"><svg class="sw" viewBox="0 0 20 8"><line x1="1" y1="4" x2="19" y2="4" stroke="var(--money)" stroke-width="2" stroke-dasharray="4 3"/></svg>Money</button>
+        <button class="tog" data-cat="tie" aria-pressed="true"><svg class="sw" viewBox="0 0 20 8"><path d="M1 7 Q10 0 19 7" fill="none" stroke="var(--tie)" stroke-width="1.8"/></svg>Allies</button>
+        <button class="tog" data-cat="rift" aria-pressed="true"><svg class="sw" viewBox="0 0 20 8"><path d="M1 7 Q10 0 19 7" fill="none" stroke="var(--rift)" stroke-width="1.8" stroke-dasharray="5 2 2 2"/></svg>Rifts</button>
+        <button class="tog" data-cat="release" aria-pressed="true"><svg class="sw" viewBox="0 0 20 8"><rect x="2" y="0.5" width="16" height="7" rx="3.5" fill="var(--navy)"/></svg>Releases</button>
+        <button class="tog" id="f-past" aria-pressed="false" title="Keep a faint trace of relationships that have ended">Past links</button>
+      </div>
+      <div class="boxbtns">
+        <button class="tog" id="key-btn" aria-expanded="false" aria-controls="keybox">How to read it</button>
+        <button class="tog" id="about-btn" aria-expanded="false" aria-controls="keybox">About</button>
+      </div>
     </div>
-    <button class="tog keybtn" id="key-btn" aria-expanded="false" aria-controls="keybox">How to read it</button>
     <button class="tog guide-btn" id="guide-btn" aria-expanded="false">Guide</button>
   </header>
 
@@ -378,8 +385,8 @@ details.vall summary { cursor: pointer; color: var(--navy); font-weight: 600; }
       <div class="sheet-handle"><span></span></div>
       <div class="panel-scroll" id="panel-body"></div>
     </aside>
-    <section class="keybox" id="keybox" hidden aria-label="How to read it">
-      <div class="kb-head"><h3>How to read it</h3><button class="kb-close" id="key-close" aria-label="Close">×</button></div>
+    <section class="keybox" id="keybox" hidden aria-labelledby="kb-title">
+      <div class="kb-head"><h3 id="kb-title">How to read it</h3><button class="kb-close" id="key-close" aria-label="Close">×</button></div>
       <div id="key-body"></div>
     </section>
     <div class="tip" id="tip" hidden></div>
@@ -1138,8 +1145,11 @@ const RC_LOGO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO8AAABQCAYAAADx7
       <h3>Stories</h3>
       <div class="stories">${STORIES.map((s, i) => `<button class="story" data-story="${i}"><span class="yr">${s.yr}</span><b>${esc(s.title)}</b><span>${esc(s.text)}</span></button>`).join("")}</div>
       <h3>Chronicle</h3>
-      <ul class="chron" id="chron">${timeline.map(chronRow).join("")}</ul>
-      <h3>About this map</h3>
+      <ul class="chron" id="chron">${timeline.map(chronRow).join("")}</ul>`;
+  }
+
+  function aboutHTML() {
+    return `
       <div class="about">
         <p>Made by Mark Oldenbeuving at <a href="https://ripplecolab.com/?utm_source=lab&amp;utm_medium=map&amp;utm_campaign=ai-map" target="_blank" rel="noopener">Ripple CoLab</a>, with Claude, from public reporting. It uses the actor-and-flow view behind <a href="https://studio.ripplecolab.com/?utm_source=lab&amp;utm_medium=map&amp;utm_campaign=ai-map" target="_blank" rel="noopener">Ripple Studio</a>.</p>
         <p>The data (CC BY 4.0) and code (MIT) are open on <a href="https://github.com/Ripple-Colab/human-system-ai" target="_blank" rel="noopener">GitHub</a>.</p>
@@ -1263,12 +1273,21 @@ const RC_LOGO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO8AAABQCAYAAADx7
     if (b.dataset.id) return select({ kind: "node", id: b.dataset.id });
   });
 
-  const keyBox = $("keybox"), keyBtn = $("key-btn");
-  function openKey() { $("key-body").innerHTML = keyHTML(); keyBox.hidden = false; keyBtn.setAttribute("aria-expanded", "true"); }
-  function closeKey() { keyBox.hidden = true; keyBtn.setAttribute("aria-expanded", "false"); }
-  keyBtn.addEventListener("click", e => { e.stopPropagation(); keyBox.hidden ? openKey() : closeKey(); });
+  // One box, two contents: the key and About this map.
+  const keyBox = $("keybox");
+  const BOXES = { key: { btn: $("key-btn"), title: "How to read it", html: keyHTML }, about: { btn: $("about-btn"), title: "About this map", html: aboutHTML } };
+  let boxOpen = null;
+  function openBox(w) {
+    boxOpen = w;
+    $("kb-title").textContent = BOXES[w].title;
+    $("key-body").innerHTML = BOXES[w].html();
+    keyBox.hidden = false;
+    Object.entries(BOXES).forEach(([k, b]) => b.btn.setAttribute("aria-expanded", String(k === w)));
+  }
+  function closeKey() { boxOpen = null; keyBox.hidden = true; Object.values(BOXES).forEach(b => b.btn.setAttribute("aria-expanded", "false")); }
+  Object.entries(BOXES).forEach(([k, b]) => b.btn.addEventListener("click", e => { e.stopPropagation(); boxOpen === k ? closeKey() : openBox(k); }));
   $("key-close").addEventListener("click", closeKey);
-  document.addEventListener("click", e => { if (!keyBox.hidden && !keyBox.contains(e.target) && e.target !== keyBtn) closeKey(); });
+  document.addEventListener("click", e => { if (!keyBox.hidden && !keyBox.contains(e.target) && !Object.values(BOXES).some(b => b.btn === e.target)) closeKey(); });
   function exitStory() { story = null; storyEnd = null; selected = null; lastPanelKey = ""; renderPanel(); }
   function select(s) {
     selected = s; lastPanelKey = "";
