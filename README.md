@@ -1,10 +1,8 @@
-# Ripple CoLab Lab
+# The Human System of AI
 
-Public maps and sketches from Ripple CoLab, served at https://lab.ripplecolab.com.
+An animated map of who worked where, who paid whom and who fell out in AI, 2012 to today. Every tie, event, release and value links to its source.
 
-## The Human System of AI
-
-An animated map of who worked where, who paid whom and who fell out in AI, 2012 to today. It lives at `/ai/`.
+Live at https://lab.ripplecolab.com/ai/. Made by Ripple CoLab.
 
 - `public/` is the site Vercel serves. Nothing in it needs a build step.
 - `src/ai-map/` holds the map's source:
@@ -23,10 +21,10 @@ An animated map of who worked where, who paid whom and who fell out in AI, 2012 
 
 ## Corrections
 
-Email mark@ripplecolab.com. Every item on the map links to its source, so please say which item and which source.
+Open an issue with a source; see `CONTRIBUTING.md`. Or email mark@ripplecolab.com.
 
-## Credits
+## Licences
 
-- Fonts: Josefin Sans and Karla, SIL Open Font License.
-- Charts: D3, ISC licence (`public/vendor/d3-LICENSE.txt`).
-- Logos: Simple Icons. Trademarks belong to their owners.
+- Code: MIT (`LICENSE`).
+- Data: CC BY 4.0 (`LICENSE-DATA.md`).
+- Photos, fonts, logos and D3: see `CREDITS.md`.
