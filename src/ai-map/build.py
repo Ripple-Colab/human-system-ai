@@ -102,7 +102,10 @@ if "--site" in sys.argv:
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<script defer src="/_vercel/insights/script.js"></script>
+<script>
+  window.va = window.va || function () {{ (window.vaq = window.vaq || []).push(arguments); }};
+</script>
+<script defer src="/_vercel/web-analytics/script.js"></script>
 </head>
 <body>
 {body}
