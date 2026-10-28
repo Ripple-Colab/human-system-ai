@@ -9,7 +9,7 @@ This covers:
 - `src/ai-map/releases.json`: model and product releases
 - `src/ai-map/values.json`: company values over time
 
-Credit it as: "The Human System of AI, Ripple CoLab (https://lab.ripplecolab.com/ai/)".
+Credit it as: "The Human System of AI, Ripple CoLab (https://lab.ripplecolab.com/human-system-ai/)".
 
 Each item links to the public source it rests on. Those sources keep their own
 copyright; the licence covers our selection, wording and structure.

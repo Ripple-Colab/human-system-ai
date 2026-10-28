@@ -2,7 +2,7 @@
 
 An animated map of who worked where, who paid whom and who fell out in AI, 2012 to today. Every tie, event, release and value links to its source.
 
-Live at https://lab.ripplecolab.com/ai/. Made by Ripple CoLab.
+Live at https://lab.ripplecolab.com/human-system-ai/. Made by Ripple CoLab.
 
 - `public/` is the site Vercel serves. Nothing in it needs a build step.
 - `src/ai-map/` holds the map's source:

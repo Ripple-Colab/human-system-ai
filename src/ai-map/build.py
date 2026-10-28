@@ -66,10 +66,12 @@ open(os.path.join(HERE, "index.test.html"), "w").write(
     'body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style></head><body>' + page + '</body></html>')
 
 # Public site: python3 build.py --site <public dir>
-# Writes <public>/ai/index.html as a full document that serves its own fonts and D3, plus the favicon, fonts and D3.
+# Writes <public>/<SLUG>/index.html as a full document that serves its own fonts and D3, plus the favicon, fonts and D3.
+SLUG = "human-system-ai"
+URL = f"https://lab.ripplecolab.com/{SLUG}/"
 if "--site" in sys.argv:
     out = os.path.abspath(sys.argv[sys.argv.index("--site") + 1])
-    os.makedirs(os.path.join(out, "ai"), exist_ok=True)
+    os.makedirs(os.path.join(out, SLUG), exist_ok=True)
     cut = page.index("</style>") + len("</style>")
     head, body = page[:cut], page[cut:]
     head = re.sub(r'<link rel="preconnect"[^>]*>\s*', "", head)
@@ -89,13 +91,13 @@ if "--site" in sys.argv:
 <style>:root{{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}}body{{margin:0}}img{{max-width:100%}}[hidden]{{display:none!important}}</style>
 {head}
 <meta name="description" content="{desc}">
-<link rel="canonical" href="https://lab.ripplecolab.com/ai/">
+<link rel="canonical" href="{URL}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ripple CoLab">
 <meta property="og:title" content="The Human System of AI">
 <meta property="og:description" content="{desc}">
-<meta property="og:url" content="https://lab.ripplecolab.com/ai/">
-<meta property="og:image" content="https://lab.ripplecolab.com/ai/og.png">
+<meta property="og:url" content="{URL}">
+<meta property="og:image" content="{URL}og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -107,5 +109,5 @@ if "--site" in sys.argv:
 </body>
 </html>
 """
-    open(os.path.join(out, "ai", "index.html"), "w").write(site)
-    print("site page:", os.path.join(out, "ai", "index.html"), f"{len(site)//1024} KB")
+    open(os.path.join(out, SLUG, "index.html"), "w").write(site)
+    print("site page:", os.path.join(out, SLUG, "index.html"), f"{len(site)//1024} KB")

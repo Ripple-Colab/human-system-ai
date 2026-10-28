@@ -7,7 +7,7 @@ import io, json, os, re, sys, time, urllib.parse, urllib.request
 from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-UA = {"User-Agent": "RippleCoLab-AI-map/1.0 (https://lab.ripplecolab.com/ai/; one-off portrait fetch)"}
+UA = {"User-Agent": "RippleCoLab-AI-map/1.0 (https://lab.ripplecolab.com/human-system-ai/; one-off portrait fetch)"}
 src = os.path.join(HERE, "data.checked.json")
 data = json.load(open(src if os.path.exists(src) else os.path.join(HERE, "data.json")))
 os.makedirs(os.path.join(HERE, "faces"), exist_ok=True)
