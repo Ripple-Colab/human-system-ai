@@ -1,7 +1,7 @@
 {
  "meta": {
   "start": "2012-01-01",
-  "end": "2026-10-27",
+  "end": "2026-11-12",
   "note": "Dates are YYYY, YYYY-MM or YYYY-MM-DD. 'to': null means still true on the end date. 'check' marks a claim to verify. 'src' is the source that supports the item."
  },
  "people": [
@@ -205,7 +205,7 @@
    "id": "huang",
    "name": "Jensen Huang",
    "wiki": "Jensen_Huang",
-   "bio": "Nvidia co-founder and CEO. Supplies the chips most AI labs train on.",
+   "bio": "Co-founded Nvidia, which makes the chips most AI labs train on. Its CEO until he resigned in November 2026.",
    "src": "https://en.wikipedia.org/wiki/Jensen_Huang"
   },
   {
@@ -1312,9 +1312,9 @@
    "a": "huang",
    "b": "nvidia",
    "type": "founder",
-   "label": "Co-founder and CEO",
+   "label": "Co-founder; CEO until November 2026",
    "from": "2012",
-   "to": null,
+   "to": "2026-11-12",
    "src": "https://en.wikipedia.org/wiki/Jensen_Huang"
   },
   {
@@ -3183,6 +3183,17 @@
    ],
    "weight": 2,
    "src": "https://breakingdefense.com/2026/09/dc-circuit-panel-upholds-pentagons-ban-on-anthropic-so-what-comes-next/"
+  },
+  {
+   "date": "2026-11-12",
+   "title": "Jensen Huang resigns from Nvidia",
+   "text": "He leaves as CEO and board member after reports of affairs, one with a woman US intelligence suspects of spying for China. Beijing denies it. CFO Colette Kress becomes interim CEO.",
+   "ids": [
+    "huang",
+    "nvidia"
+   ],
+   "weight": 3,
+   "src": "https://www.pbs.org/newshour/nation/what-we-know-after-jensen-huangs-resignation-as-nvidias-ceo"
   }
  ]
 }
